@@ -1,0 +1,29 @@
+{
+  "website": "www.comsci.tech",
+  "email": "comscitechnologies@gmail.com",
+  "phone": "+91 96873 79447",
+  "address": "Rajkot, Gujarat, India-360005",
+  "full_address": "Comsci Technologies LLP, 401 ASMAKAM FLATS, SHAKTINAGAR MAIN ROAD STREET NO. 2, NEAR PANCHAYAT CHOWK, UNIVERSITY ROAD, Rajkot, Gujarat, India-360005",
+  "social_media": [
+    {
+      "name": "Facebook",
+      "link": "https://www.facebook.com/people/Comsci/61557725482494/"
+    },
+    {
+      "name": "Behance",
+      "link": "https://www.behance.net/comsci-technologies"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/company/comsci-technologies"
+    },
+    {
+      "name": "Youtube",
+      "link": "https://www.youtube.com/@comsci-technologies"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://x.com/comsci_tech"
+    }
+  ]
+}

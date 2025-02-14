@@ -1,0 +1,84 @@
+import Link from "next/link";
+import Image from "next/image";
+import PrimaryBtn from '@/components/layout/PrimaryBtn';
+import FtrLogo from '@/../public/images/footer-logo.svg';
+
+const Footer = () => {
+	const contactData = require('../../files/contact.json');
+	return (
+		<>
+			<footer className="footer">
+				<div className="container">
+					<div className="footer_section">
+						<div className="title_box">
+							<div className="mail_box">
+								<h4>Start a new project or Schedule a Consultation today</h4>
+								<Link href={`mailto:${contactData.email}`}>Contact Us</Link>
+							</div>
+							<PrimaryBtn name="Lets talk" arrow="no" link="/"/>
+						</div>
+						<div className="links_section">
+							<div className="use_link">
+								<ul>
+									<li><Link href="/services">Services</Link></li>
+									<li><Link href="/projects">Projects</Link></li>
+									<li><Link href="/approach">Approach</Link></li>
+									<li><Link href="/about">About us</Link></li>
+									<li><Link href="/blogs">Blogs</Link></li>
+									<li><Link href="/jobposition">Job Position</Link></li>
+									{/* <li><Link href="/errorpages">Contact Us</Link></li> */}
+								</ul>
+							</div>
+							<div className="social_media">
+								<ul>
+									<li><Link href="#">Logo & Branding</Link></li>
+									<li><Link href="#">UX UI Designing</Link></li>
+									<li><Link href="#">Custom Web Development</Link></li>
+									<li><Link href="#">Mobile Application</Link></li>
+									<li><Link href="#">Video & Art Direction</Link></li>
+									<li><Link href="#">Search Engine Optimization</Link></li>
+									<li><Link href="#">Artificial Intelligence</Link></li>
+								</ul>
+							</div>
+							<div className="social_media industries_block">
+								<ul>
+									<li><Link href="#">Healthcare</Link></li>
+									<li><Link href="#">Real Estate</Link></li>
+									<li><Link href="#">Fintech & Banking</Link></li>
+									<li><Link href="#">Web3</Link></li>
+									<li><Link href="#">AR & VR</Link></li>
+									<li><Link href="#">Educational</Link></li>
+									<li><Link href="#">Hospitality & Luxery</Link></li>
+								</ul>
+							</div>
+							<div className="social_media soc_block_wrap">
+								<ul>
+								{contactData.social_media.map((item) => (
+									<li key={item.name}>
+										<Link href={item.link}>{item.name}</Link>
+									</li>
+								))}
+								</ul>
+							</div>
+							<div className="contactbox">
+								<ul>
+									<li><p>{contactData.address}</p></li>
+									<li><Link href={`tel:${contactData.phone}`}><span>{contactData.phone}</span></Link></li>
+									<li><Link href={`mailto:${contactData.email}`}><span>{contactData.email}</span></Link></li>
+								</ul>
+							</div>
+						</div>
+						<div className="copyright">
+							<p>© 2023 COMSCI TECHNOLOGIES All rights reserved<Link href="/privacy">Privacy Policy</Link></p>
+						</div>
+						<div className="footer_logo">
+							<Image src={FtrLogo} alt="ftrlogo" quality={100}/>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</>
+	)
+}
+
+export default Footer;

@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "title": "NuAI Artificial Intelligence Health App - Developed by Comsci Technologies",
+        "description": "Nuverse Health Solutions or NuAI has been formed to place intuitive preventive healthcare in the hands of the end user. Nuverse envisions the discovery of new processes, drugs, diagnostics and devices for efficient healthcare delivery. Using Artifical Intelloigence technology integrated inside mobile application can deliver critical health parameters in hand without any medical device.",
+        "image": "/images/projects/NuAI-1.webp",
+        "images": [
+            "/images/projects/NuAI-1.webp",
+            "/images/projects/NuAI-2.webp",
+            "/images/projects/NuAI-3.webp",
+            "/images/projects/NuAI-4.webp",
+            "/images/projects/NuAI-5.webp",
+            "/images/projects/NuAI-6.webp",
+            "/images/projects/NuAI-7.webp",
+            "/images/projects/NuAI-8.webp",
+            "/images/projects/NuAI-9.webp",
+            "/images/projects/NuAI-10.webp"
+        ],
+        "link": "nuai_artificial_intelligence_enabled_health_app"
+    },
+    {
+        "id": 2,
+        "title": "Mipo FinTech Platform - Developed by Comsci Technologies",
+        "description": "MIPO is your trusted partner in financial empowerment. We specialize in turning unpaid invoices into immediate cash flow for small businesses. With seamless and friendly factoring solutions, MIPO accelerates your path to financial freedom, ensuring your business thrives today, not tomorrow.",
+        "image": "/images/projects/Mipo-1.webp",
+        "images": [
+            "/images/projects/Mipo-1.webp",
+            "/images/projects/Mipo-2.webp",
+            "/images/projects/Mipo-3.webp",
+            "/images/projects/Mipo-4.webp",
+            "/images/projects/Mipo-5.webp",
+            "/images/projects/Mipo-6.webp",
+            "/images/projects/Mipo-7.webp",
+            "/images/projects/Mipo-8.webp",
+            "/images/projects/Mipo-9.webp",
+            "/images/projects/Mipo-10.webp",
+            "/images/projects/Mipo-11.webp"
+        ],
+        "link": "mipo_south_america_fintech_platform"
+    },
+    {
+        "id": 4,
+        "title": "Medical Escape Project Details - Developed by Comsci Technologies",
+        "description": "Choosing our clinic means relying on a team of highly qualified professionals, led by the renowned prof. Dario bertossi",
+        "image": "/images/projects/Medical-Escape-1.webp",
+        "images": [
+            "/images/projects/Medical-Escape-1.webp",
+            "/images/projects/Medical-Escape-2.webp",
+            "/images/projects/Medical-Escape-3.webp",
+            "/images/projects/Medical-Escape-4.webp",
+            "/images/projects/Medical-Escape-5.webp",
+            "/images/projects/Medical-Escape-6.webp",
+            "/images/projects/Medical-Escape-7.webp"
+        ],
+        "link": "medical_escape_skin_care_clinic"
+    },
+    {
+        "id": 4,
+        "title": "BLKResumes Recruitment Platform - Developed by Comsci Technologies",
+        "description": "BLKResumes is a dynamic and inclusive hiring and job search platform designed for professionals seeking career opportunities, with a focus on connecting black and brown talent in various industries.",
+        "image": "/images/projects/BLKResumes-1.webp",
+        "images": [
+            "/images/projects/BLKResumes-1.webp",
+            "/images/projects/BLKResumes-2.webp",
+            "/images/projects/BLKResumes-3.webp",
+            "/images/projects/BLKResumes-4.webp",
+            "/images/projects/BLKResumes-5.webp",
+            "/images/projects/BLKResumes-6.webp",
+            "/images/projects/BLKResumes-7.webp",
+            "/images/projects/BLKResumes-8.webp",
+            "/images/projects/BLKResumes-9.webp"
+        ],
+        "link": "blkresumes_recruitment_platform"
+    },
+    {
+        "id": 5,
+        "title": "BLKResumes Recruitment Platform - Developed by Comsci Technologies",
+        "description": "BLKResumes is a dynamic and inclusive hiring and job search platform designed for professionals seeking career opportunities, with a focus on connecting black and brown talent in various industries.",
+        "image": "/images/projects/BLKResumes-1.webp",
+        "images": [
+            "/images/projects/BLKResumes-1.webp",
+            "/images/projects/BLKResumes-2.webp",
+            "/images/projects/BLKResumes-3.webp",
+            "/images/projects/BLKResumes-4.webp",
+            "/images/projects/BLKResumes-5.webp",
+            "/images/projects/BLKResumes-6.webp",
+            "/images/projects/BLKResumes-7.webp",
+            "/images/projects/BLKResumes-8.webp",
+            "/images/projects/BLKResumes-9.webp"
+        ],
+        "link": "blkresumes_recruitment_platform"
+    }
+]
