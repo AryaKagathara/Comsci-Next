@@ -1,0 +1,83 @@
+[
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "image": "/images/Healthcare-Small.webp",
+      "shortDescription": "Revolutionizing patient care with cutting-edge technology.",
+      "content": [
+              {
+                  "type": "paragraph",
+                  "text": "Transforming the healthcare landscape through innovative digital solutions that empower patients and providers alike."
+              },
+              {
+                  "type": "paragraph",
+                  "text": "We develop custom applications for telehealth, remote patient monitoring, electronic health records (EHR), and more, ensuring HIPAA compliance and data security."
+              },
+        {
+          "type": "list",
+                  "items": [
+                      "Telehealth platforms for virtual consultations",
+                      "AI-powered diagnostic tools for faster and more accurate diagnoses",
+                      "Wearable technology integration for remote patient monitoring"
+          ]
+        }
+  
+          ]
+    },
+    {
+      "id": "web3",
+      "title": "Web3",
+      "image": "/images/Web3-Small.webp",
+      "shortDescription": "Building the decentralized future of the internet.",
+      "content": [
+              {
+                  "type": "paragraph",
+                  "text": "Leveraging blockchain technology to create secure, transparent, and user-centric Web3 experiences."
+              },
+        {
+                  "type": "heading",
+                  "text": "Our Web3 Expertise"
+        },
+        {
+          "type": "list",
+                  "items":[
+                      "Decentralized application (dApp) development",
+                      "Smart contract auditing and security",
+                      "NFT marketplaces and tokenization solutions"
+                  ]
+        }
+      ]
+    },
+    {
+          "id": "real-estate",
+          "title": "Real Estate",
+          "image": "/images/RealEstate-Small.webp",
+          "shortDescription": "Modernizing real estate transactions with digital solutions.",
+          "content": [
+              {
+                  "type": "paragraph",
+                  "text": "We create innovative platforms that streamline property searches, facilitate virtual tours, and simplify the buying and selling process."
+              },
+              {
+                  "type": "paragraph",
+                  "text": "Our solutions leverage data analytics to provide valuable insights for investment decisions."
+              }
+          ]
+      },
+      {
+          "id": "fintech",
+          "title": "Finance & Banking Tech",
+          "image": "/images/Fintech-Small.webp",
+          "shortDescription": "Revolutionizing financial services with secure and efficient technology.",
+          "content": [
+              {
+                  "type": "paragraph",
+                  "text": "We develop cutting-edge fintech solutions for mobile banking, payment processing, fraud detection, and investment management."
+              },
+              {
+                  "type": "paragraph",
+                  "text": "Our expertise in blockchain and AI allows us to create secure and personalized financial experiences."
+              }
+          ]
+      }
+  ]

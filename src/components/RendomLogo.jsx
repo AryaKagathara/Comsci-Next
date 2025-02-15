@@ -9,7 +9,7 @@ function RandomImage(props) {
 		height: 80,
 		display: 'inline-flex',
 		boxSizing: 'border-box',
-		backgroundImage: `url("images/rendom-type-${props.num}.svg")`,
+		backgroundImage: `url("images/clients/client-logo-${props.num}.svg")`,
 		transition: 'all 1s ease-in-out'
 	};
 
