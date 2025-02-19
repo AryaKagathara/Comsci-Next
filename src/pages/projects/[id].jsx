@@ -40,13 +40,13 @@ export default function ProjectDetail({ project }) {
         og: {
             title: `${project.title} | Comsci`,
             description: project.shortDescription,
-            image: project.ogImage, // Assuming you have an ogImage property in your project data
+            image: project.image, // Assuming you have an ogImage property in your project data
             imageAlt: `Project image for ${project.title}`,
          },
         twitter: {  // Similar to og, adapt as needed for Twitter
            title: `${project.title} | Comsci`,
             description: project.shortDescription,
-            image: project.twitterImage || project.ogImage, // Use a specific Twitter image or fallback to ogImage
+            image: project.image || project.ogImage, // Use a specific Twitter image or fallback to ogImage
             imageAlt: `Project image for ${project.title}`, 
         },    
     };
