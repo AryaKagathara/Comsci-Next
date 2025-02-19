@@ -62,7 +62,7 @@ p { font-size: 16px; font-style: normal; }
 .main_header .menu-toggler.active .menu-toggler-icon::before, .menu-toggler.active .menu-toggler-icon::after { transition-delay: 0s, .2s; }
 .main_header .menu-toggler.active .menu-toggler-icon::before { top: 0px; transform: rotate(-45deg); }
 .main_header .menu-toggler.active .menu-toggler-icon::after { bottom: 0px; transform: rotate(45deg); }
-.main_header .navigation_bar { width: calc(50% + 220px); }
+.main_header .navigation_bar { width: calc(60% + 220px); }
 .main_header .navigation_bar .mobile_header_logo a { display: none; }
 .main_header .navigation_bar .navigation_wrap { display: flex; justify-content: space-between; align-items: center; }
 .main_header .navigation_bar .nav-bar ul { display: flex; align-items: center; margin: 0; padding: 0; }

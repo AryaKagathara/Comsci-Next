@@ -67,7 +67,7 @@ const Header = () => {
 								<div className="navigation_wrap">
 									<div className="nav-bar">
 										<ul>
-											<li><Link href="/about" className="active">About us</Link></li>
+											<li><Link href="/about">About us</Link></li>
 											<li>
 												<Link href="/services">Services</Link>
 												{/* <Link href="/services">Services <i><Image src={downArrow} alt="arrow" /></i></Link> */}
@@ -98,7 +98,9 @@ const Header = () => {
 												</ul> */}
 											</li>
 											<li><Link href="/blogs">Blogs</Link></li>
+											<li><Link href="/faqs">FAQs</Link></li>
 											<li><Link href="/approach">Approach</Link></li>
+											<li><Link href="/jobposition">Job Position</Link></li>
 										</ul>
 									</div>
 									<div className="header_btn">
