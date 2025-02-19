@@ -87,8 +87,7 @@ export default function IndustryDetail({ industry }) {
     return (
         <>
             <Head>
-                <title>{industry.title}</title>
-                <meta name="description" content={industry.description} />
+                {getMetaTags(metaData, customMeta)}
             </Head>
 
             {industry.fullImage && ( // Conditionally render the banner if fullImage exists
