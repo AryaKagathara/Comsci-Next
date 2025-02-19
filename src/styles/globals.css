@@ -295,7 +295,7 @@ to { transform: translateX(calc(-100% - 1rem)); }
 .footer_section .copyright p a { color: var(--primary-white); font-size: 14px; font-weight: 400; text-transform: capitalize; margin: 0; margin: 0 0 0 5px; text-underline-offset: 4px; }
 .footer_section .copyright p a:hover { text-decoration: none; }
 .footer_section .footer_logo { position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 90px); opacity: 0.2; width: 1296px; height: 226px; }
-.new_project_btn_wrapper { position: fixed; bottom: 5%; right: 50px; z-index: 100; display: flex; justify-content: flex-end; width: 100%; }
+.new_project_btn_wrapper { width:100px; position: fixed; bottom: 5%; right: 50px; z-index: 100; display: flex; justify-content: flex-end; }
 .new_projectbtn a { display: block; text-decoration: none; background-image: linear-gradient(to right, #F35C1B 0%, #F35C1B 25%, #F7AD19 75%, #F35C1B 100%); padding: 18px 30px; color: var(--primary-white); font-size: 18px; font-weight: 500; font-family: 'Satoshi'; border-radius: 40px; animation: pulse 3.0s infinite; background-size: 400% auto; transition: all 0.6s ease-in-out; white-space: nowrap; }
 .header_wrap .new_projectbtn a:hover { background-position: right center; }
 @keyframes pulse {

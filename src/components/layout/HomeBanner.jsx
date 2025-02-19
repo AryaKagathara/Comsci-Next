@@ -18,7 +18,7 @@ const HomeBanner = () => {
 						<p className="fadeInUp">Design & Development Company</p>
 						<h1 className="fadeInUp">We help business evolve</h1>
 						<div className='fadeInUp learn_btn_2'>
-                          <Link href="/servicesdetail">Explore Our Services</Link>
+                          <Link href="/services">Explore Our Services</Link>
                         </div>
 					</div>
 				</div>
