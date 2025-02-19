@@ -14,12 +14,12 @@ const Faqsection = () => {
 						<div className="text_box fadeInUp">
 							<ContentBox title="Discover the Answers You Seek" text="Unlock insights and find the information you're seeking with our FAQ section. Dive into a curated collection of commonly asked questions, offering clear and concise answers to guide you effortlessly through your queries." />
 						</div>
-						<Accordion defaultActiveKey="0"> {/*Removed defaultActiveKey prop value.  This will prevent an error in case there is no data */}
+						<Accordion defaultActiveKey="0">
 							{faqs.map((faq, index) => (
-								<Accordion.Item eventKey={index} key={index}> {/* Use index as key */}
+								<Accordion.Item eventKey={index} key={index}>
 									<Accordion.Header>{faq.question}</Accordion.Header>
 									<Accordion.Body>
-										{faq.answer}  {/*Added dangerouslySetInnerHTML. This is generally not recommended for security reasons unless you completely trust the source of your HTML content */}
+										{faq.answer} 
 									</Accordion.Body>
 								</Accordion.Item>
 							))}

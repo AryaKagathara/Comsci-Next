@@ -10,8 +10,6 @@ const BlogSection = () => {
 						<HomeBlogBox />
 						<div className="bloglist_section">
 							<BlogListSection />
-							<BlogListSection />
-							<BlogListSection />
 						</div>
 					</div>
 				</div>

@@ -7,7 +7,6 @@ import Tab from "react-bootstrap/Tab";
 import Accordion from 'react-bootstrap/Accordion';
 import { useState, useEffect } from 'react';
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
-import React from "react";
 
 
 const ServicesSection = ({ isHome }) => {
@@ -30,7 +29,12 @@ const ServicesSection = ({ isHome }) => {
 
     fetchServicesData().then(data => {
       setMarqueeItems(data.marquee);
-      setServices(isHome ? data.services.slice(0, 3) : data.services);
+      if (isHome) {
+        setServices(data.services.slice(0, 3)); // data.services holds the array
+    } else {
+        setServices(data.services);          // data.services holds the array
+    }
+
     });
   }, [isHome]);
 
@@ -41,6 +45,20 @@ const ServicesSection = ({ isHome }) => {
   if (!services || services.length === 0) {
     return <div className="industries"><div className="indus_wrap"><div className="title">Services</div><div className="indus_section"><p>Loading...</p></div></div></div>;
   }
+
+
+  const handleMouseEnter = (event) => {
+    event.currentTarget.querySelector('.textbox').style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+    event.currentTarget.querySelector('.img_box').style.filter = 'brightness(0.7)';
+
+  };
+
+  const handleMouseLeave = (event) => {
+    event.currentTarget.querySelector('.textbox').style.backgroundColor = 'transparent';
+    event.currentTarget.querySelector('.img_box').style.filter = 'brightness(1)';
+
+  };
+
   return (
     <>
       <div className="services">
@@ -153,30 +171,53 @@ const ServicesSection = ({ isHome }) => {
 
         </div>
         <div className="service_detail">
-        <div className="marquee">
-          <ul className="marquee-content scroll">
-            {marqueeItems.map((item, index) => (
-              <React.Fragment key={index}>
-                <li className="back_wrapper">
-                  <p className="text_box">{item}</p>
-                </li>
-                {index < marqueeItems.length - 1 && <li className="dot"></li>}
-              </React.Fragment>
-            ))}
-          </ul>
-          {/* Duplicate the list to create a seamless loop */}
-          <ul className="marquee-content scroll">
-            {marqueeItems.map((item, index) => (
-              <React.Fragment key={index}>
-                <li className="back_wrapper">
-                  <p className="text_box">{item}</p>
-                </li>
-                 {index < marqueeItems.length - 1 && <li className="dot"></li>}
-              </React.Fragment>
-            ))}
-          </ul>
+          <div className="marquee">
+            <ul className="marquee-content scroll">
+              <li className="back_wrapper">
+                <p className="text_box">Best MVP Developers</p>
+              </li>
+              <li className="dot"></li>
+              <li className="back_wrapper">
+                <p className="text_box">Official WordPress Partner</p>
+              </li>
+              <li className="dot"></li>
+              <li className="back_wrapper">
+                <p className="text_box">21th Century Best Design</p>
+              </li>
+              <li className="dot"></li>
+              <li className="back_wrapper">
+                <p className="text_box">5 Star Rated Agency</p>
+              </li>
+              <li className="dot"></li>
+              <li className="back_wrapper">
+                <p className="text_box">Agile Process</p>
+              </li>
+              <li className="dot"></li>
+            </ul>
+            <ul className="marquee-content scroll">
+              <li className="back_wrapper">
+                <p className="text_box">Award Winning</p>
+              </li>
+              <li className="dot"></li>
+              <li className="back_wrapper">
+                <p className="text_box">Official WordPress Partner</p>
+              </li>
+              <li className="dot"></li>
+              <li className="back_wrapper">
+                <p className="text_box">21th Century Best Design</p>
+              </li>
+              <li className="dot"></li>
+              <li className="back_wrapper">
+                <p className="text_box">5 Star Rated Agency</p>
+              </li>
+              <li className="dot"></li>
+              <li className="back_wrapper">
+                <p className="text_box">Agile Process</p>
+              </li>
+              <li className="dot"></li>
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );

@@ -1,0 +1,361 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Logo Design & Branding",
+      "image": "/images/services/service-img1.webp",
+      "shortDescription": "Our branding experts craft unique logos...",
+      "link": "logo-design-branding",
+      "chips": [
+        {
+          "name": "Brand Strategy"
+        },
+        {
+          "name": "Brand Guidelines"
+        },
+        {
+          "name": "Logo Ideas"
+        },
+        {
+          "name": "Typography"
+        },
+        {
+          "name": "Colors"
+        },
+        {
+          "name": "Concept Design"
+        }
+      ],
+      "content": [
+        {
+          "tag": "p",
+          "content": "A detailed description of the Logo Design & Branding service..."
+        },
+        {
+          "tag": "h6",
+          "content": "What's Included:"
+        },
+        {
+          "tag": "ul",
+          "content": [
+            {
+              "tag": "li",
+              "content": "Logo design concepts"
+            },
+            {
+              "tag": "li",
+              "content": "Brand guidelines"
+            },
+            {
+              "tag": "li",
+              "content": "Stationery design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "UX/UI Design",
+      "image": "/images/services/service-img2.webp",
+      "shortDescription": "Elevate your user experience...",
+      "link": "ux-ui-design",
+      "chips": [
+        {
+          "name": "User-Centered Design"
+        },
+        {
+          "name": "Prototyping"
+        },
+        {
+          "name": "Interaction Design"
+        },
+        {
+          "name": "Figma"
+        },
+        {
+          "name": "Photoshop"
+        },
+        {
+          "name": "Illustrator"
+        },
+        {
+          "name": "Design Thinking"
+        },
+        {
+          "name": "Storyboarding"
+        }
+      ],
+      "content": []
+    },
+    {
+      "id": 3,
+      "title": "Mobile application",
+      "image": "/images/services/service-img5.webp",
+      "shortDescription": "From concept to app store...",
+      "link": "mobile-application",
+      "chips": [
+        {
+          "name": "iOS"
+        },
+        {
+          "name": "Android"
+        },
+        {
+          "name": "Cross-Platform"
+        }
+      ],
+      "content": [
+        {
+          "tag": "p",
+          "content": "A detailed description of the Logo Design & Branding service..."
+        },
+        {
+          "tag": "h2",
+          "content": "What's Included:"
+        },
+        {
+          "tag": "ul",
+          "content": [
+            {
+              "tag": "li",
+              "content": "Logo design concepts"
+            },
+            {
+              "tag": "li",
+              "content": "Brand guidelines"
+            },
+            {
+              "tag": "li",
+              "content": "Stationery design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "SEO",
+      "image": "/images/services/service-img6.webp",
+      "shortDescription": "Boost your online visibility...",
+      "link": "seo",
+      "chips": [
+        {
+          "name": "Search Engine Optimization"
+        },
+        {
+          "name": "Keywords Research"
+        },
+        {
+          "name": "SEO Audits"
+        },
+        {
+          "name": "Social Media"
+        }
+      ],
+      "content": [
+        {
+          "tag": "p",
+          "content": "A detailed description of the Logo Design & Branding service..."
+        },
+        {
+          "tag": "h2",
+          "content": "What's Included:"
+        },
+        {
+          "tag": "ul",
+          "content": [
+            {
+              "tag": "li",
+              "content": "Logo design concepts"
+            },
+            {
+              "tag": "li",
+              "content": "Brand guidelines"
+            },
+            {
+              "tag": "li",
+              "content": "Stationery design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Custom Web Development",
+      "image": "/images/services/service-img3.webp",
+      "shortDescription": "Our experienced developers build...",
+      "link": "custom-web-development",
+      "chips": [
+        {
+          "name": "Full Stack Development"
+        },
+        {
+          "name": "E-commerce Solutions"
+        },
+        {
+          "name": "API Integration"
+        },
+        {
+          "name": "PHP"
+        },
+        {
+          "name": "Python"
+        },
+        {
+          "name": "Node.js"
+        },
+        {
+          "name": "React"
+        },
+        {
+          "name": "WordPress"
+        },
+        {
+          "name": "Jira/Trello"
+        }
+      ],
+      "content": [
+        {
+          "tag": "p",
+          "content": "A detailed description of the Logo Design & Branding service..."
+        },
+        {
+          "tag": "h2",
+          "content": "What's Included:"
+        },
+        {
+          "tag": "ul",
+          "content": [
+            {
+              "tag": "li",
+              "content": "Logo design concepts"
+            },
+            {
+              "tag": "li",
+              "content": "Brand guidelines"
+            },
+            {
+              "tag": "li",
+              "content": "Stationery design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Video & Art Direction",
+      "image": "/images/services/service-img7.webp",
+      "shortDescription": "Bring your brand to life...",
+      "link": "video-art-direction",
+      "chips": [
+        {
+          "name": "Storyboarding"
+        },
+        {
+          "name": "Video Editing"
+        },
+        {
+          "name": "Creative Direction"
+        },
+        {
+          "name": "SEO Audits"
+        },
+        {
+          "name": "Social Media"
+        }
+      ],
+      "content": [
+        {
+          "tag": "p",
+          "content": "A detailed description of the Logo Design & Branding service..."
+        },
+        {
+          "tag": "h2",
+          "content": "What's Included:"
+        },
+        {
+          "tag": "ul",
+          "content": [
+            {
+              "tag": "li",
+              "content": "Logo design concepts"
+            },
+            {
+              "tag": "li",
+              "content": "Brand guidelines"
+            },
+            {
+              "tag": "li",
+              "content": "Stationery design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Artificial Intelligence",
+      "image": "/images/services/service-img4.webp",
+      "shortDescription": "Harness the power of AI...",
+      "link": "artificial-intelligence",
+      "chips": [
+        {
+          "name": "Machine Learning"
+        },
+        {
+          "name": "Natural Language Processing"
+        },
+        {
+          "name": "Data Science"
+        },
+        {
+          "name": "ChatGPT"
+        },
+        {
+          "name": "TensorFlow"
+        },
+        {
+          "name": "Python"
+        }
+      ],
+      "content": [
+        {
+          "tag": "p",
+          "content": "A detailed description of the Logo Design & Branding service..."
+        },
+        {
+          "tag": "h2",
+          "content": "What's Included:"
+        },
+        {
+          "tag": "ul",
+          "content": [
+            {
+              "tag": "li",
+              "content": "Logo design concepts"
+            },
+            {
+              "tag": "li",
+              "content": "Brand guidelines"
+            },
+            {
+              "tag": "li",
+              "content": "Stationery design"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "marquee": [
+    "Best MVP Developers",
+    "Official WordPress Partner",
+    "21th Century Best Design",
+    "5 Star Rated Agency",
+    "Agile Process",
+    "Award Winning"
+  ]
+}

@@ -1,35 +1,58 @@
+// components/layout/BlogListSection.js - Updated
 import Link from "next/link";
 import Image from "next/image";
-import blog1 from "@/../public/images/blog-pic1.webp";
+import { useEffect, useState } from "react";
+
+
 
 const BlogListSection = () => {
-	return (
+	const [blogs, setBlogs] = useState([]);
+
+	useEffect(() => {
+		const fetchBlogsData = async () => {
+			try {
+				const response = await import('../../files/blogs.json');
+				return response.default;
+			} catch (error) {
+				console.error("Error fetching Blogs data:", error);
+				return [];
+			}
+		};
+
+		fetchBlogsData().then(blogsData => {
+			setBlogs(blogsData);
+		});
+	}, []);
+
+return (
 		<>
+		{blogs.map((blog) => (
 			<div className="listing_secting">
-				<Link href="/blogdetail" className="list_wrap">
+				<Link href={`/blog/${blog.link}`} className="list_wrap">
 					<div className="blog_img">
-						<Image src={blog1} alt="blog" quality={100}/>
+						<Image src={blog.image} alt="blog" quality={100} width={100} height={100}/>
 					</div>
 					<div className="blog_content">
 						<div className="text">
-							<span className="category">News</span>
+							<span className="category">{blog.category}</span>
 							<div className="first_dot"></div>
-							<p className="date">30.October.2023</p>
+							<p className="date">{blog.date}</p>
 							<div className="second_dot"></div>
 							<div className="time_section">
 								<p className="read">Reading Time: approx.</p>	
-								<p className="time">02 min</p>
+								<p className="time">{blog.readingTime}</p>
 							</div>
 						</div>
-						<span className="blog_title">Amelie Diehl becomes a lecturer at the University of Applied Sciences Darmstadt for the subject Online Branding.</span>
+						<span className="blog_title">{blog.title}</span>
 						<div className="read_btn">
 							<p>Read now</p>
 						</div>
 					</div>
 				</Link>
 			</div>
-		</>
-	)
+		))}
+	</>
+)
 }
 
 export default BlogListSection;

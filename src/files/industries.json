@@ -1,83 +1,170 @@
 [
-    {
-      "id": "healthcare",
-      "title": "Healthcare",
-      "image": "/images/Healthcare-Small.webp",
-      "shortDescription": "Revolutionizing patient care with cutting-edge technology.",
-      "content": [
-              {
-                  "type": "paragraph",
-                  "text": "Transforming the healthcare landscape through innovative digital solutions that empower patients and providers alike."
-              },
-              {
-                  "type": "paragraph",
-                  "text": "We develop custom applications for telehealth, remote patient monitoring, electronic health records (EHR), and more, ensuring HIPAA compliance and data security."
-              },
-        {
-          "type": "list",
-                  "items": [
-                      "Telehealth platforms for virtual consultations",
-                      "AI-powered diagnostic tools for faster and more accurate diagnoses",
-                      "Wearable technology integration for remote patient monitoring"
-          ]
-        }
-  
-          ]
-    },
-    {
-      "id": "web3",
-      "title": "Web3",
-      "image": "/images/Web3-Small.webp",
-      "shortDescription": "Building the decentralized future of the internet.",
-      "content": [
-              {
-                  "type": "paragraph",
-                  "text": "Leveraging blockchain technology to create secure, transparent, and user-centric Web3 experiences."
-              },
-        {
-                  "type": "heading",
-                  "text": "Our Web3 Expertise"
-        },
-        {
-          "type": "list",
-                  "items":[
-                      "Decentralized application (dApp) development",
-                      "Smart contract auditing and security",
-                      "NFT marketplaces and tokenization solutions"
-                  ]
-        }
-      ]
-    },
-    {
-          "id": "real-estate",
-          "title": "Real Estate",
-          "image": "/images/RealEstate-Small.webp",
-          "shortDescription": "Modernizing real estate transactions with digital solutions.",
-          "content": [
-              {
-                  "type": "paragraph",
-                  "text": "We create innovative platforms that streamline property searches, facilitate virtual tours, and simplify the buying and selling process."
-              },
-              {
-                  "type": "paragraph",
-                  "text": "Our solutions leverage data analytics to provide valuable insights for investment decisions."
-              }
-          ]
+  {
+    "id": 1,
+    "title": "Healthcare",
+    "description": "Revolutionizing patient care with innovative digital solutions.",
+    "image": "/images/Healthcare-Small.webp",
+    "fullImage": "/images/Healthcare-Full.webp",
+    "link": "healthcare",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Healthcare Solutions"
       },
       {
-          "id": "fintech",
-          "title": "Finance & Banking Tech",
-          "image": "/images/Fintech-Small.webp",
-          "shortDescription": "Revolutionizing financial services with secure and efficient technology.",
-          "content": [
-              {
-                  "type": "paragraph",
-                  "text": "We develop cutting-edge fintech solutions for mobile banking, payment processing, fraud detection, and investment management."
-              },
-              {
-                  "type": "paragraph",
-                  "text": "Our expertise in blockchain and AI allows us to create secure and personalized financial experiences."
-              }
-          ]
+        "tag": "p",
+        "content": "The healthcare landscape is undergoing a rapid transformation..."
+      },
+      {
+        "tag": "h2",
+        "content": "Our Focus Areas:"
+      },
+      {
+        "tag": "ul",
+        "content": [
+          {
+            "tag": "li",
+            "content": "<strong>Telehealth and Remote Patient Monitoring:</strong> We leverage..."
+          },
+          {
+            "tag": "li",
+            "content": "<strong>Data Analytics and Predictive Modeling:</strong> We harness..."
+          },
+          {
+            "tag": "li",
+            "content": "<strong>Electronic Health Records (EHR) Integration:</strong> Our solutions..."
+          }
+        ]
+      },
+      {
+        "tag": "h2",
+        "content": "Benefits of Our Healthcare Solutions:"
+      },
+      {
+        "tag": "ul",
+        "content": [
+          {
+            "tag": "li",
+            "content": "<strong>Enhanced Patient Experience:</strong> Improved access..."
+          },
+          {
+            "tag": "li",
+            "content": "<strong>Improved Clinical Outcomes:</strong> Proactive interventions..."
+          }
+        ]
       }
-  ]
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Web3",
+    "description": "Building the decentralized future with blockchain technology.",
+    "image": "/images/Web3-Small.webp",
+    "fullImage": "/images/Web3-Full.webp",
+    "link": "web3",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Healthcare Solutions"
+      },
+      {
+        "tag": "p",
+        "content": "The healthcare landscape is undergoing a rapid transformation..."
+      },
+      {
+        "tag": "h2",
+        "content": "Our Focus Areas:"
+      },
+      {
+        "tag": "ul",
+        "content": [
+          {
+            "tag": "li",
+            "content": "<strong>Telehealth and Remote Patient Monitoring:</strong> We leverage..."
+          },
+          {
+            "tag": "li",
+            "content": "<strong>Data Analytics and Predictive Modeling:</strong> We harness..."
+          },
+          {
+            "tag": "li",
+            "content": "<strong>Electronic Health Records (EHR) Integration:</strong> Our solutions..."
+          }
+        ]
+      },
+      {
+        "tag": "h2",
+        "content": "Benefits of Our Healthcare Solutions:"
+      },
+      {
+        "tag": "ul",
+        "content": [
+          {
+            "tag": "li",
+            "content": "<strong>Enhanced Patient Experience:</strong> Improved access..."
+          },
+          {
+            "tag": "li",
+            "content": "<strong>Improved Clinical Outcomes:</strong> Proactive interventions..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Real Estate",
+    "description": "Transforming the property market through smart contracts and tokenization.",
+    "image": "/images/RealEstate-Small.webp",
+    "fullImage": "/images/RealEstate-Full.webp",
+    "link": "real-estate",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Healthcare Solutions"
+      },
+      {
+        "tag": "p",
+        "content": "The healthcare landscape is undergoing a rapid transformation..."
+      },
+      {
+        "tag": "h2",
+        "content": "Our Focus Areas:"
+      },
+      {
+        "tag": "ul",
+        "content": [
+          {
+            "tag": "li",
+            "content": "<strong>Telehealth and Remote Patient Monitoring:</strong> We leverage..."
+          },
+          {
+            "tag": "li",
+            "content": "<strong>Data Analytics and Predictive Modeling:</strong> We harness..."
+          },
+          {
+            "tag": "li",
+            "content": "<strong>Electronic Health Records (EHR) Integration:</strong> Our solutions..."
+          }
+        ]
+      },
+      {
+        "tag": "h2",
+        "content": "Benefits of Our Healthcare Solutions:"
+      },
+      {
+        "tag": "ul",
+        "content": [
+          {
+            "tag": "li",
+            "content": "<strong>Enhanced Patient Experience:</strong> Improved access..."
+          },
+          {
+            "tag": "li",
+            "content": "<strong>Improved Clinical Outcomes:</strong> Proactive interventions..."
+          }
+        ]
+      }
+    ]
+  }
+]

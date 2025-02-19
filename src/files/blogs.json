@@ -1,0 +1,79 @@
+[
+    {
+      "id": 1,
+      "title": "Amelie Diehl becomes a lecturer at the University of Applied Sciences...",
+      "category": "News",
+      "date": "30.October.2023",
+      "readingTime": "2 min",
+      "image": "/images/blog-pic1.webp",
+      "link": "amelie-diehl-lecturer",
+      "content": [
+        {
+          "tag": "p",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin nisl eu augue fermentum gravida."
+        },
+        {
+          "tag": "h2",
+          "content": "A Subheading in the Blog Post"
+        },
+        {
+          "tag": "p",
+          "content": "Sed tristique nisl vel gravida tempor. Sed non lectus eget quam ornare placerat faucibus eu diam."
+        },
+         {
+          "tag": "ul",
+          "content": [
+            {
+              "tag": "li",
+              "content": "List item 1"
+            },
+            {
+              "tag": "li",
+              "content": "List item 2 with a <strong>bold</strong> word."
+            }
+          ]
+        },
+        {
+          "tag": "p", 
+          "content": "Image",
+          "image": "/images/blog-pic1.webp"
+        },
+        {
+          "tag": "p",
+          "content": "Aliquam sit amet dignissim odio. Curabitur mattis ipsum faucibus tortor gravida, sed imperdiet orci imperdiet."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Another Blog Post with a Nested Structure",
+      "category": "Articles",
+      "date": "15.November.2023",
+      "readingTime": "5 min",
+      "image": "/images/blog-pic2.webp", 
+      "link": "another-blog-post",
+      "content": [
+         {
+          "tag": "p",
+          "content": "This is the beginning of the second blog post."
+        },
+        {
+          "tag": "blockquote",
+          "content": "A wise quote goes here."
+        },
+        {
+          "tag": "ol", 
+          "content": [
+            {
+              "tag": "li",
+              "content": "First step"
+            },
+            {
+              "tag": "li",
+              "content": "Second step"
+            }
+          ]
+        }
+      ]
+    }
+  ]

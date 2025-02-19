@@ -5,6 +5,7 @@ import FtrLogo from '@/../public/images/footer-logo.svg';
 
 const Footer = () => {
 	const contactData = require('../../files/contact.json');
+	const industriesData = require('../../files/industries.json');
 	return (
 		<>
 			<footer className="footer">
@@ -15,7 +16,7 @@ const Footer = () => {
 								<h4>Start a new project or Schedule a Consultation today</h4>
 								<Link href={`mailto:${contactData.email}`}>Contact Us</Link>
 							</div>
-							<PrimaryBtn name="Lets talk" arrow="no" link="/"/>
+							<PrimaryBtn name="Lets talk" arrow="no" link={`mailto:${contactData.email}`}/>
 						</div>
 						<div className="links_section">
 							<div className="use_link">
@@ -41,16 +42,16 @@ const Footer = () => {
 								</ul>
 							</div>
 							<div className="social_media industries_block">
-								<ul>
-									<li><Link href="#">Healthcare</Link></li>
-									<li><Link href="#">Real Estate</Link></li>
-									<li><Link href="#">Fintech & Banking</Link></li>
-									<li><Link href="#">Web3</Link></li>
-									<li><Link href="#">AR & VR</Link></li>
-									<li><Link href="#">Educational</Link></li>
-									<li><Link href="#">Hospitality & Luxery</Link></li>
-								</ul>
-							</div>
+                            <ul>
+                                {industriesData.map((industry) => (
+                                    <li key={industry.id}>
+                                        <Link href={`/industries/${industry.link}`}>
+                                            {industry.title}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 							<div className="social_media soc_block_wrap">
 								<ul>
 								{contactData.social_media.map((item) => (
