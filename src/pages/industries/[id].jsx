@@ -1,27 +1,70 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from 'react';
+import metaData from '../../files/meta.json'; // Import your default meta data
+
 
 export async function getStaticPaths() {
     const industries = require('../../files/industries.json');
     const paths = industries.map(industry => ({
-        params: { id: industry.link }, // Use industry.link here
+        params: { id: industry.link },
     }));
     return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
     const industries = require('../../files/industries.json');
-    const industry = industries.find(industry => industry.link === params.id); //Match on link
+    const industry = industries.find(industry => industry.link === params.id);
 
     if (!industry) {
-        return { notFound: true }
+        return { notFound: true };
     }
     return { props: { industry } };
 }
 
 
 export default function IndustryDetail({ industry }) {
+    const customMeta = {
+        title: `${industry.title} Industry | Comsci`,
+        description: industry.description,
+        keywords: industry.keywords || [], // Use keywords from industry data if available
+        og: {
+            title: `${industry.title} Industry Solutions | Comsci`,
+            description: industry.description,            
+            image: industry.fullImage, // Assuming fullImage is the best for social sharing
+            imageAlt: `Comsci's expertise in ${industry.title} Industry`,
+         },
+        twitter: {
+           title: `${industry.title} Industry Solutions | Comsci`,
+            description: industry.description,           
+            image: industry.fullImage,
+            imageAlt: `Comsci's expertise in ${industry.title} Industry`,
+        },    
+    };
+
+     const getMetaTags = (metaData, customMeta = {}) => {
+        const mergedMeta = { ...metaData, ...customMeta };
+
+        //handle nested og and twitter objects to override and merge correctly
+        mergedMeta.og = { ...metaData?.og, ...customMeta?.og }
+        mergedMeta.twitter = { ...metaData?.twitter, ...customMeta?.twitter }
+    
+    
+        return Object.entries(mergedMeta).map(([key, value]) => {
+          if (key === "title") {
+            return <title key={key}>{value}</title>;
+          }
+          if (typeof value === 'string') {
+            return <meta key={key} name={key} content={value} />;
+          }
+          if (typeof value === 'object'){
+            return Object.entries(value).map(([property, content]) => (
+              <meta key={`${key}:${property}`} property={`${key}:${property}`} content={content} />
+              ))
+          }
+          return null
+        }).filter(Boolean);
+      };
 
     const renderContent = (content) => {
         if (Array.isArray(content)) {

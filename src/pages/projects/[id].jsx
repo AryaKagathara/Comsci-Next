@@ -35,17 +35,17 @@ export default function ProjectDetail({ project }) {
   // Dynamically create customMeta from the project data
     const customMeta = {
         title: `${project.title} | Comsci`, //Combine project title with your brand
-        description: project.shortDescription, //Use the project's short description
+        description: project.description, //Use the project's short description
         keywords: project.keywords || [], //add keywords if available in your project data. otherwise leave as empty array.
         og: {
             title: `${project.title} | Comsci`,
-            description: project.shortDescription,
+            description: project.description,
             image: project.image, // Assuming you have an ogImage property in your project data
             imageAlt: `Project image for ${project.title}`,
          },
         twitter: {  // Similar to og, adapt as needed for Twitter
            title: `${project.title} | Comsci`,
-            description: project.shortDescription,
+            description: project.description,
             image: project.image || project.ogImage, // Use a specific Twitter image or fallback to ogImage
             imageAlt: `Project image for ${project.title}`, 
         },    
