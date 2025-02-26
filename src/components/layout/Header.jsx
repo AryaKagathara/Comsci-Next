@@ -70,17 +70,6 @@ const Header = () => {
 											<li><Link href="/about">About us</Link></li>
 											<li>
 												<Link href="/services">Services</Link>
-												{/* <Link href="/services">Services <i><Image src={downArrow} alt="arrow" /></i></Link> */}
-												{/* <ul className="dropdown_menu">
-													<li><Link href="#">Logo & Branding</Link></li>
-													<li><Link href="#">UX/UI Design</Link></li>
-													<li><Link href="#">Custom Web Development</Link></li>
-													<li><Link href="#">SEO</Link></li>
-													<li><Link href="#">Mobile Application</Link></li>
-													<li><Link href="#">Video Editing</Link></li>
-													<li><Link href="#">Artificial Intelligence</Link></li>
-													<li><Link href="/services" className="drop_learn_btn">Explore Our Services</Link></li>
-												</ul> */}
 											</li>
 											<li><Link href="/projects">Projects</Link></li>
 											<li>
@@ -105,25 +94,6 @@ const Header = () => {
 									</div>
 									<div className="header_btn">
 										<PrimaryBtn name="Contact Us" arrow="no" link={`mailto:${contactData.email}`} />
-										{/* <div className={`ent_lang dropdown ${languageDropdown ? 'show' : ' '}`}>
-											<Link className="lang-link" href="javascript:;" onClick={languageHandler}>
-												EN
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<g clip-path="url(#clip0_877_266)">
-														<path d="M7 9L12 14L17 9" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-													</g>
-													<defs>
-														<clipPath id="clip0_877_266">
-															<rect width="24" height="24" fill="white"/>
-														</clipPath>
-													</defs>
-												</svg>
-											</Link>
-											<ul className={`dropdown-menu ${languageDropdown ? 'show' : ' '}`}>
-												<li><Link href="#">ES</Link></li>
-												<li><Link href="#">EN</Link></li>
-											</ul>
-										</div> */}
 									</div>
 								</div>
 							</div>

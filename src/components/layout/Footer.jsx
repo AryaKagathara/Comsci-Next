@@ -6,6 +6,7 @@ import FtrLogo from '@/../public/images/footer-logo.svg';
 const Footer = () => {
 	const contactData = require('../../files/contact.json');
 	const industriesData = require('../../files/industries.json');
+	const servicesData = require('../../files/services.json');
 	return (
 		<>
 			<footer className="footer">
@@ -32,13 +33,13 @@ const Footer = () => {
 							</div>
 							<div className="social_media">
 								<ul>
-									<li><Link href="#">Logo & Branding</Link></li>
-									<li><Link href="#">UX UI Designing</Link></li>
-									<li><Link href="#">Custom Web Development</Link></li>
-									<li><Link href="#">Mobile Application</Link></li>
-									<li><Link href="#">Video & Art Direction</Link></li>
-									<li><Link href="#">Search Engine Optimization</Link></li>
-									<li><Link href="#">Artificial Intelligence</Link></li>
+									{servicesData.services.map((service) => (
+										<li key={service.id}>
+											<Link href={`/services/${service.link}`}>
+												{service.title} 
+											</Link>
+										</li>
+									))}
 								</ul>
 							</div>
 							<div className="social_media industries_block">

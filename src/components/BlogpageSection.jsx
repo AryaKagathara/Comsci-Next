@@ -12,25 +12,20 @@ const BlogpageSection = () => {
 						<div className="blogpage_wrapper">
 							<ContentBox title="Existing insights and articles" />
 						</div>
-						<div className="filter_btn">
+						{/* <div className="filter_btn">
 							<ul>
 								<li><Link href="#" className="active">All</Link></li>
 								<li><Link href="#">News</Link></li>
 								<li><Link href="#">Articles</Link></li>
 								<li><Link href="#">Events</Link></li>
 							</ul>
-						</div>
+						</div> */}
 						<div className="bloglist_section">
 							<BlogListSection />
-							<BlogListSection />
-							<BlogListSection />
-							<BlogListSection />
-							<BlogListSection />
-							<BlogListSection />
 						</div>
-						<div className="blog_loadbtn">
+						{/* <div className="blog_loadbtn">
 							<PrimaryBtn name="Load more" arrow="no" link="#"/>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

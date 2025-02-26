@@ -1,11 +1,10 @@
 // pages/services/[link].js
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import React from 'react';
 import InnerBanner from "@/components/layout/InnerBanner";
+import ServiceProcess from "@/components/layout/ServiceProcess";
 import ProjectSection from "@/components/ProjectSection";
-import Process from "@/components/Process";
 import metaData from '../../files/meta.json';
 
 
@@ -36,8 +35,8 @@ export async function getStaticProps({ params }) {
 	return { props: { service } };
 }
 
-
 const ServiceDetail = ({ service }) => {
+
 	const customMeta = {
 		title: `${service.title} | Comsci Services`,
 		description: service.shortDescription,
@@ -112,7 +111,7 @@ const ServiceDetail = ({ service }) => {
 						<div className="row">
 							<div className="col-lg-8">
 								<div className="caption_box">
-									<h4>{service.title}</h4>
+									<h2>{service.title}</h2>
 									{renderContent(service.content)} {/* Render content here */}
 								</div>
 							</div>
@@ -130,6 +129,11 @@ const ServiceDetail = ({ service }) => {
 					</div>
 				</div>
 			</div>
+			<ServiceProcess
+				strategyTitle={service.strategy?.strategyTitle || "Default Title"}
+				strategyDescription={service.strategy?.strategyDescription || "Default Description"}
+				steps={service.strategy?.strategySteps || []} 
+			/>
 			<ProjectSection />
 		</>
 	);
