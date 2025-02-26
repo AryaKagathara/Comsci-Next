@@ -40,7 +40,7 @@
 	.banner_textbox p { font-weight: 500; }
 	.banner_textbox h1 { margin-bottom: 36px; }
 	.banner_textbox .contact_btn a span { font-size: 20px; }
-	.innerbanner .banner_img { height: 600px; }
+	.innerbanner .banner_img { height: 400px; }
 
 
 	.services { padding: 80px 0; }
@@ -526,9 +526,6 @@
 
 
 	.default_page_content p + h2 { padding-top: 40px; }
-
-
-	.innerbanner .banner_img { height: 650px; }
 
 
 	.process_section .row { row-gap: 20px; }

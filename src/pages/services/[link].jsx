@@ -104,7 +104,7 @@ const ServiceDetail = ({ service }) => {
 			<Head>
 				{getMetaTags(metaData, customMeta)}
 			</Head>
-			<InnerBanner />
+			<InnerBanner banner={service}/>
 			<div className="process">
 				<div className="container">
 					<div className="process_section">

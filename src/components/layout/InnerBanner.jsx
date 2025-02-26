@@ -1,12 +1,14 @@
 import Image from "next/image";
 import InnerImg from "@/../public/images/innerbanner-img.webp";
 
-const InnerBanner = () => {
+const InnerBanner = ({banner}) => {
+
+	const bannerImage = banner?.image || InnerImg;
 	return (
 		<>
 			<div className="innerbanner">
 				<div className="banner_img">
-					<Image src={InnerImg} alt="banner" quality={100}/>
+					<Image src={bannerImage} alt="banner" quality={100} width={2000} height={2000}/>
 				</div>
 			</div>
 		</>
