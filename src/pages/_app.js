@@ -10,6 +10,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRouter } from 'next/router';
 import { motion, AnimatePresence } from 'framer-motion';
+import Script from 'next/script'
 
 gsap.registerPlugin(ScrollTrigger);
 
