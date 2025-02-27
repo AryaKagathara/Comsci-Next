@@ -90,10 +90,10 @@ export default function IndustryDetail({ industry }) {
                 {getMetaTags(metaData, customMeta)}
             </Head>
 
-            {industry.fullImage && ( // Conditionally render the banner if fullImage exists
+            {industry.fullImage && (
                 <div className="industrie_detail_banner">
                     <div className="detail_img_block">
-                      <Image src={industry.fullImage} alt={industry.title} quality={100} width={500} height={350} />                        
+                      <Image src={industry.fullImage} alt={industry.title} quality={100} width={1000} height={1000} />                        
                     </div>
                 </div>
             )}

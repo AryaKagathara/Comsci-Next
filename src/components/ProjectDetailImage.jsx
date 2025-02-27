@@ -7,7 +7,7 @@ const ProjectDetailImage = ({ project }) => {
         <div className="project_imagewrap">
             {project.images && project.images.map((image, index) => (
                 <div key={index} className="images_wrapper_block">
-                    <Image src={image} alt={project.title+". "+project.description} width={500} height={350} quality={100}/>
+                    <Image src={image} alt={project.title+". "+project.description} width={1000} height={1000} quality={100}/>
                 </div>
             ))}
         </div>

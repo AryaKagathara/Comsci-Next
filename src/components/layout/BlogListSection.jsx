@@ -30,11 +30,11 @@ return (
 			<div className="listing_secting">
 				<Link href={`/blog/${blog.link}`} className="list_wrap">
 					<div className="blog_img">
-						<Image src={blog.image} alt="blog" quality={100} width={100} height={100}/>
+						<Image src={blog.image} alt="blog" quality={100} width={1000} height={1000}/>
 					</div>
 					<div className="blog_content">
 						<div className="text">
-							<span className="category">{blog.category}</span>
+							<span className="category">{blog.author}</span>
 							<div className="first_dot"></div>
 							<p className="date">{blog.date}</p>
 							<div className="second_dot"></div>
@@ -43,7 +43,7 @@ return (
 								<p className="time">{blog.readingTime}</p>
 							</div>
 						</div>
-						<span className="blog_title">{blog.title}</span>
+						<h2 className="blog_title">{blog.title}</h2>
 						<div className="read_btn">
 							<p>Read now</p>
 						</div>

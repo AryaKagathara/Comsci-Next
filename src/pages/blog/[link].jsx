@@ -96,6 +96,8 @@ export default function BlogDetail({ blog }) {
                             <i>{blog.category}</i>
                             <div className="dot"></div>
                             <i>{blog.date}</i>
+                            <div className="dot"></div>
+                            <i>{blog.author}</i>
                         </div>
                         {/* Conditionally render the main blog image if it exists */}
                         {blog.image && (
