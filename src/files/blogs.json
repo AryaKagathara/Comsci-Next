@@ -31,8 +31,8 @@
       },
       {
         "tag": "img",
-        "image": "/images/blogs/website-vs-mobile-app/SearchEngine.webp",
-        "content": "Search Engine - Google, Bing, DuckDuckGo"
+        "image": "/images/blogs/website-vs-mobile-app/Desktop.webp",
+        "content": "Website on Desktop"
       },
       {
         "tag": "p",
@@ -44,8 +44,8 @@
       },
       {
         "tag": "img",
-        "image": "/images/blogs/website-vs-mobile-app/Desktop.webp",
-        "content": "Website on Desktop"
+        "image": "/images/blogs/website-vs-mobile-app/SearchEngine.webp",
+        "content": "Search Engine - Google, Bing, DuckDuckGo"
       },
       {
         "tag": "h4",
