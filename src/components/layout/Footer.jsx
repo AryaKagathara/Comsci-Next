@@ -15,9 +15,9 @@ const Footer = () => {
 						<div className="title_box">
 							<div className="mail_box">
 								<h4>Start a new project or Schedule a Consultation today</h4>
-								<Link href={`mailto:${contactData.email}`}>Contact Us</Link>
+								<Link target="_blank" href={contactData.contact_form}>Get a Quote</Link>
 							</div>
-							<PrimaryBtn name="Lets talk" arrow="no" link={`mailto:${contactData.email}`}/>
+							<PrimaryBtn name="Lets talk" arrow="no" link={contactData.contact_form}/>
 						</div>
 						<div className="links_section">
 							<div className="use_link">
@@ -28,7 +28,7 @@ const Footer = () => {
 									<li><Link href="/about">About us</Link></li>
 									<li><Link href="/blogs">Blogs</Link></li>
 									<li><Link href="/jobposition">Job Position</Link></li>
-									{/* <li><Link href="/errorpages">Contact Us</Link></li> */}
+									<li><Link href="/contact">Contact Us</Link></li>
 								</ul>
 							</div>
 							<div className="social_media">
@@ -64,7 +64,8 @@ const Footer = () => {
 							</div>
 							<div className="contactbox">
 								<ul>
-									<li><p>{contactData.address}</p></li>
+									<li><p></p></li>
+									<li><Link target="_blank" href={contactData.location}><span>{contactData.address}</span></Link></li>
 									<li><Link href={`tel:${contactData.phone}`}><span>{contactData.phone}</span></Link></li>
 									<li><Link href={`mailto:${contactData.email}`}><span>{contactData.email}</span></Link></li>
 								</ul>

@@ -47,7 +47,7 @@ const Header = () => {
 		<>
 			<div className="new_project_btn_wrapper"> {/* Added a wrapper */}
 				<div className="new_projectbtn">
-					<Link href={`mailto:${contactData.email}`}>New Project?</Link>
+					<Link target="_blank" href={contactData.contact_form}>New Project?</Link>
 				</div>
 			</div>
 			<header className={`header ${scrolling ? "scrolling" : ""}`}>
@@ -93,7 +93,7 @@ const Header = () => {
 										</ul>
 									</div>
 									<div className="header_btn">
-										<PrimaryBtn name="Contact Us" arrow="no" link={`mailto:${contactData.email}`} />
+										<PrimaryBtn name="Contact Us" arrow="no" link="/contact" />
 									</div>
 								</div>
 							</div>
