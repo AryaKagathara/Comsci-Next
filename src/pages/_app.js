@@ -76,6 +76,24 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+    <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-SK66D59Z07`}
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SK66D59Z07', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
       <AnimatePresence mode='wait'>
         <motion.dev key={router.pathname}>
       <main>
