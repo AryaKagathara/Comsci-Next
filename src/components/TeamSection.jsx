@@ -1,13 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Paige from "@/../public/images/paige-image.webp";
-import Tristan from "@/../public/images/tristan-image.webp";
-import Megan from "@/../public/images/megan-image.webp";
-import Laura from "@/../public/images/laura-image.webp";
-import Katie from "@/../public/images/katie-image.webp";
-import Markus from "@/../public/images/markus-image.webp";
-import Emma from "@/../public/images/emma-image.webp";
-import Brandon from "@/../public/images/brandon-image.webp";
+import Temp from "@/../public/images/temp.webp";
 import ContentBox from "@/components/layout/ContentBox";
 
 const TeamSection = () => {
@@ -24,7 +17,7 @@ const TeamSection = () => {
 								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
-											<Image src={Brandon} alt="Brandon" quality={100}/>
+											<Image src={Temp} alt="Brandon" quality={100}/>
 										</div>
 										<div className="text">
 											<p>Brandon Harrar</p>
@@ -35,7 +28,7 @@ const TeamSection = () => {
 								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
-											<Image src={Emma} alt="Emma" quality={100}/>
+											<Image src={Temp} alt="Emma" quality={100}/>
 										</div>
 										<div className="text">
 											<p>Emma De Angelis</p>
@@ -46,7 +39,7 @@ const TeamSection = () => {
 								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
-											<Image src={Markus} alt="Markus" quality={100}/>
+											<Image src={Temp} alt="Markus" quality={100}/>
 										</div>
 										<div className="text">
 											<p>Markus Specogna</p>
@@ -57,7 +50,7 @@ const TeamSection = () => {
 								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
-											<Image src={Katie} alt="Katie" quality={100}/>
+											<Image src={Temp} alt="Katie" quality={100}/>
 										</div>
 										<div className="text">
 											<p>Katie Armstrong</p>
@@ -68,7 +61,7 @@ const TeamSection = () => {
 								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
-											<Image src={Laura} alt="Laura" quality={100}/>
+											<Image src={Temp} alt="Laura" quality={100}/>
 										</div>
 										<div className="text">
 											<p>Brandon Harrar</p>
@@ -79,7 +72,7 @@ const TeamSection = () => {
 								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
-											<Image src={Megan} alt="Megan" quality={100}/>
+											<Image src={Temp} alt="Megan" quality={100}/>
 										</div>
 										<div className="text">
 											<p>Emma De Angelis</p>
@@ -90,7 +83,7 @@ const TeamSection = () => {
 								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
-											<Image src={Tristan} alt="Tristan" quality={100}/>
+											<Image src={Temp} alt="Tristan" quality={100}/>
 										</div>
 										<div className="text">
 											<p>Markus Specogna</p>
@@ -101,7 +94,7 @@ const TeamSection = () => {
 								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
-											<Image src={Paige} alt="Paige" quality={100}/>
+											<Image src={Temp} alt="Paige" quality={100}/>
 										</div>
 										<div className="text">
 											<p>Katie Armstrong</p>
