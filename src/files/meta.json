@@ -1,0 +1,25 @@
+{
+    "title": "Comsci - Leading Design & Development Company | Elevate Your Business with Us",
+    "description": "Comsci - Unlock unparalleled design and development solutions for your business. Partner with us for award-winning services and agile processes. Explore our projects now!",
+    "keywords": [
+      "design", "development", "software", "web", "mobile", "app", "company", "agency", "solutions", "technology", "branding", "UI", "UX",  "AI", "Artificial Intelligence" 
+    ],
+    "og": {
+      "type": "website",
+      "url": "https://comsci.tech",
+      "title": "Comsci - Leading Design & Development Company",
+      "description": "Unlock unparalleled design and development solutions for your business.",
+      "image": "https://comsci.tech/images/social-share-og/Facebook.webp",
+      "imageAlt": "Comsci Logo" 
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://comsci.tech",
+      "title": "Comsci - Leading Design & Development Company",
+      "description": "Unlock unparalleled design and development solutions for your business.",
+      "image": "https://comsci.tech/images/social-share-og/Twitter.webp",
+      "imageAlt": "Comsci Logo"
+    },
+    "robots": "index, follow",
+    "author": "Comsci"
+}
