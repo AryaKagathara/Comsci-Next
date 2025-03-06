@@ -47,7 +47,7 @@ const ServicesSection = ({ isHome }) => {
         <div className="container">
           <div className="service_heading" data-scroll data-scroll-speed=".2">
             <strong>
-              We engineer business solutions that drive measurable results for renowned industry leaders around the
+              We engineer business solutions that drive measurable results for renowned industry leaders around the 
               <div className="globe">
                 gl
                 <div className="world_img">
@@ -95,16 +95,16 @@ const ServicesSection = ({ isHome }) => {
                               width={1000} height={1000}
                             />
                           </div>
-                          <span>{service.shortDescription}</span>
+                          {/* <span>{service.shortDescription}</span> */}
                           <div className="chips">
-                            {service.chips.map((chip, chipIndex) => (
-                              <div key={chipIndex} className="chip">
-                                <Link href="javascript:;">{chip.name}</Link>
-                              </div>
-                            ))}
+                        {service.chips.map((chip, chipIndex) => (
+                          <div key={chipIndex} className="chip">
+                            <p>{chipIndex > 0 ? `, ${chip.name}` : chip.name}</p>
                           </div>
+                        ))}
+                      </div>
                           <div className="learn_btn">
-                            <Link href={`/services/${service.link}`}>Explore Our Service</Link>
+                            <Link href={`/services/${service.link}`}>Explore {service.title}</Link>
                           </div>
                         </div>
                       </Tab.Pane>
@@ -131,13 +131,13 @@ const ServicesSection = ({ isHome }) => {
                       <div className="chips">
                         {service.chips.map((chip, chipIndex) => (
                           <div key={chipIndex} className="chip">
-                            <Link href="javascript:;">{chip.name}</Link>
+                            <p>{chipIndex > 0 ? `, ${chip.name}` : chip.name}</p>
                           </div>
                         ))}
                       </div>
-                      <span>{service.shortDescription}</span>
+                      {/* <span>{service.shortDescription}</span> */}
                       <div className="learn_btn">
-                        <Link href={`/services/${service.link}`}>Explore Our Service</Link>
+                        <Link href={`/services/${service.link}`}>Explore {service.title}</Link>
                       </div>
                     </div>
                   </Accordion.Body>
@@ -153,30 +153,30 @@ const ServicesSection = ({ isHome }) => {
 
         </div>
         <div className="service_detail">
-        <div className="marquee">
-          <ul className="marquee-content scroll">
-            {marqueeItems.map((item, index) => (
-              <React.Fragment key={index}>
-                <li className="back_wrapper">
-                  <p className="text_box">{item}</p>
-                </li>
-                {index < marqueeItems.length - 1 && <li className="dot"></li>}
-              </React.Fragment>
-            ))}
-          </ul>
-          {/* Duplicate the list to create a seamless loop */}
-          <ul className="marquee-content scroll">
-            {marqueeItems.map((item, index) => (
-              <React.Fragment key={index}>
-                <li className="back_wrapper">
-                  <p className="text_box">{item}</p>
-                </li>
-                 {index < marqueeItems.length - 1 && <li className="dot"></li>}
-              </React.Fragment>
-            ))}
-          </ul>
+          <div className="marquee">
+            <ul className="marquee-content scroll">
+              {marqueeItems.map((item, index) => (
+                <React.Fragment key={index}>
+                  <li className="back_wrapper">
+                    <p className="text_box">{item}</p>
+                  </li>
+                  {index < marqueeItems.length - 1 && <li className="dot"></li>}
+                </React.Fragment>
+              ))}
+            </ul>
+            {/* Duplicate the list to create a seamless loop */}
+            <ul className="marquee-content scroll">
+              {marqueeItems.map((item, index) => (
+                <React.Fragment key={index}>
+                  <li className="back_wrapper">
+                    <p className="text_box">{item}</p>
+                  </li>
+                  {index < marqueeItems.length - 1 && <li className="dot"></li>}
+                </React.Fragment>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );
