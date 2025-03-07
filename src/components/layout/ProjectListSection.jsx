@@ -6,7 +6,7 @@ const ProjectListSection = ({ project }) => {
     return (
         <Link href={`/projects/${project.link}`} className="project_wrap">
             <div className="picture">
-                <Image src={project.image} alt={project.title+" "+project.description} width={500} height={350} quality={100}/>
+                <Image src={project.image} alt={project.title+" "+project.description} width={1000} height={1000} quality={100}/>
             </div>
             <div className="project_wrapper_btn">
                 <div className="project_btn">
