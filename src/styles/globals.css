@@ -544,3 +544,15 @@ to { transform: translateX(calc(-100% - 1rem)); }
       font-weight: 700; }
 .industrie_wrap_sec a { /* Style links */
       color: var(--primary-orange); text-decoration: underline; }
+
+
+.gtranslate_wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 0;
+}
+.gtranslate_wrapper a {
+  color: var(--primary-white);
+  font-size: 18px;
+}

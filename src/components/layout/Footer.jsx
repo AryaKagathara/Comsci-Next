@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import FtrLogo from '@/../public/images/footer-logo.svg';
+import Script from 'next/script';
 
 const Footer = () => {
 	const contactData = require('../../files/contact.json');
@@ -17,7 +18,7 @@ const Footer = () => {
 								<h4>Start a new project or Schedule a Consultation today</h4>
 								<Link target="_blank" href={contactData.contact_form}>Get a Quote</Link>
 							</div>
-							<PrimaryBtn name="Lets talk" arrow="no" link={contactData.contact_form}/>
+							<PrimaryBtn name="Lets talk" arrow="no" link={contactData.contact_form} />
 						</div>
 						<div className="links_section">
 							<div className="use_link">
@@ -36,30 +37,30 @@ const Footer = () => {
 									{servicesData.services.map((service) => (
 										<li key={service.id}>
 											<Link href={`/services/${service.link}`}>
-												{service.title} 
+												{service.title}
 											</Link>
 										</li>
 									))}
 								</ul>
 							</div>
 							<div className="social_media industries_block">
-                            <ul>
-                                {industriesData.map((industry) => (
-                                    <li key={industry.id}>
-                                        <Link href={`/industries/${industry.link}`}>
-                                            {industry.title}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+								<ul>
+									{industriesData.map((industry) => (
+										<li key={industry.id}>
+											<Link href={`/industries/${industry.link}`}>
+												{industry.title}
+											</Link>
+										</li>
+									))}
+								</ul>
+							</div>
 							<div className="social_media soc_block_wrap">
 								<ul>
-								{contactData.social_media.map((item) => (
-									<li key={item.name}>
-										<Link href={item.link}>{item.name}</Link>
-									</li>
-								))}
+									{contactData.social_media.map((item) => (
+										<li key={item.name}>
+											<Link href={item.link}>{item.name}</Link>
+										</li>
+									))}
 								</ul>
 							</div>
 							<div className="contactbox">
@@ -73,9 +74,25 @@ const Footer = () => {
 						</div>
 						<div className="copyright">
 							<p>© 2023 COMSCI TECHNOLOGIES All rights reserved<Link href="/privacy">Privacy Policy</Link></p>
+							<div className="gtranslate_wrapper"></div>
+
+							<Script strategy="lazyOnload" id="google-translate">
+								{`
+								window.gtranslateSettings = {
+									"default_language":"en",
+									"detect_browser_language":true,
+									"languages":["en","fr","it","es"],
+									"wrapper_selector":".gtranslate_wrapper"
+								};
+								`}
+							</Script>
+							<Script
+								strategy="lazyOnload"
+								src="https://cdn.gtranslate.net/widgets/latest/lc.js"
+							/>
 						</div>
 						<div className="footer_logo">
-							<Image src={FtrLogo} alt="ftrlogo" quality={100}/>
+							<Image src={FtrLogo} alt="ftrlogo" quality={100} />
 						</div>
 					</div>
 				</div>
