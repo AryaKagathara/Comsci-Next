@@ -39,7 +39,27 @@
         "link": "mipo_south_america_fintech_platform"
     },
     {
-        "id": 4,
+        "id": 3,
+        "title": "EatCoast Restaurant Management & Food Delivery Platform - Developed by Comsci Technologies",
+        "description": "EatCoast is a comprehensive restaurant management and food delivery platform that streamlines operations, enhances customer experience, and boosts revenue. From online ordering and delivery tracking to inventory management and analytics, EatCoast offers a complete solution for restaurants to thrive in the digital age.",
+        "image": "/images/projects/EatCoast-0.webp",
+        "images": [
+            "/images/projects/EatCoast-1.webp",
+            "/images/projects/EatCoast-2.webp",
+            "/images/projects/EatCoast-3.webp",
+            "/images/projects/EatCoast-4.webp",
+            "/images/projects/EatCoast-5.webp",
+            "/images/projects/EatCoast-6.webp",
+            "/images/projects/EatCoast-7.webp",
+            "/images/projects/EatCoast-8.webp",
+            "/images/projects/EatCoast-9.webp",
+            "/images/projects/EatCoast-10.webp",
+            "/images/projects/EatCoast-00.webp"
+        ],
+        "link": "eatcoast_restaurant_management_food_delivery_platform"
+    },
+    {
+        "id": 5,
         "title": "Medical Escape Milan Skin Care Clinic - Developed by Comsci Technologies",
         "description": "Choosing our clinic means relying on a team of highly qualified professionals, led by the renowned prof. Dario bertossi",
         "image": "/images/projects/Medical-Escape-1.webp",
@@ -55,7 +75,7 @@
         "link": "medical_escape_milan_skin_care_clinic"
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "BLKResumes USA Recruitment Platform - Developed by Comsci Technologies",
         "description": "BLKResumes is a dynamic and inclusive hiring and job search platform designed for professionals seeking career opportunities, with a focus on connecting black and brown talent in various industries.",
         "image": "/images/projects/BLKResumes-1.webp",
@@ -73,7 +93,7 @@
         "link": "blkresumes_usa_recruitment_platform"
     },
     {
-        "id": 5,
+        "id": 7,
         "title": "W3Dart Bug Reporting SaaS Tool - Developed by Comsci Technologies",
         "description": "W3Dart is a powerful visual feedback and bug reporting tool designed for developers and designers. Streamline collaboration with annotated screenshots, video screen capture, and seamless task management.",
         "image": "/images/projects/W3Dart-1.webp",
@@ -107,7 +127,7 @@
         "link": "roberto_bolle_foundation_website"
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "Recre Marketing Agency Website - Developed by Comsci Technologies",
         "description": "Crafted a sleek and engaging website for Recre8, a video marketing agency that brings brands to life through compelling visuals. The design captures their creativity, innovation, and storytelling expertise.",
         "image": "/images/projects/Recre-0.webp",
@@ -123,7 +143,7 @@
         "link": "recre_marketing_agency_website_design_development"
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "Black Lusion Web3 Games Marketplace - Developed by Comsci Technologies",
         "description": "Crafted a sleek and engaging website for Recre8, a video marketing agency that brings brands to life through compelling visuals. The design captures their creativity, innovation, and storytelling expertise.",
         "image": "/images/projects/Black-Lusion-1.webp",
@@ -137,7 +157,7 @@
         "link": "black_lusion_web3_games_item_collection_marketplace"
     },
     {
-        "id": 9,
+        "id": 10,
         "title": "Carlton West Canada Real Estate Website - Developed by Comsci Technologies",
         "description": "Carlton West offers premium condo-style living next to Westboro, combining modern design with top-tier amenities. Experience the perfect blend of comfort, convenience, and vibrant city life in Ottawa.",
         "image": "/images/projects/Carlton-West-0.webp",
@@ -155,7 +175,7 @@
         "link": "carlton_west_canada_real_estate_developer_website"
     },
     {
-        "id": 10,
+        "id": 11,
         "title": "DA Studio Interior Designer Branding - Developed by Comsci Technologies",
         "description": "We crafted a sophisticated brand identity for DA Studio, an interior design firm that transforms spaces with elegance and innovation. The branding reflects their vision of timeless aesthetics and functional design.",
         "image": "/images/projects/DA-Studio-0.webp",
@@ -172,7 +192,7 @@
         "link": "da_studio_interior_designer_branding"
     },
     {
-        "id": 11,
+        "id": 12,
         "title": "Myotonx Body Reset Clinic - Developed by Comsci Technologies",
         "description": "Myotonx® revolutionizes body alignment with Instant Body Reset™, a groundbreaking approach that restores posture and function without stretching or manipulation. Experience a pain-free, self-correcting transformation that makes you functionally younger—guaranteed!",
         "image": "/images/projects/Myotonx-0.webp",
@@ -189,7 +209,7 @@
         "link": "myotonx_body_pain_relex_clinic_design_development"
     },
     {
-        "id": 12,
+        "id": 13,
         "title": "RMS Advance GIS Logistic Tool - Developed by Comsci Technologies",
         "description": "Designed and developed a web-based GIS logistics tool that streamlines route planning and quoting by integrating real-time data with Google Maps. This smart system optimizes delivery efficiency, reducing costs and improving decision-making for logistics managers.",
         "image": "/images/projects/RMS-0.webp",
