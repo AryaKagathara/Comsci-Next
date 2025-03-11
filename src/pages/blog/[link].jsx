@@ -67,17 +67,19 @@ export default function BlogDetail({ blog }) {
 
     const renderContent = (content) => {
         return content.map((item, index) => {
-            if (item.tag === 'ul' || item.tag === 'ol') {
-                const listItems = item.content.map((listItem, listIndex) => (
-                    <li key={listIndex} dangerouslySetInnerHTML={{ __html: listItem.content }} />
-                ));
-                return React.createElement(item.tag, { key: index }, listItems);
-            } else if (item.tag === 'img') {
-                return <div className="image" key={index}><Image src={item.image} alt={item.content} quality={100} width={1000} height={600} /></div>;
-            } else if (item.content) {
-                return React.createElement(item.tag, { key: index, dangerouslySetInnerHTML: { __html: item.content } });
-            }
-            return null;
+                if (item.tag === 'ul' || item.tag === 'ol') {
+                        const listItems = item.content.map((listItem, listIndex) => (
+                                <li key={listIndex} dangerouslySetInnerHTML={{ __html: listItem.content }} />
+                        ));
+                        return React.createElement(item.tag, { key: index }, listItems);
+                } else if (item.tag === 'img') {
+                    return <div className="image" key={index}><Image src={item.image} alt={item.content} quality={100} width={1000} height={600} /></div>;
+                } else if (item.tag === 'iframe' && item.src) {
+                    return <iframe key={index} src={item.src} title="Embedded Content" allowFullScreen />;
+                } else if (item.content) {
+                    return React.createElement(item.tag, { key: index, dangerouslySetInnerHTML: { __html: item.content } });
+                }
+                return null;
         });
     };
 
