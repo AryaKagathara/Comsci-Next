@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image";
+import metaData from '../files/meta.json';
 import colorBubbles from "@/../public/images/extras/color-bubble.webp";
+import Head from "next/head";
 
 export default function BrandColorQuiz() {
     const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -125,6 +127,42 @@ export default function BrandColorQuiz() {
         }
     }
 
+    const customMeta = {
+        "title": "Color Game - How well do you know the colors - Comsci: Your Trusted Design & Development Partner",
+        "description": "Test your knowledge of colors with our fun quiz! Answer questions about color psychology, branding, and marketing. Challenge yourself and learn more about the fascinating world of colors.",
+        "keywords": [
+            "color quiz", "color game", "color psychology", "branding quiz", "marketing quiz", "color knowledge", "color trivia"    
+        ],
+        "robots": "index, follow",
+        "author": "Comsci"
+      };
+    
+      const getMetaTags = (metaData, customMeta = {}) => {
+        const mergedMeta = { ...metaData, ...customMeta };
+        if (customMeta.og) {
+          mergedMeta.og = { ...metaData.og, ...customMeta.og }
+        }
+        if (customMeta.twitter) {
+          mergedMeta.twitter = { ...metaData.twitter, ...customMeta.twitter }
+        }
+        return Object.keys(mergedMeta).map((key) => {
+          if (key === "title") {
+            return <title key={key}>{mergedMeta[key]}</title>;
+          }
+    
+          if (key === "og" || key === "twitter") {
+            return Object.keys(mergedMeta[key]).map((property) => (
+              <meta
+                key={`${key}:${property}`}
+                property={`${key}:${property}`}
+                content={mergedMeta[key][property]}
+              />
+            ));
+          }
+          return <meta key={key} name={key} content={mergedMeta[key]} />;
+        });
+      };
+
     useEffect(() => {
         fetchNewQuestion();
     }, []);
@@ -198,6 +236,10 @@ export default function BrandColorQuiz() {
     }
 
     return (
+        <>
+              <Head>
+        {getMetaTags(metaData, customMeta)}
+      </Head>
         <div className="quiz-wrapper">
             <div className="quiz-container">
                 <Image src={colorBubbles} alt="Color Quiz" width={160} height={130} quality={100} className="quiz-logo" />
@@ -222,5 +264,6 @@ export default function BrandColorQuiz() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

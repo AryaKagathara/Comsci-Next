@@ -1,10 +1,4 @@
 import Head from "next/head";
-import AboutSection from "@/components/AboutSection";
-import ResultSection from "@/components/ResultSection";
-import TestimonialsSection from "@/components/layout/TestimonialsSection";
-import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
-import Awards from "@/components/Awards";
-import RendomLogo from "@/components/RendomLogo";
 import metaData from '../files/meta.json';
 import BooksSection from "@/components/layout/BooksSection";
 
