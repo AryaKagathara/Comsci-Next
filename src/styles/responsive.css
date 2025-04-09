@@ -40,6 +40,7 @@
 	.banner_textbox p { font-weight: 500; }
 	.banner_textbox h1 { margin-bottom: 36px; }
 	.banner_textbox .contact_btn a span { font-size: 20px; }
+	.banner_badges { max-width: 400px; }
 	.innerbanner .banner_img { height: 400px; }
 
 

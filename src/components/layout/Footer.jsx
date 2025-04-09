@@ -28,6 +28,7 @@ const Footer = () => {
 									<li><Link href="/about">About us</Link></li>
 									<li><Link href="/blogs">Blogs</Link></li>
 									<li><Link href="/jobposition">Job Position</Link></li>
+									<li><Link href="/freebies">Freebies</Link></li>
 									<li><Link href="/contact">Contact Us</Link></li>
 								</ul>
 							</div>
@@ -67,7 +68,7 @@ const Footer = () => {
 									<li><p></p></li>
 									<li><Link target="_blank" href={contactData.location}><span>{contactData.address}</span></Link></li>
 									<li><Link href={`tel:${contactData.phone}`}><span>{contactData.phone}</span></Link></li>
-									<li><Link href={`mailto:${contactData.email}`}><span>{contactData.email}</span></Link></li>
+									<li><Link href={`mailto:${contactData.email}?subject=REQUEST - I want to start a new project with Comsci`}><span>{contactData.email}</span></Link></li>
 								</ul>
 							</div>
 						</div>

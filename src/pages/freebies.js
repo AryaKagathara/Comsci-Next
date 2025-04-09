@@ -1,42 +1,37 @@
 import Head from "next/head";
-import Banner from "@/components/layout/HomeBanner";
-import ServicesSection from "@/components/layout/ServicesSection";
-import Awards from "@/components/Awards";
+import AboutSection from "@/components/AboutSection";
+import ResultSection from "@/components/ResultSection";
 import TestimonialsSection from "@/components/layout/TestimonialsSection";
-import Technologies from "@/components/layout/Technologies";
-import Faqsection from "@/components/layout/Faqsection";
-import StrategySection from "@/components/layout/StrategySection";
-import BlogSection from "@/components/BlogSection";
-import ProjectSection from "@/components/ProjectSection";
 import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
+import Awards from "@/components/Awards";
 import RendomLogo from "@/components/RendomLogo";
-import AwardType from "@/components/AwardTypeSection";
-import IndustriesSection from "@/components/IndustriesSection";
 import metaData from '../files/meta.json';
-import Books from "@/components/layout/BooksSection";
-export default function Home() {
+import BooksSection from "@/components/layout/BooksSection";
+
+export default function Books() {
 
   const customMeta = {
+    "title": "Downlaod Creative Books - Comsci: Your Trusted Design & Development Partner",
+    "description": "Learn about Designing, Logo, Branding, Typography. Download free eBooks from Comsci Technologies.",
+    "keywords": [
+       "books comsci", "branding books", "logo design book", "typography books", "UX UI books", "design books", "visual concept books"
+    ],
+    "robots": "index, follow",
+    "author": "Comsci"
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
-
     const mergedMeta = { ...metaData, ...customMeta };
-
-    //handle nested og and twitter objects to override and merge correctly
     if (customMeta.og) {
       mergedMeta.og = { ...metaData.og, ...customMeta.og }
     }
     if (customMeta.twitter) {
       mergedMeta.twitter = { ...metaData.twitter, ...customMeta.twitter }
     }
-
-
     return Object.keys(mergedMeta).map((key) => {
       if (key === "title") {
         return <title key={key}>{mergedMeta[key]}</title>;
       }
-
 
       if (key === "og" || key === "twitter") {
         return Object.keys(mergedMeta[key]).map((property) => (
@@ -50,26 +45,13 @@ export default function Home() {
       return <meta key={key} name={key} content={mergedMeta[key]} />;
     });
   };
-
+  
   return (
     <>
       <Head>
         {getMetaTags(metaData, customMeta)}
       </Head>
-      <Banner />
-      <ServicesSection />
-      <Awards />
-      <AwardType />
-      <RendomLogo />
-      <TestiMonialsSlider />
-      <StrategySection />
-      <Technologies />
-      <ProjectSection />
-      <TestimonialsSection />
-      <IndustriesSection />
-      <Faqsection />
-      <BlogSection />
-      <Books />
+      <BooksSection />
     </>
   )
 }
