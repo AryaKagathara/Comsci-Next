@@ -6,7 +6,10 @@ import InnerBanner from "@/components/layout/InnerBanner";
 import ServiceProcess from "@/components/layout/ServiceProcess";
 import ProjectSection from "@/components/ProjectSection";
 import metaData from '../../files/meta.json';
-
+import breadcrumbData from '../../files/breadcrumbs.json'; // Import breadcrumb data
+import Breadcrumb from '@/components/Breadcrumb';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 // getStaticPaths
 export async function getStaticPaths() {
@@ -36,6 +39,42 @@ export async function getStaticProps({ params }) {
 }
 
 const ServiceDetail = ({ service }) => {
+
+	const router = useRouter();
+	const [breadcrumbItems, setBreadcrumbItems] = useState([]); // State for breadcrumbs
+
+    useEffect(() => {
+        // --- Logic to derive parent path ---
+        const pathSegments = router.pathname.split('/').filter(Boolean); // e.g., ['services', '[id]']
+        let parentPath = '/'; // Default to root
+        if (pathSegments.length > 1) {
+          parentPath = '/' + pathSegments.slice(0, -1).join('/'); // e.g., "/services"
+        }
+        // --- End Parent Path Logic ---
+
+        // Look up the parent's breadcrumbs in the JSON
+        const parentBreadcrumbs = breadcrumbData[parentPath];
+
+        // Check if parent items found & current service data exists
+        if (parentBreadcrumbs && service?.title && router.asPath) {
+          // Create a deep copy of parent items
+          const itemsCopy = JSON.parse(JSON.stringify(parentBreadcrumbs));
+
+          // Create the item for the current service page
+          const currentServiceItem = {
+            name: service.title, // Use the actual service title
+            href: router.asPath   // Use the actual URL
+          };
+
+          // Append the current service item
+          itemsCopy.push(currentServiceItem);
+          setBreadcrumbItems(itemsCopy); // Update state
+
+        } else {
+          // Fallback to Home if parent not in JSON or data missing
+          setBreadcrumbItems(breadcrumbData['/'] || []);
+        }
+    }, [router.pathname, router.asPath, service?.title]);
 
 	const customMeta = {
 		title: `${service.title} | Comsci Services`,
@@ -104,6 +143,7 @@ const ServiceDetail = ({ service }) => {
 			<Head>
 				{getMetaTags(metaData, customMeta)}
 			</Head>
+			<Breadcrumb items={breadcrumbItems} />
 			<InnerBanner banner={service}/>
 			<div className="process">
 				<div className="container">

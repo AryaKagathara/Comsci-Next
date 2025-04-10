@@ -1,9 +1,17 @@
 import Head from "next/head";
 import BlogpageSection from "@/components/BlogpageSection";
 import metaData from '../files/meta.json'; // Import your default meta data
-
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function Blogs() {
+
+  const router = useRouter();
+
+  const currentPath = router.pathname;
+  const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
+        
   const customMeta = {
     title: "Comsci Technologies Blog | Insights and Expertise in Software Development",  
     description: "Stay updated with the latest trends, insights, and expert advice on software development, web design, mobile app development, and more from the Comsci Technologies blog.",
@@ -40,6 +48,7 @@ return Object.keys(mergedMeta).map((key) => {
       <Head>
         {getMetaTags(metaData, customMeta)}
       </Head>
+      <Breadcrumb items={breadcrumbItems} />
       <BlogpageSection />
     </>
   );

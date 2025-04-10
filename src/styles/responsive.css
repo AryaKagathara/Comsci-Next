@@ -129,7 +129,7 @@
 	.faq_section .accordion .accordion-item { padding: 24px 0; border-left: none; border-right: none; }
 
 
-	.blog { padding: 0 0 100px 0; }
+	.blog { padding: 0 0 80px 0; }
 	.blog_section .blog_text { margin-bottom: 48px; flex-direction: column; }
 	.blog_section .bloglist_section { border-top: 1px solid var(--primary-light-white); border-bottom: 1px solid var(--primary-light-white); }
 	.blog_section .bloglist_section .listing_secting + .listing_secting { border-top: 1px solid var(--primary-light-white); }

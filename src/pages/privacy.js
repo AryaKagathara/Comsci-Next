@@ -1,8 +1,17 @@
 import Head from "next/head";
 import PrivacyPage from "@/components/layout/PrivacyPage";
 import metaData from '../files/meta.json'; // Import your default meta data
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function Privacy() {
+
+  const router = useRouter();
+      
+        const currentPath = router.pathname;
+        const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
+
   const customMeta = {
     title: "Privacy Policy | Comsci Technologies",
     description: "Comsci Technologies is committed to protecting your privacy. Learn how we collect, use, and safeguard your personal information.",  // Clear and concise
@@ -49,6 +58,7 @@ export default function Privacy() {
       <Head>
         {getMetaTags(metaData, customMeta)}
       </Head>
+      <Breadcrumb items={breadcrumbItems} />
       <PrivacyPage />
     </>
   );

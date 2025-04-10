@@ -5,6 +5,7 @@ import colorBubbles from "@/../public/images/extras/color-bubble.webp";
 import Head from "next/head";
 
 export default function BrandColorQuiz() {
+    
     const [currentQuestion, setCurrentQuestion] = useState(null);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [answerStatus, setAnswerStatus] = useState(null);

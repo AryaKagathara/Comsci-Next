@@ -2,8 +2,17 @@ import Head from "next/head";
 import ServicesSection from "@/components/layout/ServicesSection";
 import Technologies from "@/components/layout/Technologies";
 import metaData from '../files/meta.json';
+import Breadcrumb from '@/components/Breadcrumb';
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+
 
 export default function Services() {
+
+  const router = useRouter();
+
+  const currentPath = router.pathname;
+  const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
   const customMeta = {
     "title": "Our Services - Comsci Design & Development Company",
@@ -60,8 +69,9 @@ export default function Services() {
       <Head>
         {getMetaTags(metaData, customMeta)}
       </Head>
-      <ServicesSection />
-      <Technologies />
+      <Breadcrumb items={breadcrumbItems} />
+          <ServicesSection />
+          <Technologies />
     </>
   )
 }

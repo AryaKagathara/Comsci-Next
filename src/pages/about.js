@@ -7,8 +7,16 @@ import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import Awards from "@/components/Awards";
 import RendomLogo from "@/components/RendomLogo";
 import metaData from '../files/meta.json';
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function About() {
+
+    const router = useRouter();
+  
+    const currentPath = router.pathname;
+    const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
   const customMeta = {
     "title": "About Us - Comsci: Your Trusted Design & Development Partner",
@@ -51,6 +59,7 @@ export default function About() {
       <Head>
         {getMetaTags(metaData, customMeta)}
       </Head>
+      <Breadcrumb items={breadcrumbItems} />
       <AboutSection />
       <Awards />
       <RendomLogo />

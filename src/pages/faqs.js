@@ -1,8 +1,17 @@
 import Head from "next/head";
 import Faqsection from "@/components/layout/Faqsection";
 import metaData from '../files/meta.json'; // Import your default meta data
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function Faqs() {
+
+        const router = useRouter();
+      
+        const currentPath = router.pathname;
+        const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
+
   const customMeta = {
     title: "Frequently Asked Questions | Comsci Technologies",
     description: "Find answers to common questions about Comsci Technologies, our services, processes, and more.  If you don't see your question here, contact us!",
@@ -48,6 +57,7 @@ export default function Faqs() {
       <Head>
         {getMetaTags(metaData, customMeta)}
       </Head>
+      <Breadcrumb items={breadcrumbItems} />
       <Faqsection />
     </>
   );

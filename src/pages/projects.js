@@ -3,9 +3,17 @@ import ProjectPage from "@/components/ProjectPage";
 import TestimonialsSection from "@/components/layout/TestimonialsSection";
 import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import metaData from '../files/meta.json'; // Import your default meta data
-
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function Projects() {
+
+      const router = useRouter();
+    
+      const currentPath = router.pathname;
+      const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
+
   const customMeta = {
     title: "Our Projects | Comsci Technologies - Software Development Portfolio", // More descriptive title
     description: "Explore Comsci Technologies' portfolio of successful software development projects. Discover innovative solutions we've delivered across various industries.", // More compelling description
@@ -54,6 +62,7 @@ export default function Projects() {
       <Head>
         {getMetaTags(metaData, customMeta)}
       </Head>
+      <Breadcrumb items={breadcrumbItems} />
       <ProjectPage />
       <TestimonialsSection />
       <TestiMonialsSlider />

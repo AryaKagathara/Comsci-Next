@@ -3,9 +3,16 @@ import IndustriesPage from "@/components/IndustriesPage";
 import ServicesSection from "@/components/layout/ServicesSection";
 import Technologies from "@/components/layout/Technologies";
 import metaData from '../files/meta.json'; // Import your default meta data
-
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function Industries() { // Function name should match filename (Industries)
+
+      const router = useRouter();
+    
+      const currentPath = router.pathname;
+      const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
   const customMeta = {
     title: "Industries We Serve | Comsci Technologies - Software Solutions", // More specific title
@@ -49,6 +56,7 @@ export default function Industries() { // Function name should match filename (I
       <Head>
          {getMetaTags(metaData, customMeta)}
       </Head>
+      <Breadcrumb items={breadcrumbItems} />
       <IndustriesPage />
       <ServicesSection />
       <Technologies />

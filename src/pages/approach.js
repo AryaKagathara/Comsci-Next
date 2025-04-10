@@ -4,8 +4,18 @@ import StrategySection from "@/components/layout/StrategySection";
 import Technologies from "@/components/layout/Technologies";
 import ProjectSection from "@/components/ProjectSection";
 import metaData from '../files/meta.json'; // Import your meta data
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
+
 
 export default function Approach() {
+
+  const router = useRouter();
+      
+        const currentPath = router.pathname;
+        const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
+
   // Define custom meta data for the Approach page
   const customMeta = {
     title: "Comsci's Approach: Delivering Results Through Strategic Software Development",
@@ -50,6 +60,7 @@ export default function Approach() {
       <Head>
          {getMetaTags(metaData, customMeta)} {/* Call the function to render meta tags */}     
       </Head>
+      <Breadcrumb items={breadcrumbItems} />
       <StrategySection />
       <ProjectSection />
       <ServicesSection />

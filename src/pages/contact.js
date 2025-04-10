@@ -2,6 +2,9 @@ import Head from "next/head";
 import metaData from '../files/meta.json'; // Import your default meta data
 import ContentBox from "@/components/layout/ContentBox";
 import dynamic from 'next/dynamic';
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const DynamicIframe = dynamic(() => Promise.resolve( ({ children }) => {
   return (
@@ -17,6 +20,12 @@ const DynamicIframe = dynamic(() => Promise.resolve( ({ children }) => {
 
 
 export default function Contact() {
+
+  const router = useRouter();
+        
+          const currentPath = router.pathname;
+          const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
+
   const customMeta = {
     title: "Contact Us | Comsci Technologies - Software Development", // More descriptive title
     description: "Explore Comsci Technologies for successful software development projects. Discover innovative solutions we've delivered across various industries.", // More compelling description
@@ -65,7 +74,8 @@ export default function Contact() {
         <Head>
 {getMetaTags(metaData, customMeta)}
 </Head>
-      <div style={{ position: 'relative', height: '80vh', overflow: 'auto', backgroundColor: '#ffffff', margin: '60px 0' }}>
+        <Breadcrumb items={breadcrumbItems} />
+      <div style={{ position: 'relative', height: '80vh', overflow: 'auto', backgroundColor: '#ffffff', margin: '0' }}>
         <DynamicIframe />
       </div>
         </>

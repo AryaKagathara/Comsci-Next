@@ -1,8 +1,17 @@
 import Head from "next/head";
 import JobpageSection from "@/components/JobpageSection";
 import metaData from '../files/meta.json'; // Import default meta data
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function JobPosition() {
+
+  const router = useRouter();
+      
+        const currentPath = router.pathname;
+        const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
+
     const customMeta = {
         title: "Job Openings | Careers at Comsci Technologies", // Clear and concise title
         description: "Explore current job opportunities at Comsci Technologies and join our team of talented software developers, designers, and engineers.",
@@ -50,6 +59,7 @@ export default function JobPosition() {
       <Head>
           {getMetaTags(metaData, customMeta)}
       </Head>
+        <Breadcrumb items={breadcrumbItems} />
       <JobpageSection />
     </>
   );

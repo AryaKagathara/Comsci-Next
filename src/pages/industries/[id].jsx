@@ -2,7 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import React from 'react';
 import metaData from '../../files/meta.json'; // Import your default meta data
-
+import breadcrumbData from '../../files/breadcrumbs.json'; // Import breadcrumb data
+import Breadcrumb from '@/components/Breadcrumb';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 export async function getStaticPaths() {
     const industries = require('../../files/industries.json');
@@ -24,6 +27,43 @@ export async function getStaticProps({ params }) {
 
 
 export default function IndustryDetail({ industry }) {
+
+    const router = useRouter();
+    const [breadcrumbItems, setBreadcrumbItems] = useState([]); // State for breadcrumbs
+
+    useEffect(() => {
+        // --- Logic to derive parent path ---
+        const pathSegments = router.pathname.split('/').filter(Boolean); // e.g., ['industries', '[id]']
+        let parentPath = '/'; // Default to root
+        if (pathSegments.length > 1) {
+          parentPath = '/' + pathSegments.slice(0, -1).join('/'); // e.g., "/industries"
+        }
+        // --- End Parent Path Logic ---
+
+        // Look up the parent's breadcrumbs in the JSON
+        const parentBreadcrumbs = breadcrumbData[parentPath];
+
+        // Check if parent items found & current industry data exists
+        if (parentBreadcrumbs && industry?.title && router.asPath) {
+          // Create a deep copy of parent items
+          const itemsCopy = JSON.parse(JSON.stringify(parentBreadcrumbs));
+
+          // Create the item for the current industry page
+          const currentIndustryItem = {
+            name: industry.title, // Use the actual industry title
+            href: router.asPath   // Use the actual URL
+          };
+
+          // Append the current industry item
+          itemsCopy.push(currentIndustryItem);
+          setBreadcrumbItems(itemsCopy); // Update state
+
+        } else {
+          // Fallback to Home if parent not in JSON or data missing
+          setBreadcrumbItems(breadcrumbData['/'] || []);
+        }
+    }, [router.pathname, router.asPath, industry?.title]); // Dependencies
+
     const customMeta = {
         title: `${industry.title} Industry | Comsci`,
         description: industry.description,
@@ -89,7 +129,7 @@ export default function IndustryDetail({ industry }) {
             <Head>
                 {getMetaTags(metaData, customMeta)}
             </Head>
-
+            <Breadcrumb items={breadcrumbItems} />
             {industry.fullImage && (
                 <div className="industrie_detail_banner">
                     <div className="detail_img_block">

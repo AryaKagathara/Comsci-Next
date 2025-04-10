@@ -2,6 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import React from 'react';
 import metaData from '../../files/meta.json';
+import breadcrumbData from '../../files/breadcrumbs.json'; // Import breadcrumb data
+import Breadcrumb from '@/components/Breadcrumb';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 export async function getStaticPaths() {
     const blogs = require('../../files/blogs.json');
@@ -22,6 +26,43 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogDetail({ blog }) {
+
+    const router = useRouter();
+    const [breadcrumbItems, setBreadcrumbItems] = useState([]); // State for breadcrumbs
+
+    useEffect(() => {
+        // --- Logic to derive parent path ---
+        // router.pathname for /blogs/[link] should be "/blogs/[link]"
+        const pathSegments = router.pathname.split('/').filter(Boolean); // e.g., ['blogs', '[link]']
+        let parentPath = '/'; // Default to root
+        if (pathSegments.length > 1) {
+          parentPath = '/' + pathSegments.slice(0, -1).join('/'); // e.g., "/blogs"
+        }
+        // --- End Parent Path Logic ---
+
+        // Look up the parent's breadcrumbs in the JSON
+        const parentBreadcrumbs = breadcrumbData[parentPath];
+
+        // Check if parent items found & current blog data exists
+        if (parentBreadcrumbs && blog?.title && router.asPath) {
+          // Create a deep copy of parent items
+          const itemsCopy = JSON.parse(JSON.stringify(parentBreadcrumbs));
+
+          // Create the item for the current blog page
+          const currentBlogItem = {
+            name: blog.title,    // Use the actual blog title
+            href: router.asPath  // Use the actual URL
+          };
+
+          // Append the current blog item
+          itemsCopy.push(currentBlogItem);
+          setBreadcrumbItems(itemsCopy); // Update state
+
+        } else {
+          // Fallback to Home if parent not in JSON or data missing
+          setBreadcrumbItems(breadcrumbData['/'] || []);
+        }
+    }, [router.pathname, router.asPath, blog?.title]);
 
     const customMeta = {
         title: `${blog.title} | Comsci Blog`,
@@ -89,7 +130,7 @@ export default function BlogDetail({ blog }) {
             <Head>
                 {getMetaTags(metaData, customMeta)}
             </Head>
-
+            <Breadcrumb items={breadcrumbItems} />
             <div className="blogdetail">
                 <div className="container">
                     <div className="blogdetail_section">

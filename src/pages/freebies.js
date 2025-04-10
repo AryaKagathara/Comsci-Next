@@ -1,8 +1,16 @@
 import Head from "next/head";
 import metaData from '../files/meta.json';
 import BooksSection from "@/components/layout/BooksSection";
+import breadcrumbData from '../files/breadcrumbs.json';
+import { useRouter } from 'next/router';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function Books() {
+
+  const router = useRouter();
+      
+        const currentPath = router.pathname;
+        const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
   const customMeta = {
     "title": "Downlaod Creative Books - Comsci: Your Trusted Design & Development Partner",
@@ -45,6 +53,7 @@ export default function Books() {
       <Head>
         {getMetaTags(metaData, customMeta)}
       </Head>
+      <Breadcrumb items={breadcrumbItems} />
       <BooksSection />
     </>
   )

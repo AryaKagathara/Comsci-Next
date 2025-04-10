@@ -15,9 +15,9 @@ const Footer = () => {
 						<div className="title_box">
 							<div className="mail_box">
 								<h4>Start a new project or Schedule a Consultation today</h4>
-								<Link target="_blank" href={contactData.contact_form}>Get a Quote</Link>
+								<Link target="_blank" href={`mailto:${contactData.email}?subject=REQUEST - Let's get started`}>Get a Quote</Link>
 							</div>
-							<PrimaryBtn name="Lets talk" arrow="no" link={contactData.contact_form}/>
+							<PrimaryBtn name="Lets talk" arrow="no" link={`mailto:${contactData.email}?subject=REQUEST - Let's get started`}/>
 						</div>
 						<div className="links_section">
 							<div className="use_link">
@@ -68,7 +68,7 @@ const Footer = () => {
 									<li><p></p></li>
 									<li><Link target="_blank" href={contactData.location}><span>{contactData.address}</span></Link></li>
 									<li><Link href={`tel:${contactData.phone}`}><span>{contactData.phone}</span></Link></li>
-									<li><Link href={`mailto:${contactData.email}?subject=REQUEST - I want to start a new project with Comsci`}><span>{contactData.email}</span></Link></li>
+									<li><Link href={`mailto:${contactData.email}?subject=REQUEST - Let's get started`}><span>{contactData.email}</span></Link></li>
 								</ul>
 							</div>
 						</div>
