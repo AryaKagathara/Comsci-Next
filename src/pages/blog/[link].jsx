@@ -50,7 +50,7 @@ export default function BlogDetail({ blog }) {
 
           // Create the item for the current blog page
           const currentBlogItem = {
-            name: blog.title,    // Use the actual blog title
+            name: blog.subtitle,    // Use the actual blog title
             href: router.asPath  // Use the actual URL
           };
 
@@ -62,7 +62,7 @@ export default function BlogDetail({ blog }) {
           // Fallback to Home if parent not in JSON or data missing
           setBreadcrumbItems(breadcrumbData['/'] || []);
         }
-    }, [router.pathname, router.asPath, blog?.title]);
+    }, [router.pathname, router.asPath, blog?.subtitle]);
 
     const customMeta = {
         title: `${blog.title} | Comsci Blog`,
