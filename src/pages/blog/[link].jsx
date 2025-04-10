@@ -116,7 +116,7 @@ export default function BlogDetail({ blog }) {
                 } else if (item.tag === 'img') {
                     return <div className="image" key={index}><Image src={item.image} alt={item.content} quality={100} width={1000} height={600} /></div>;
                 } else if (item.tag === 'iframe' && item.src) {
-                    return <iframe key={index} src={item.src} title="Embedded Content" allowFullScreen />;
+                    return <iframe loading="lazy" key={index} src={item.src} title="Embedded Content" allowFullScreen />;
                 } else if (item.content) {
                     return React.createElement(item.tag, { key: index, dangerouslySetInnerHTML: { __html: item.content } });
                 }
