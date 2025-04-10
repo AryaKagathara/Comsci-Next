@@ -7,7 +7,7 @@ export const organizationSchema = {
   "name": "Comsci Technologies",
   "legalName": "Comsci Technologies LLP",
   "url": BASE_URL,
-  "logo": `${BASE_URL}/path/to/your/logo.png`,
+  "logo": `${BASE_URL}/images/logo.svg`,
   "email": "hello@comsci.tech",
   "telephone": "+91 96873 79447",
   "address": {
@@ -36,13 +36,5 @@ export const websiteSchema = {
   "name": "Comsci Technologies",
   "publisher": {
     "@id": organizationSchema["@id"]
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": `${BASE_URL}/?s={search_term_string}`
-    },
-    "query-input": "required name=search_term_string"
   }
 };

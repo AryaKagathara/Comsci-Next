@@ -73,7 +73,7 @@ export default function About() {
       "itemListElement": breadcrumbItems.map((item, index) => ({
         "@type": "ListItem",
         "position": index + 1,
-        "name": item.label,
+        "name": item.name,
         "item": item.href.startsWith('http') ? item.href : `${BASE_URL}${item.href}`
       }))
     };

@@ -1,182 +1,261 @@
-// pages/services/[link].js
+
 import Head from "next/head";
 import Image from "next/image";
-import React from 'react';
+import React, { useEffect, useState } from 'react'; 
 import InnerBanner from "@/components/layout/InnerBanner";
 import ServiceProcess from "@/components/layout/ServiceProcess";
 import ProjectSection from "@/components/ProjectSection";
-import metaData from '../../files/meta.json';
-import breadcrumbData from '../../files/breadcrumbs.json'; // Import breadcrumb data
 import Breadcrumb from '@/components/Breadcrumb';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 
-// getStaticPaths
+import baseMetaData from '../../files/meta.json'; 
+
+import breadcrumbData from '../../files/breadcrumbs.json'; 
+
+import { organizationSchema, websiteSchema, BASE_URL } from '../../lib/commonSchema'; 
+
 export async function getStaticPaths() {
-	const servicesData = require('../../files/services.json'); //get the whole object {services:[], marquee:[]}
-	const services = servicesData.services; //access the services array by it's key
-
-	const paths = services.map(service => ({   //now map works
-		params: { link: service.link }
-	}));
-
-	return { paths, fallback: false };
+  const servicesData = require('../../files/services.json');
+  const services = servicesData.services;
+  const paths = services.map(service => ({
+    params: { link: service.link }
+  }));
+  return { paths, fallback: false };
 }
 
-
-// getStaticProps
 export async function getStaticProps({ params }) {
-	const servicesData = require('../../files/services.json'); //get the whole object
-	const services = servicesData.services //access the services array by it's key
-
-	const service = services.find(service => service.link === params.link); //now find works
-
-	if (!service) {
-		return { notFound: true }
-	}
-
-	return { props: { service } };
+  const servicesData = require('../../files/services.json');
+  const services = servicesData.services;
+  const service = services.find(s => s.link === params.link); 
+  if (!service) {
+    return { notFound: true };
+  }
+  
+  return { props: { service } };
 }
 
 const ServiceDetail = ({ service }) => {
+  const router = useRouter();
+  const [breadcrumbItems, setBreadcrumbItems] = useState([]); 
 
-	const router = useRouter();
-	const [breadcrumbItems, setBreadcrumbItems] = useState([]); // State for breadcrumbs
+  useEffect(() => {
+    
+    const pathSegments = router.pathname.split('/').filter(Boolean);
+    let parentPath = '/';
+    if (pathSegments.length > 1) {
+      parentPath = '/' + pathSegments.slice(0, -1).join('/');
+    }
 
-    useEffect(() => {
-        // --- Logic to derive parent path ---
-        const pathSegments = router.pathname.split('/').filter(Boolean); // e.g., ['services', '[id]']
-        let parentPath = '/'; // Default to root
-        if (pathSegments.length > 1) {
-          parentPath = '/' + pathSegments.slice(0, -1).join('/'); // e.g., "/services"
+    const parentBreadcrumbs = breadcrumbData[parentPath];
+
+    if (parentBreadcrumbs && service?.title && router.asPath) {
+      const itemsCopy = JSON.parse(JSON.stringify(parentBreadcrumbs));
+      const currentServiceItem = {
+        label: service.title, 
+        name: service.title, 
+        href: router.asPath
+      };
+      itemsCopy.push(currentServiceItem);
+      setBreadcrumbItems(itemsCopy);
+    } else {
+      setBreadcrumbItems(breadcrumbData['/'] || []);
+    }
+  }, [router.pathname, router.asPath, service?.title]); 
+
+  const fullImageUrl = service.image ? (service.image.startsWith('http') ? service.image : `${BASE_URL}${service.image}`) : `${BASE_URL}/images/social-share-og/Facebook.webp`; 
+  const customMeta = {
+    title: `${service.title} | Comsci Services`,
+    description: service.shortDescription,
+    keywords: service.chips?.map(chip => chip.name) || [], 
+    og: {
+      title: `${service.title} | Comsci Services`,
+      description: service.shortDescription,
+      image: fullImageUrl,
+      imageAlt: `Comsci's ${service.title} Service`,
+    },
+    twitter: {
+      
+      title: `${service.title} | Comsci Services`,
+      description: service.shortDescription,
+      image: fullImageUrl, 
+      imageAlt: `Comsci's ${service.title} Service`,
+    },
+  };
+
+  const getMetaTags = (metaData, customMeta = {}) => {
+    const mergedMeta = { ...metaData, ...customMeta };
+    if (customMeta.og) mergedMeta.og = { ...metaData.og, ...customMeta.og };
+    if (customMeta.twitter) mergedMeta.twitter = { ...metaData.twitter, ...customMeta.twitter };
+
+    return Object.keys(mergedMeta).map((key) => {
+      if (key === "title") return <title key={key}>{mergedMeta[key]}</title>;
+      if (key === "og" || key === "twitter") {
+        return Object.keys(mergedMeta[key]).map((property) => (
+          <meta key={`${key}:${property}`} property={`${key}:${property}`} content={mergedMeta[key][property]} />
+        ));
+      }
+      if (key === "keywords" && Array.isArray(mergedMeta[key])) {
+          return <meta key={key} name={key} content={mergedMeta[key].join(', ')} />;
+      }
+       if (key === "robots") return <meta key={key} name="robots" content={mergedMeta[key]} />;
+       
+       if (key !== 'og' && key !== 'twitter' && key !== 'title' && key !== 'keywords' && typeof mergedMeta[key] === 'string') {
+           return <meta key={key} name={key} content={mergedMeta[key]} />;
+       }
+       return null;
+    });
+  };
+
+  const pageUrl = `${BASE_URL}${router.asPath}`; 
+  const currentPageMeta = { ...baseMetaData, ...customMeta }; 
+
+  const pageSchema = {
+    "@type": "Service", 
+    "@id": pageUrl, 
+    "url": pageUrl,
+    "name": service.title,
+    "description": service.shortDescription, 
+    "isPartOf": {
+      "@id": websiteSchema["@id"] 
+    },
+    "provider": {
+      "@id": organizationSchema["@id"] 
+    },
+    
+    "image": fullImageUrl,
+    "serviceType": service.title, 
+    
+    "areaServed": organizationSchema.areaServed,
+    
+     "keywords": service.chips?.map(chip => chip.name).join(', '),
+    
+  };
+
+  let breadcrumbSchema = null;
+  if (breadcrumbItems && breadcrumbItems.length > 0) {
+      breadcrumbSchema = {
+		"@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbItems.map((item, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+             
+             "name": item.name || item.label || service.title,
+             "item": item.href.startsWith('/') ? `${BASE_URL}${item.href}` : item.href 
+        }))
+      };
+  }
+
+  const finalSchema = [
+      organizationSchema,
+      websiteSchema,
+      pageSchema,
+      ...(breadcrumbSchema ? [breadcrumbSchema] : [])
+  ];
+  
+  const renderContent = (content) => {
+    if (!Array.isArray(content)) return null; 
+
+    return content.map((item, index) => {
+        if (!item || !item.tag) return null; 
+
+        switch (item.tag) {
+            case 'ul':
+            case 'ol':
+                 if (!Array.isArray(item.content)) return null;
+                 const listItems = item.content.map((listItem, listIndex) => {
+                    if (!listItem || typeof listItem.content !== 'string') return null;
+                    return <li key={listIndex} dangerouslySetInnerHTML={{ __html: listItem.content }}></li>
+                 }).filter(Boolean); 
+                 return React.createElement(item.tag, { key: index }, listItems);
+            case 'img':
+                 
+                 const width = item.width || 768; 
+                 const height = item.height || 432; 
+                 const altText = typeof item.content === 'string' ? item.content : `Service Image ${index + 1}`;
+                 return item.image ? (
+                    <div className="image" key={index} style={{ position: 'relative', width: '100%', maxWidth: `${width}px`, height: 'auto', margin: '20px 0' }}>
+                      <Image src={item.image} alt={altText} width={width} height={height} style={{ width: '100%', height: 'auto' }} quality={90} priority={index < 2} /> {/* Set priority for early images */}
+                    </div>
+                  ) : null;
+             case 'iframe': 
+                 return item.src ? (
+                     <div className="video-embed" key={index} style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', background: '#000', margin: '20px 0' }}>
+                        <iframe
+                           src={item.src}
+                           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                           frameBorder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowFullScreen
+                           title={`Embedded Content ${index + 1}`}>
+                        </iframe>
+                    </div>
+                  ) : null;
+            default: 
+                return (typeof item.content === 'string') ? React.createElement(item.tag, { key: index, dangerouslySetInnerHTML: { __html: item.content } }) : null;
         }
-        // --- End Parent Path Logic ---
+    }).filter(Boolean); 
+  };
 
-        // Look up the parent's breadcrumbs in the JSON
-        const parentBreadcrumbs = breadcrumbData[parentPath];
+  return (
+    <>
+      <Head>
+        {getMetaTags(baseMetaData, customMeta)}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(finalSchema, null, 2) }} 
+          key="jsonld-schema"
+        />
+      </Head>
+      {/* Use state variable for breadcrumbs */}
+      <Breadcrumb items={breadcrumbItems} />
 
-        // Check if parent items found & current service data exists
-        if (parentBreadcrumbs && service?.title && router.asPath) {
-          // Create a deep copy of parent items
-          const itemsCopy = JSON.parse(JSON.stringify(parentBreadcrumbs));
-
-          // Create the item for the current service page
-          const currentServiceItem = {
-            name: service.title, // Use the actual service title
-            href: router.asPath   // Use the actual URL
-          };
-
-          // Append the current service item
-          itemsCopy.push(currentServiceItem);
-          setBreadcrumbItems(itemsCopy); // Update state
-
-        } else {
-          // Fallback to Home if parent not in JSON or data missing
-          setBreadcrumbItems(breadcrumbData['/'] || []);
-        }
-    }, [router.pathname, router.asPath, service?.title]);
-
-	const customMeta = {
-		title: `${service.title} | Comsci Services`,
-		description: service.shortDescription,
-		keywords: service.keywords || [], //add keywords property to your services.json if you want to use this, otherwise it will be an empty array.
-		og: {
-			title: `${service.title} | Comsci Services`,
-			description: service.shortDescription,
-			image: service.image || '/path/to/default/social/image.jpg', // Provide a default image if service.image is missing, otherwise your social media preview will be blank/broken
-			imageAlt: `Comsci's ${service.title} Service`,
-		},
-		twitter: {
-			title: `${service.title} | Comsci Services`,
-			description: service.shortDescription,
-			image: service.image || '/path/to/default/social/image.jpg', //default image here as well
-			imageAlt: `Comsci's ${service.title} Service`,
-		},
-	};
-
-	const getMetaTags = (metaData, customMeta = {}) => {
-		const mergedMeta = { ...metaData, ...customMeta };
-
-		mergedMeta.og = { ...metaData?.og, ...customMeta?.og }
-		mergedMeta.twitter = { ...metaData?.twitter, ...customMeta?.twitter }
-
-
-		return Object.entries(mergedMeta).map(([key, value]) => {
-			if (key === "title") {
-				return <title key={key}>{value}</title>;
-			}
-			if (typeof value === 'string') {
-				return <meta key={key} name={key} content={value} />;
-			}
-			if (typeof value === 'object') {
-				return Object.entries(value).map(([property, content]) => (
-					<meta key={`${key}:${property}`} property={`${key}:${property}`} content={content} />
-				))
-			}
-			return null
-		}).filter(Boolean);
-	};
-
-	const renderContent = (content) => {
-		if (!content) return null; // Handle cases where content is empty
-
-		return content.map((item, index) => {
-			switch (item.tag) {
-				case 'ul':
-				case 'ol':
-					const listItems = item.content.map((listItem, listIndex) => <li key={listIndex} dangerouslySetInnerHTML={{ __html: listItem.content }}></li>);
-					return React.createElement(item.tag, { key: index }, listItems);
-				case 'img':
-					// Add width and height as props, not attributes
-					return <div className="image" key={index}><Image src={item.image} alt={item.content || ''} width={item.width || 100} height={item.height || 100} quality={100} /></div>;
-				default:
-					if (item.content) {
-						return React.createElement(item.tag, { key: index, dangerouslySetInnerHTML: { __html: item.content } });
-					}
-					return null;
-			}
-		});
-	};
-
-	return (
-		<>
-			<Head>
-				{getMetaTags(metaData, customMeta)}
-			</Head>
-			<Breadcrumb items={breadcrumbItems} />
-			<InnerBanner banner={service}/>
-			<div className="process">
-				<div className="container">
-					<div className="process_section">
-						<div className="row">
-							<div className="col-lg-8">
-								<div className="caption_box">
-									<h2>{service.title}</h2>
-									{renderContent(service.content)} {/* Render content here */}
-								</div>
-							</div>
-							<div className="col-lg-3 offset-lg-1">
-								<div className="box_wrap">
-									<span>Process</span>
-									<ul>
-										{service.chips && service.chips.map((chip, index) => (
-											<li key={index}>{chip.name}</li>
-										))}
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<ServiceProcess
-				strategyTitle={service.strategy?.strategyTitle || "Default Title"}
-				strategyDescription={service.strategy?.strategyDescription || "Default Description"}
-				steps={service.strategy?.strategySteps || []} 
-			/>
-			<ProjectSection />
-		</>
-	);
+      {/* Ensure service object exists before accessing properties */}
+      {service && (
+        <>
+          <InnerBanner banner={service}/>
+          <div className="process">
+            <div className="container">
+              <div className="process_section">
+                <div className="row">
+                  <div className="col-lg-8">
+                    <div className="caption_box">
+                      <h1>{service.title}</h1> {/* Use h1 for the main title */}
+                      {renderContent(service.content)}
+                    </div>
+                  </div>
+                  <div className="col-lg-3 offset-lg-1">
+                    <div className="box_wrap">
+                      <span>Process</span>
+                       {/* Check if chips exist and is array */}
+                       {Array.isArray(service.chips) && service.chips.length > 0 && (
+                           <ul>
+                               {service.chips.map((chip, index) => (
+                                   chip?.name && <li key={index}>{chip.name}</li> 
+                               ))}
+                           </ul>
+                       )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Pass strategy data only if it exists */}
+          {service.strategy && (
+              <ServiceProcess
+                  strategyTitle={service.strategy.strategyTitle}
+                  strategyDescription={service.strategy.strategyDescription}
+                  steps={service.strategy.strategySteps || []}
+              />
+           )}
+          <ProjectSection />
+        </>
+      )}
+      {/* Add a loading state or fallback if service data isn't ready, though getStaticProps handles this mostly */}
+      {!service && <p>Loading service details...</p>}
+    </>
+  );
 };
 
 export default ServiceDetail;
