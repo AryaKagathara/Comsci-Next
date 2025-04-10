@@ -16,7 +16,7 @@
             "/images/projects/NuAI-9.webp",
             "/images/projects/NuAI-10.webp"
         ],
-        "link": "nuai_artificial_intelligence_enabled_health_app"
+        "link": "nuai-artificial-intelligence-health-app"
     },
     {
         "id": 2,
@@ -36,7 +36,7 @@
             "/images/projects/Mipo-10.webp",
             "/images/projects/Mipo-11.webp"
         ],
-        "link": "mipo_south_america_fintech_platform"
+        "link": "mipo-fintech-platform"
     },
     {
         "id": 3,
@@ -56,7 +56,7 @@
             "/images/projects/EatCoast-10.webp",
             "/images/projects/EatCoast-00.webp"
         ],
-        "link": "eatcoast_restaurant_management_food_delivery_platform"
+        "link": "eatcoast-food-delivery"
     },
     {
         "id": 5,
@@ -72,7 +72,7 @@
             "/images/projects/Medical-Escape-6.webp",
             "/images/projects/Medical-Escape-7.webp"
         ],
-        "link": "medical_escape_milan_skin_care_clinic"
+        "link": "medical-escape-milan"
     },
     {
         "id": 6,
@@ -90,7 +90,7 @@
             "/images/projects/BLKResumes-8.webp",
             "/images/projects/BLKResumes-9.webp"
         ],
-        "link": "blkresumes_usa_recruitment_platform"
+        "link": "blkresumes-recruitment"
     },
     {
         "id": 7,
@@ -106,7 +106,7 @@
             "/images/projects/W3Dart-6.webp",
             "/images/projects/W3Dart-7.webp"
         ],
-        "link": "w3dart_bug_reporting_saas_tool"
+        "link": "w3dart-bug-reporting-saas"
     },
     {
         "id": 6,
@@ -124,7 +124,7 @@
             "/images/projects/Roberto-Bolle-8.webp",
             "/images/projects/Roberto-Bolle-9.webp"
         ],
-        "link": "roberto_bolle_foundation_website"
+        "link": "roberto-bolle-foundation"
     },
     {
         "id": 8,
@@ -140,7 +140,7 @@
             "/images/projects/Recre-6.webp",
             "/images/projects/Recre-7.webp"
         ],
-        "link": "recre_marketing_agency_website_design_development"
+        "link": "recre-marketing-agency"
     },
     {
         "id": 9,
@@ -154,7 +154,7 @@
             "/images/projects/Black-Lusion-4.webp",
             "/images/projects/Black-Lusion-5.webp"
         ],
-        "link": "black_lusion_web3_games_item_collection_marketplace"
+        "link": "web3-games-marketplace"
     },
     {
         "id": 10,
@@ -172,7 +172,7 @@
             "/images/projects/Carlton-West-8.webp",
             "/images/projects/Carlton-West-9.webp"
         ],
-        "link": "carlton_west_canada_real_estate_developer_website"
+        "link": "carlton-west-canada-real-estate"
     },
     {
         "id": 11,
@@ -189,7 +189,7 @@
             "/images/projects/DA-Studio-7.webp",
             "/images/projects/DA-Studio-8.webp"
         ],
-        "link": "da_studio_interior_designer_branding"
+        "link": "interior-designer-branding"
     },
     {
         "id": 12,
@@ -206,7 +206,7 @@
             "/images/projects/Myotonx-7.webp",
             "/images/projects/Myotonx-8.webp"
         ],
-        "link": "myotonx_body_pain_relex_clinic_design_development"
+        "link": "myotonx-body-pain-clinic"
     },
     {
         "id": 13,
@@ -223,6 +223,6 @@
             "/images/projects/RMS-7.webp",
             "/images/projects/RMS-8.webp"
         ],
-        "link": "rms_advance_gis_logistic_tool"
+        "link": "rms-gis-logistic"
     }
 ]
