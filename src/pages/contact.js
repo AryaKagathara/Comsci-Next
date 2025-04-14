@@ -1,26 +1,11 @@
 import Head from "next/head";
 import { useRouter } from 'next/router';
-import dynamic from 'next/dynamic';
+import Script from 'next/script';
 import Breadcrumb from '@/components/Breadcrumb';
 
 import baseMetaData from '../files/meta.json';
-
 import breadcrumbData from '../files/breadcrumbs.json';
-
 import { organizationSchema, websiteSchema, BASE_URL } from '../lib/commonSchema';
-
-const DynamicIframe = dynamic(() => Promise.resolve(({ children }) => {
-  return (
-    <iframe
-      src="https://app.formbricks.com/s/clutpyviv0bfdekwq1il46zje"
-      frameBorder="0"
-      style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', border: 0 }}
-      title="Contact Us Form"
-    >
-      {children}
-    </iframe>
-  );
-}), { ssr: false });
 
 export default function Contact() {
   const router = useRouter();
@@ -28,16 +13,16 @@ export default function Contact() {
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
   const customMeta = {
-    title: "Contact Us | Comsci Technologies - Software Development",
-    description: "Get in touch with Comsci Technologies to discuss your software development project. We offer solutions in web design, mobile apps, branding, AI, and more.", // Updated description
+    title: "Schedule a Meeting | Comsci Technologies - Software Development", // Updated title
+    description: "Schedule a meeting with Comsci Technologies to discuss your software development project. Let's talk about web design, mobile apps, branding, AI, and more.", // Updated description
     og: {
-      title: "Contact Comsci Technologies",
-      description: "Ready to start your next software project? Contact Comsci Technologies today for a consultation.",
+      title: "Schedule a Meeting with Comsci Technologies", // Updated OG title
+      description: "Ready to start your next software project? Book a time with Comsci Technologies today for a consultation.", // Updated OG description
     },
     twitter: {
       card: "summary_large_image",
-      title: "Contact Comsci Technologies - Let's Build Together",
-      description: "Reach out to Comsci Technologies to discuss web, mobile, AI, or branding projects. Let's connect!",
+      title: "Schedule Meeting - Comsci Technologies", // Updated Twitter title
+      description: "Book a meeting with Comsci Technologies to discuss web, mobile, AI, or branding projects. Let's connect!", // Consistent Twitter description
     },
   };
 
@@ -77,9 +62,9 @@ export default function Contact() {
     },
     "mainContentOfPage": {
       "@type": "WebPageElement",
-      "name": "Contact Form",
-      "description": "Use the embedded form to send us a message.",
-      "url": "https://app.formbricks.com/s/clutpyviv0bfdekwq1il46zje"
+      "name": "Scheduling Widget",
+      "description": "Use the embedded Calendly widget to schedule a meeting with us.",
+      "url": "https://calendly.com/aryakagathara/meeting"
     },
   };
 
@@ -104,6 +89,8 @@ export default function Contact() {
     ...(breadcrumbSchema ? [breadcrumbSchema] : [])
   ];
 
+  const calendlyUrl = "https://calendly.com/aryakagathara/meeting?hide_gdpr_banner=1";
+
   return (
     <>
       <Head>
@@ -113,11 +100,20 @@ export default function Contact() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(finalSchema, null, 2) }}
           key="jsonld-schema"
         />
+        <link rel="preconnect" href="https://assets.calendly.com" />
       </Head>
       <Breadcrumb items={breadcrumbItems} />
-      <div style={{ position: 'relative', height: '80vh', overflow: 'auto', backgroundColor: '#ffffff', margin: '0' }}>
-        <DynamicIframe />
+      <div style={{ backgroundColor: '#ffffff', margin: '2rem 0' }}>
+        <div
+          className="calendly-inline-widget"
+          data-url={calendlyUrl}
+          style={{ minWidth: '320px', height: '700px' }}
+        ></div>
       </div>
+      <Script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        strategy="lazyOnload"
+      />
     </>
   );
 }

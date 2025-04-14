@@ -7,6 +7,9 @@ const Footer = () => {
 	const contactData = require('../../files/contact.json');
 	const industriesData = require('../../files/industries.json');
 	const servicesData = require('../../files/services.json');
+
+	const currentYear = new Date().getFullYear();
+
 	return (
 		<>
 			<footer className="footer">
@@ -73,7 +76,7 @@ const Footer = () => {
 							</div>
 						</div>
 						<div className="copyright">
-							<p>© 2023 COMSCI TECHNOLOGIES All rights reserved<Link href="/privacy">Privacy Policy</Link></p>
+							<p>© {currentYear} COMSCI TECHNOLOGIES All rights reserved<Link href="/privacy">Privacy Policy</Link></p>
 						</div>
 						<div className="footer_logo">
 							<Image src={FtrLogo} alt="ftrlogo" quality={100}/>
