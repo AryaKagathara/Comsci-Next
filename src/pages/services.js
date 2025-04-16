@@ -73,7 +73,7 @@ export default function ServicesPage({ servicesData }) {
       "itemListElement": servicesData.map((service, index) => ({
         "@type": "ListItem",
         "position": index + 1,
-        "name": service.title,
+        "name": service.metatitle,
 
         "url": `${BASE_URL}/services/${service.link}`
       }))

@@ -47,13 +47,13 @@ const ServicesSection = ({ isHome }) => {
         <div className="container">
           <div className="service_heading" data-scroll data-scroll-speed=".2">
             <strong>
-              We engineer business solutions that drive measurable results for renowned industry leaders around the 
+            We engineer bespoke digital solutions from stunning web design to robust software driving measurable results for industry leaders 
               <div className="globe">
-                gl
+                w
                 <div className="world_img">
                   <Image src={world} alt="world" />
                 </div>
-                be
+                rldwide.
               </div>
             </strong>
           </div>
@@ -62,7 +62,7 @@ const ServicesSection = ({ isHome }) => {
             <Tab.Container id="tabs_wrapper" activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
               <div className="row">
                 <div className="heading">
-                  <span>Services</span>
+                  <span>Our Core Services</span>
                 </div>
                 <div className="col-lg-6">
                   <div className="tab_section">
@@ -91,20 +91,13 @@ const ServicesSection = ({ isHome }) => {
                             <Image
                               quality={100}
                               src={service.image}
-                              alt={service.shortDescription}
+                              alt={service.alt}
                               width={1000} height={1000}
                             />
                           </div>
-                          {/* <span>{service.shortDescription}</span> */}
-                          <div className="chips">
-                        {service.chips.map((chip, chipIndex) => (
-                          <div key={chipIndex} className="chip">
-                            <p>{chipIndex > 0 ? `, ${chip.name}` : chip.name}</p>
-                          </div>
-                        ))}
-                      </div>
+                          <span>{service.shortDescription}</span>
                           <div className="learn_btn">
-                            <Link href={`/services/${service.link}`}>Explore {service.title}</Link>
+                            <Link href={`/services/${service.link}`}>{service.button_text}</Link>
                           </div>
                         </div>
                       </Tab.Pane>
@@ -126,18 +119,11 @@ const ServicesSection = ({ isHome }) => {
                   <Accordion.Body>
                     <div className="content_box">
                       <div className="image_wrap">
-                        <Image src={service.image} alt={service.shortDescription} width={1000} height={1000} />
+                        <Image src={service.image} alt={service.alt} width={1000} height={1000} />
                       </div>
-                      <div className="chips">
-                        {service.chips.map((chip, chipIndex) => (
-                          <div key={chipIndex} className="chip">
-                            <p>{chipIndex > 0 ? `, ${chip.name}` : chip.name}</p>
-                          </div>
-                        ))}
-                      </div>
-                      {/* <span>{service.shortDescription}</span> */}
+                      <span>{service.shortDescription}</span>
                       <div className="learn_btn">
-                        <Link href={`/services/${service.link}`}>Explore {service.title}</Link>
+                        <Link href={`/services/${service.link}`}>{service.button_text}</Link>
                       </div>
                     </div>
                   </Accordion.Body>

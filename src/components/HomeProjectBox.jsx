@@ -6,8 +6,8 @@ const HomeProjectBox = () => {
 	return (
 		<>
 			<div className="project_text fadeInUp">
-				<ContentBox title="Browse our projects for a glimpse into our past work." />
-				<PrimaryBtn name="View more" arrow="no" link="/projects" />
+				<ContentBox title="Explore Our Portfolio of Success Stories" />
+				<PrimaryBtn name="View All Projects" arrow="no" link="/projects" />
 			</div>
 		</>
 	)

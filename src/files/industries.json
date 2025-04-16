@@ -5,6 +5,7 @@
     "description": "Revolutionizing patient care with innovative digital solutions for telehealth, remote monitoring, data analytics, and EHR integration.",
     "image": "/images/industries/Healthcare-Small.webp",
     "fullImage": "/images/industries/Healthcare-Full.webp",
+    "alt": "Comsci digital solutions for the Healthcare industry",
     "link": "healthcare",
     "keywords": [
       "healthcare",
@@ -83,6 +84,7 @@
     "description": "Building the decentralized future with blockchain technology, specializing in smart contracts, dApps, and decentralized infrastructure.",
     "image": "/images/industries/Web3-Small.webp",
     "fullImage": "/images/industries/Web3-Full.webp",
+    "alt": "Comsci Web3 and Blockchain development services",
     "link": "web3",
     "keywords": [
       "Web3",
@@ -167,6 +169,7 @@
     "description": "Revolutionizing the real estate market with blockchain technology, tokenization, and fractional ownership.",
     "image": "/images/industries/RealEstate-Small.webp",
     "fullImage": "/images/industries/RealEstate-Full.webp",
+    "alt": "Comsci tech solutions for Real Estate",
     "link": "real-estate",
     "keywords": [
       "real estate",

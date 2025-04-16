@@ -47,7 +47,7 @@ const TestiMonialsSlider = () => {
           {testimonialsData.map((testimonial, index) => (
             <div className="testimg-text" key={index}>
               <div className="textimgbox">
-                <Image src={Testimonialimg} alt="Test" quality={100} />
+                <Image src={testimonial.image} alt="Test" quality={100} width={100} height={100} />
               </div>
               <div className="contentbox">
                 <h4>{testimonial.quote}</h4>

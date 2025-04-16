@@ -7,10 +7,13 @@ import ServiceProcess from "@/components/layout/ServiceProcess";
 import ProjectSection from "@/components/ProjectSection";
 import Breadcrumb from '@/components/Breadcrumb';
 import { useRouter } from 'next/router';
+import IndustriesPage from "@/components/IndustriesPage";
 
 import baseMetaData from '../../files/meta.json'; 
 
-import breadcrumbData from '../../files/breadcrumbs.json'; 
+import breadcrumbData from '../../files/breadcrumbs.json';
+
+import industriesData from '../../files/industries.json';
 
 import { organizationSchema, websiteSchema, BASE_URL } from '../../lib/commonSchema'; 
 
@@ -31,7 +34,7 @@ export async function getStaticProps({ params }) {
     return { notFound: true };
   }
   
-  return { props: { service } };
+  return { props: { service, industriesData } };
 }
 
 const ServiceDetail = ({ service }) => {
@@ -48,7 +51,7 @@ const ServiceDetail = ({ service }) => {
 
     const parentBreadcrumbs = breadcrumbData[parentPath];
 
-    if (parentBreadcrumbs && service?.title && router.asPath) {
+    if (parentBreadcrumbs && service?.metatitle && router.asPath) {
       const itemsCopy = JSON.parse(JSON.stringify(parentBreadcrumbs));
       const currentServiceItem = {
         label: service.title, 
@@ -60,25 +63,25 @@ const ServiceDetail = ({ service }) => {
     } else {
       setBreadcrumbItems(breadcrumbData['/'] || []);
     }
-  }, [router.pathname, router.asPath, service?.title]); 
+  }, [router.pathname, router.asPath, service?.metatitle]); 
 
   const fullImageUrl = service.image ? (service.image.startsWith('http') ? service.image : `${BASE_URL}${service.image}`) : `${BASE_URL}/images/social-share-og/Facebook.webp`; 
   const customMeta = {
-    title: `${service.title} | Comsci Services`,
+    title: `${service.metatitle}`,
     description: service.shortDescription,
     keywords: service.chips?.map(chip => chip.name) || [], 
     og: {
-      title: `${service.title} | Comsci Services`,
-      description: service.shortDescription,
+      title: `${service.title}`,
+      description: service.metatitle,
       image: fullImageUrl,
-      imageAlt: `Comsci's ${service.title} Service`,
+      imageAlt: `${service.metatitle}`,
     },
     twitter: {
       
-      title: `${service.title} | Comsci Services`,
-      description: service.shortDescription,
+      title: `${service.title}`,
+      description: service.metatitle,
       image: fullImageUrl, 
-      imageAlt: `Comsci's ${service.title} Service`,
+      imageAlt: `${service.metatitle}`,
     },
   };
 
@@ -140,7 +143,7 @@ const ServiceDetail = ({ service }) => {
             "@type": "ListItem",
             "position": index + 1,
              
-             "name": item.name || item.label || service.title,
+             "name": item.name || item.label || service.subtitle,
              "item": item.href.startsWith('/') ? `${BASE_URL}${item.href}` : item.href 
         }))
       };
@@ -153,49 +156,53 @@ const ServiceDetail = ({ service }) => {
       ...(breadcrumbSchema ? [breadcrumbSchema] : [])
   ];
   
-  const renderContent = (content) => {
-    if (!Array.isArray(content)) return null; 
+const renderContent = (content) => {
+      if (!Array.isArray(content)) return null;
 
-    return content.map((item, index) => {
-        if (!item || !item.tag) return null; 
+      return content.map((item, index) => {
+         if (!item || !item.tag) return null;
 
-        switch (item.tag) {
-            case 'ul':
-            case 'ol':
-                 if (!Array.isArray(item.content)) return null;
-                 const listItems = item.content.map((listItem, listIndex) => {
-                    if (!listItem || typeof listItem.content !== 'string') return null;
-                    return <li key={listIndex} dangerouslySetInnerHTML={{ __html: listItem.content }}></li>
-                 }).filter(Boolean); 
-                 return React.createElement(item.tag, { key: index }, listItems);
-            case 'img':
-                 
-                 const width = item.width || 768; 
-                 const height = item.height || 432; 
-                 const altText = typeof item.content === 'string' ? item.content : `Service Image ${index + 1}`;
-                 return item.image ? (
-                    <div className="image" key={index} style={{ position: 'relative', width: '100%', maxWidth: `${width}px`, height: 'auto', margin: '20px 0' }}>
-                      <Image src={item.image} alt={altText} width={width} height={height} style={{ width: '100%', height: 'auto' }} quality={90} priority={index < 2} /> {/* Set priority for early images */}
-                    </div>
+         switch(item.tag) {
+             case 'ul':
+             case 'ol':
+                  if (!Array.isArray(item.content)) return null;
+                  const listItems = item.content.map((listItem, listIndex) => {
+                      if (!listItem || typeof listItem.content !== 'string') return null;
+                      return <li key={listIndex} dangerouslySetInnerHTML={{ __html: listItem.content }}></li>;
+                  }).filter(Boolean);
+                  return React.createElement(item.tag, { key: index }, listItems);
+             case 'img':
+                  const width = item.width || 1000; 
+                  const height = item.height || 600; 
+                  const altText = typeof item.content === 'string' ? item.content : `Blog content image ${index + 1}`;
+                  return item.image ? ( 
+                     <div className="image" key={index} style={{ margin: '20px 0', maxWidth: `${width}px`}}>
+                        <Image src={item.image} alt={altText} quality={90} width={width} height={height} style={{ width: '100%', height: 'auto'}} />
+                     </div>
                   ) : null;
-             case 'iframe': 
-                 return item.src ? (
-                     <div className="video-embed" key={index} style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', background: '#000', margin: '20px 0' }}>
-                        <iframe
-                           src={item.src}
-                           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                           frameBorder="0"
-                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                           allowFullScreen
-                           title={`Embedded Content ${index + 1}`}>
-                        </iframe>
-                    </div>
-                  ) : null;
-            default: 
-                return (typeof item.content === 'string') ? React.createElement(item.tag, { key: index, dangerouslySetInnerHTML: { __html: item.content } }) : null;
-        }
-    }).filter(Boolean); 
-  };
+              case 'iframe':
+                  return item.src ? (
+                      <div className="video-embed" key={index} style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '800px', margin: '20px auto' }}>
+                           <iframe loading="lazy" src={item.src} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title={`Embedded Content ${index + 1}`}></iframe>
+                      </div>
+                   ) : null;
+               case 'a': 
+                    if (item.src && item.src.includes('youtube.com/embed')) {
+                        
+                         return (
+                           <div className="video-embed" key={index} style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '800px', margin: '20px auto' }}>
+                              <iframe loading="lazy" src={item.src} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title={`Embedded Video ${index + 1}`}></iframe>
+                           </div>
+                        );
+                    }
+                    
+                    return (item.content && item.href) ? <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">{item.content}</a> : null;
+
+              default: 
+                   return (typeof item.content === 'string') ? React.createElement(item.tag, { key: index, dangerouslySetInnerHTML: { __html: item.content } }) : null;
+          }
+       }).filter(Boolean);
+     };
 
   return (
     <>
@@ -220,14 +227,13 @@ const ServiceDetail = ({ service }) => {
                 <div className="row">
                   <div className="col-lg-8">
                     <div className="caption_box">
-                      <h1>{service.title}</h1> {/* Use h1 for the main title */}
+                      <h1 className=".service_title">{service.subtitle}</h1> {/* Use h1 for the main title */}
                       {renderContent(service.content)}
                     </div>
                   </div>
                   <div className="col-lg-3 offset-lg-1">
                     <div className="box_wrap">
-                      <span>Process</span>
-                       {/* Check if chips exist and is array */}
+                      <span>Work</span>
                        {Array.isArray(service.chips) && service.chips.length > 0 && (
                            <ul>
                                {service.chips.map((chip, index) => (
@@ -250,9 +256,10 @@ const ServiceDetail = ({ service }) => {
               />
            )}
           <ProjectSection />
+          <IndustriesPage industries={industriesData} />
+
         </>
       )}
-      {/* Add a loading state or fallback if service data isn't ready, though getStaticProps handles this mostly */}
       {!service && <p>Loading service details...</p>}
     </>
   );

@@ -112,8 +112,6 @@ export default function Industries({ industriesData }) {
       </Head>
       <Breadcrumb items={breadcrumbItems} />
       <IndustriesPage industries={industriesData} />
-      <ServicesSection />
-      <Technologies />
     </>
   );
 }

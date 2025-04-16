@@ -94,22 +94,22 @@ const Awards = () => {
         <div className="container">
           <div className="award_section">
             <div className="image">
-              <Image src={Award} alt="award" ref={awardElBig} quality={100} />
+              <Image src={Award} alt="Abstract representation of excellence in UX design - Comsci award focus, Comsci design award trophy elements montage" ref={awardElBig} quality={100} />
             </div>
             <div className="first_img">
-              <Image src={Award1} alt="award" ref={awardEl1} quality={100} />
+              <Image src={Award1} alt="Abstract representation of excellence in UX design - Comsci award focus, Comsci design award trophy elements montage" ref={awardEl1} quality={100} />
             </div>
             <div className="second_img">
-              <Image src={Award2} alt="award" ref={awardEl2} quality={100}/>
+              <Image src={Award2} alt="Abstract representation of excellence in UX design - Comsci award focus, Comsci design award trophy elements montage" ref={awardEl2} quality={100}/>
             </div>
             <div className="third_img">
-              <Image src={Award3} alt="award" ref={awardEl3} quality={100}/>
+              <Image src={Award3} alt="Abstract representation of excellence in UX design - Comsci award focus, Comsci design award trophy elements montage" ref={awardEl3} quality={100}/>
             </div>
             <div className="fourth_img">
-              <Image src={Award4} alt="award" ref={awardEl4} quality={100}/>
+              <Image src={Award4} alt="Abstract representation of excellence in UX design - Comsci award focus, Comsci design award trophy elements montage" ref={awardEl4} quality={100}/>
             </div>
             <div className="award_text">
-              <h2>Excellence in User Experience</h2>
+              <h2>Recognized Excellence in Design & User Experience</h2>
             </div>
           </div>
         </div>

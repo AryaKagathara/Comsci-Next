@@ -47,7 +47,7 @@ const Header = () => {
 		<>
 			<div className="new_project_btn_wrapper"> {/* Added a wrapper */}
 				<div className="new_projectbtn">
-					<Link target="_blank" href={contactData.contact_form}>New Project?</Link>
+					<Link target="_blank" href={contactData.calendly}>New Project?</Link>
 				</div>
 			</div>
 			<header className={`header ${scrolling ? "scrolling" : ""}`}>
@@ -55,14 +55,14 @@ const Header = () => {
 					<div className="container">
 						<div className="main_header">
 							<div className="header_logo">
-								<Link href="/"><Image src={Logo} alt="Logo" quality={100} /></Link>
+								<Link href="/"><Image src={Logo} alt="Comsci Technologies Logo - Design & Development Agency" quality={100} /></Link>
 							</div>
 							<div className={`menu-toggler ${menuBtn ? 'active' : ' '}`} onClick={menuHandler}>
 								<div className="menu-toggler-icon"></div>
 							</div>
 							<div className={`navigation_bar ${menuBtn ? 'slide' : ' '}`}>
 								<div className="mobile_header_logo">
-									<Link href="/"><Image src={Logo} alt="Logo" quality={100} /></Link>
+									<Link href="/"><Image src={Logo} alt="Comsci Technologies Logo - Design & Development Agency" quality={100}/></Link>
 								</div>
 								<div className="navigation_wrap">
 									<div className="nav-bar">

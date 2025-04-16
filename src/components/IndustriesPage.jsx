@@ -26,7 +26,7 @@ const IndustriesPage = () => {
 		<>
 			<div className="industries">
 				<div className="indus_wrap">
-					<div className="title">Industries</div>
+					<div className="title">Industries We Serve</div>
 					<div className="indus_section">
 						{industries.map((industry) => (
 							<Link href={`/industries/${industry.link}`} className="industries_imgtext">

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-
 const ProjectListSection = ({ project }) => {
     return (
         <Link href={`/projects/${project.link}`} className="project_wrap">

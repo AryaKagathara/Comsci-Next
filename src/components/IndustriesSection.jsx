@@ -51,7 +51,7 @@ const IndustriesSection = () => {
     return (
         <div className="industries">
             <div className="indus_wrap">
-                <div className="title">Industries</div>
+                <div className="title">Industries We Serve</div>
                 <div className="indus_section">
                     {industries.map((industry) => (
                         <Link key={industry.id} href={`/industries/${industry.link}`} className="industries_imgtext">
@@ -70,14 +70,14 @@ const IndustriesSection = () => {
                                     <h5>{industry.title}</h5>
                                     <p><span>{industry.description}</span></p>
                                     <div className="btn_box">
-                                        <strong>Learn more about {industry.title}</strong>
+                                        <strong>Learn more about {industry.title} Solutions</strong>
                                     </div>
                                 </div>
                             </div>
                         </Link>
                     ))}
                     <div className="btn_wrap_block">
-                        <PrimaryBtn name="See all" arrow="no" link="/industries" />
+                        <PrimaryBtn name="View All Industries" arrow="no" link="/industries" />
                     </div>
                 </div>
             </div>

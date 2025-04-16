@@ -80,10 +80,10 @@ export default function Home() {
       <AwardType />
       <RendomLogo />
       <TestiMonialsSlider />
+      <TestimonialsSection />
       <StrategySection />
       <Technologies />
       <ProjectSection />
-      <TestimonialsSection />
       <IndustriesSection />
       <Faqsection />
       <BlogSection />

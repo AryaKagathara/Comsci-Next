@@ -7,6 +7,8 @@ import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import Awards from "@/components/Awards";
 import RendomLogo from "@/components/RendomLogo";
 import Breadcrumb from '@/components/Breadcrumb';
+import Letter from '@/components/layout/Letter';
+import Banner from "@/components/layout/Banner";
 
 import baseMetaData from '../files/meta.json';
 
@@ -20,10 +22,10 @@ export default function About() {
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
   const customMeta = {
-    "title": "About Us - Comsci: Your Trusted Design & Development Partner",
-    "description": "Learn about Comsci's mission, values, and team of expert designers and developers. Discover how we help businesses evolve.",
+    "title": "About Comsci | Our Story, Mission & Values - Global Design & Development Agency",
+    "description": "Discover Comsci Technologies, your expert design & development partner, serving global clients. Learn about our mission, values, founder's vision, and commitment to delivering innovative web, app & branding solutions for businesses in Europe & the USA.",
     "keywords": [
-      "about comsci", "company history", "team", "mission", "values", "design agency", "development company"
+      "about comsci", "design agency india", "global web development partner", "creative branding agency", "software development mission", "ux ui design values", "tech company story", "Arya Kagathara founder", "design agency Europe clients", "web design agency USA focus"
     ],
 
   };
@@ -97,8 +99,9 @@ export default function About() {
         />
       </Head>
       <Breadcrumb items={breadcrumbItems} />
+      <Banner/>
       <AboutSection />
-      <Awards />
+      <Letter />
       <RendomLogo />
       <ResultSection />
       <TestimonialsSection />

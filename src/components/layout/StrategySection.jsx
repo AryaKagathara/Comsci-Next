@@ -46,7 +46,7 @@ const StrategySection = () => {
 						<div className="row">
 							<div className="col-lg-5">
 								<div className="text_section fadeInUp">
-									<h3>All things considered from strategy to code</h3>
+									<h3>Our Proven Process: From Strategy to High-Performance Code</h3>
 								</div>
 							</div>
 							<div className="col-lg-6 offset-lg-1">
@@ -54,7 +54,7 @@ const StrategySection = () => {
 									<div className="step_box">
 										<div className="image_content">
 											<div className="img_box">
-												<Image src={StrategyImg1} alt="image" quality={100}/>
+												<Image src={StrategyImg1} alt="Comsci digital strategy planning icon" quality={100}/>
 											</div>
 											<div className="content_box">
 												<span>Strategy</span>
@@ -63,37 +63,37 @@ const StrategySection = () => {
 										</div>
 										<div className="image_content">
 											<div className="img_box">
-												<Image src={StrategyImg2} alt="image" quality={100}/>
+												<Image src={StrategyImg2} alt="Comsci creative UX/UI design icon" quality={100}/>
 											</div>
 											<div className="content_box">
-												<span>Creative</span>
+												<span>Creative Design</span>
 												<p>Our creative team develops a website design that conveys clients unique value proposition and drives results by creating an intuitive and engaging user experience, ensuring every aspect of the design meets their business objectives.</p>
 											</div>
 										</div>
 										<div className="image_content">
 											<div className="img_box">
-												<Image src={StrategyImg3} alt="image" quality={100}/>
+												<Image src={StrategyImg3} alt="Comsci agile development process icon" quality={100}/>
 											</div>
 											<div className="content_box">
-												<span>Implementation</span>
+												<span>Development & Implementation</span>
 												<p>Our developers bring the design to life, ensuring the website is fully functional, responsive, and optimised for search engines, conducting thorough testing to meet high-quality requirements.</p>
 											</div>
 										</div>
 										<div className="image_content">
 											<div className="img_box">
-												<Image src={StrategyImg4} alt="image" quality={100}/>
+												<Image src={StrategyImg4} alt="Comsci QA testing symbol" quality={100}/>
 											</div>
 											<div className="content_box">
-												<span>Test</span>
+												<span>Quality Assurance Testing</span>
 												<p>Quality assurance is paramount to us. Our dedicated testing team rigorously examines every aspect of your project to identify and address any potential issues. Through thorough testing and debugging, we ensure that the final product meets the highest standards.</p>
 											</div>
 										</div>
 										<div className="image_content">
 											<div className="img_box">
-												<Image src={StrategyImg5} alt="image" quality={100}/>
+												<Image src={StrategyImg5} alt="Comsci project delivery checklist icon" quality={100}/>
 											</div>
 											<div className="content_box">
-												<span>Delivery</span>
+												<span>Launch & Delivery</span>
 												<p>In the final phase, we work closely with clients to ensure satisfaction and provide training and support for website management. We strive to establish long-term relationships to help clients achieve their business objectives, monitoring website performance and providing ongoing optimization for continued results.</p>
 											</div>
 										</div>

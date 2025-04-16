@@ -3,6 +3,7 @@
         "id": 1,
         "title": "NuAI Artificial Intelligence Health App",
         "description": "Nuverse Health Solutions or NuAI has been formed to place intuitive preventive healthcare in the hands of the end user. Nuverse envisions the discovery of new processes, drugs, diagnostics and devices for efficient healthcare delivery. Using Artifical Intelloigence technology integrated inside mobile application can deliver critical health parameters in hand without any medical device.",
+        "alt": "NuAI AI Healthcare App user interface design by Comsci",
         "image": "/images/projects/NuAI-0.webp",
         "images": [
             "/images/projects/NuAI-1.webp",
@@ -22,6 +23,7 @@
         "id": 2,
         "title": "Mipo South America FinTech Platform",
         "description": "MIPO is your trusted partner in financial empowerment. We specialize in turning unpaid invoices into immediate cash flow for small businesses. With seamless and friendly factoring solutions, MIPO accelerates your path to financial freedom, ensuring your business thrives today, not tomorrow.",
+        "alt": "Mipo Fintech Platform dashboard design for invoice factoring - Comsci",
         "image": "/images/projects/Mipo-1.webp",
         "images": [
             "/images/projects/Mipo-1.webp",
@@ -42,6 +44,7 @@
         "id": 3,
         "title": "EatCoast Restaurant Management & Food Delivery Platform",
         "description": "EatCoast is a comprehensive restaurant management and food delivery platform that streamlines operations, enhances customer experience, and boosts revenue. From online ordering and delivery tracking to inventory management and analytics, EatCoast offers a complete solution for restaurants to thrive in the digital age.",
+        "alt": "EatCoast food delivery app and restaurant management platform UI - Comsci",
         "image": "/images/projects/EatCoast-0.webp",
         "images": [
             "/images/projects/EatCoast-1.webp",
@@ -59,9 +62,10 @@
         "link": "eatcoast-food-delivery"
     },
     {
-        "id": 5,
+        "id": 4,
         "title": "Medical Escape Milan Skin Care Clinic",
         "description": "Choosing our clinic means relying on a team of highly qualified professionals, led by the renowned prof. Dario bertossi",
+        "alt": "Medical Escape Milan skincare clinic website design - Comsci",
         "image": "/images/projects/Medical-Escape-1.webp",
         "images": [
             "/images/projects/Medical-Escape-1.webp",
@@ -75,7 +79,7 @@
         "link": "medical-escape-milan"
     },
     {
-        "id": 6,
+        "id": 5,
         "title": "BLKResumes USA Recruitment Platform",
         "description": "BLKResumes is a dynamic and inclusive hiring and job search platform designed for professionals seeking career opportunities, with a focus on connecting black and brown talent in various industries.",
         "image": "/images/projects/BLKResumes-1.webp",
@@ -93,7 +97,7 @@
         "link": "blkresumes-recruitment"
     },
     {
-        "id": 7,
+        "id": 6,
         "title": "W3Dart Bug Reporting SaaS Tool",
         "description": "W3Dart is a powerful visual feedback and bug reporting tool designed for developers and designers. Streamline collaboration with annotated screenshots, video screen capture, and seamless task management.",
         "image": "/images/projects/W3Dart-1.webp",
@@ -109,7 +113,7 @@
         "link": "w3dart-bug-reporting-saas"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "Roberto Bolle Foundation Italy",
         "description": "Developed a sleek and engaging website for the Roberto Bolle Foundation, showcasing its mission to promote dance and cultural initiatives worldwide. The site features a seamless user experience, elegant design, and intuitive navigation to highlight the foundation’s impactful work.",
         "image": "/images/projects/Roberto-Bolle-1.webp",

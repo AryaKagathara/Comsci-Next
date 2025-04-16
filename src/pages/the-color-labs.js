@@ -4,6 +4,8 @@ import metaData from '../files/meta.json';
 import colorBubbles from "@/../public/images/extras/color-bubble.webp";
 import Head from "next/head";
 
+const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+
 export default function BrandColorQuiz() {
     
     const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -15,8 +17,6 @@ export default function BrandColorQuiz() {
     const [score, setScore] = useState(1);
     const [streak, setStreak] = useState(0);
     const [highScore, setHighScore] = useState(0);
-
-    const GEMINI_API_KEY = 'AIzaSyCb6yV9m7Boi42U1BPBxXIohWOrlkhpWFE';
 
     // Function to determine difficulty level based on score
     const getDifficultyLevel = (score) => {

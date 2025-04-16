@@ -5,9 +5,9 @@ const HomeBlogBox = () => {
 	return (
 		<>
 			<div className="blog_text fadeInUp">
-				<ContentBox title="Current news & exciting Insights from COMSCI." />
+				<ContentBox title="Latest Insights from Comsci's Design & Development Experts" />
 				<div className='fadeInUp learn_btn_3'>
-                          <Link href="/blogs">Explore Our Blogs</Link>
+                          <Link href="/blogs">Explore Our Blog</Link>
                 </div>
 			</div>
 		</>

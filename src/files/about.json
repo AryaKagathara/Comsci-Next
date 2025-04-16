@@ -1,18 +1,18 @@
 {
     "title": "Our Mission",
-    "missionStatement": "Unleashing the potential of the digital realm, our agency is dedicated to pioneering transformation through inventive solutions.",
+    "missionStatement": "Pioneering Transformation Through Inventive Digital Solutions",
     "steps": [
       {
         "number": "01.",
-        "text": "We are dedicated to providing exceptional results for our clients. Mediocrity is not an option; we uphold a commitment to excellence, mitigating risks and ensuring shared responsibility. Our strategic imperative is to cultivate and retain expertise in-house."
+        "text": "Commitment to Excellence: Mediocrity isn't in our playbook. As your dedicated design and development partner, we deliver exceptional quality, uphold rigorous standards, and cultivate top-tier expertise in-house to ensure your project's success, mitigating risks every step of the way."
       },
       {
         "number": "02.",
-        "text": "Our belief in the power of personal relationships fuels the success of each project. With a personalized approach, every team member is actively involved beyond development, ensuring a collaborative and customer-centric focus."
+        "text": "Collaborative Partnership: We believe strong, personal relationships fuel outstanding results. Every Comsci team member is invested beyond the code, fostering a truly collaborative and customer-centric focus throughout the creative and development process."
       },
       {
         "number": "03.",
-        "text": "The driving force behind our team is the impact we aim to make. Rooted in purpose, our work is not just about what we do but why we do it. Our agency consistently aligns its efforts with a clear understanding of the impact our solutions will have."
+        "text": "Purpose-Driven Innovation: What drives us? The impact we create. From sophisticated software solutions to intuitive UX/UI design, our work is rooted in understanding *why* it matters – delivering solutions strategically aligned with your business objectives."
       }
     ]
   }
