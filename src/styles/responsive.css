@@ -660,4 +660,7 @@ h1.home_banner { font-size: 34px; padding: 0 20px;}
 p.home_banner { display: block; font-size: 14px; padding: 0 20px;}
 .process_section .caption_box h1 { font-size: 34px; }
 
+.faq_section .accordion .accordion-item .accordion-button { line-height: 26px;}
+.faq_section .accordion .accordion-item .accordion-body { font-size: 18px; line-height: 26px;}
+
 }

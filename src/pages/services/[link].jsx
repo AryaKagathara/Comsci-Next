@@ -8,6 +8,7 @@ import ProjectSection from "@/components/ProjectSection";
 import Breadcrumb from '@/components/Breadcrumb';
 import { useRouter } from 'next/router';
 import IndustriesPage from "@/components/IndustriesPage";
+import Faqsection from "@/components/layout/Faqsection";
 
 import baseMetaData from '../../files/meta.json'; 
 
@@ -227,7 +228,7 @@ const renderContent = (content) => {
                 <div className="row">
                   <div className="col-lg-8">
                     <div className="caption_box">
-                      <h1 className=".service_title">{service.subtitle}</h1> {/* Use h1 for the main title */}
+                      <h1 className=".service_title">{service.subtitle}</h1>
                       {renderContent(service.content)}
                     </div>
                   </div>
@@ -247,7 +248,6 @@ const renderContent = (content) => {
               </div>
             </div>
           </div>
-          {/* Pass strategy data only if it exists */}
           {service.strategy && (
               <ServiceProcess
                   strategyTitle={service.strategy.strategyTitle}
@@ -256,6 +256,12 @@ const renderContent = (content) => {
               />
            )}
           <ProjectSection />
+           {service.faqs && service.faqs.length > 0 && (
+              <Faqsection
+                 faqs={service.faqs} 
+                 title={`${service.title} FAQs`} 
+              />
+           )}
           <IndustriesPage industries={industriesData} />
 
         </>

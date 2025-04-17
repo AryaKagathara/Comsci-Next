@@ -1,25 +1,40 @@
 import ContentBox from "@/components/layout/ContentBox";
 import Accordion from 'react-bootstrap/Accordion';
-import faqsData from '../../files/faqs.json'; // Import the JSON data
+// Remove the import of the general faqs.json unless needed as a fallback somewhere else
+// import faqsData from '../../files/faqs.json';
 
+// Accept props: faqs, title, text
+const Faqsection = ({ faqs, title = "Frequently Asked Questions (FAQs)", text = "" }) => {
 
-const Faqsection = () => {
-    const faqs = faqsData;
+    // Ensure faqs is an array before mapping
+    const faqList = Array.isArray(faqs) ? faqs : [];
+
+	// Don't render the component if there are no FAQs
+	if (faqList.length === 0) {
+		return null;
+	}
 
 	return (
 		<>
+			{/* Keep the outer structure if needed for styling */}
 			<div className="faq">
 				<div className="container">
 					<div className="faq_section">
-						<div className="text_box fadeInUp">
-							<ContentBox title="Frequently Asked Questions (FAQs)" text="Find answers to common questions about our design, development, branding, and SEO services. Contact us if you don't see your question here." />
-						</div>
+						{/* Conditionally render the text box only if title or text is provided */}
+						{(title || text) && (
+							<div className="text_box fadeInUp">
+								<ContentBox title={title} text={text} />
+							</div>
+						)}
 						<Accordion defaultActiveKey="0">
-							{faqs.map((faq, index) => (
-								<Accordion.Item eventKey={index} key={index}>
+							{/* Map over the passed 'faqs' prop */}
+							{faqList.map((faq, index) => (
+								// Ensure eventKey is a string for React Bootstrap
+								<Accordion.Item eventKey={index.toString()} key={index}>
 									<Accordion.Header>{faq.question}</Accordion.Header>
 									<Accordion.Body>
-										{faq.answer} 
+										{/* You might want to sanitize or allow specific HTML if needed */}
+										{faq.answer}
 									</Accordion.Body>
 								</Accordion.Item>
 							))}

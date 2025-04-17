@@ -9,7 +9,7 @@ const ServiceProcess = ({ strategyTitle, strategyDescription, steps }) => {
                         <div className="col-lg-5">
                             <div className="text_section fadeInUp">
                                 <h3>{strategyTitle}</h3> {/* Dynamic title */}
-                                <p class="my-3">{strategyDescription}</p> {/* Dynamic description */}
+                                <p class="my-3 text-white">{strategyDescription}</p> {/* Dynamic description */}
                             </div>
                         </div>
                         <div className="col-lg-6 offset-lg-1">
