@@ -1,0 +1,44 @@
+[
+    {
+      "quote": "I can’t believe that something is so well done.",
+      "name": "Samhita B",
+      "image": "/images/testinomials/Samhita.webp",
+      "title": "Founder & CEO, Multia",
+          "scrollSpeed": ".2" 
+    },
+    {
+      "quote": "It was great pleasure working on the project. Happy to work on future projects. Highly recommending.",
+      "name": "Martin B",
+      "image": "/images/testinomials/Martin.webp",
+      "title": "Founder & CEO, Mipo",
+          "scrollSpeed": ".4"
+    },
+    {
+      "quote": "The quality of the work has been great.",
+      "name": "Joaquin M",
+      "image": "/images/testinomials/Joaquin.webp",
+      "title": "Technical Director, Coslett",
+          "scrollSpeed": ".4"
+    },
+    {
+      "quote": "Yes am happy. It worth to paid up to date for the hard work.",
+      "name": "Josh B",
+      "image": "/images/testinomials/Josh.webp",
+      "title": "CEO, GDF",
+          "scrollSpeed": ".4"
+    },
+    {
+      "quote": "You guys are truly understanding the pain points which I care about alot.",
+      "name": "Quentin D",
+      "image": "/images/testinomials/Quentin.webp",
+      "title": "Owner, BLKResumes",
+          "scrollSpeed": ".4"
+    },
+    {
+      "quote": "From the first day till the end. It was a perfect execution by the team on the website.",
+      "name": "Steffano S",
+      "image": "/images/testinomials/Stefano.webp",
+      "title": "Owner, Scozzese Agency",
+          "scrollSpeed": ".4"
+    }
+  ]

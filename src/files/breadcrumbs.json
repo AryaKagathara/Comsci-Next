@@ -1,0 +1,53 @@
+{
+    "/": [
+      { "name": "Home", "href": "/" }
+    ],
+    "/services": [
+      { "name": "Home", "href": "/" },
+      { "name": "Services", "href": "/services" }
+    ],
+    "/about": [
+      { "name": "Home", "href": "/" },
+      { "name": "About Us", "href": "/about" }
+    ],
+    "/projects": [
+      { "name": "Home", "href": "/" },
+      { "name": "Projects", "href": "/projects" }
+    ],
+    "/industries": [
+        { "name": "Home", "href": "/" },
+        { "name": "Industries", "href": "/industries" }
+    ],
+    "/contact": [
+      { "name": "Home", "href": "/" },
+      { "name": "Contact Us", "href": "/contact" }
+    ],
+    "/approach": [
+      { "name": "Home", "href": "/" },
+      { "name": "Approach", "href": "/approach" }
+    ],
+    "/faqs": [
+      { "name": "Home", "href": "/" },
+      { "name": "FAQs", "href": "/faqs" }
+    ],
+    "/jobposition": [
+      { "name": "Home", "href": "/" },
+      { "name": "Job Position", "href": "/jobposition" }
+    ],
+    "/privacy": [
+      { "name": "Home", "href": "/" },
+      { "name": "Privacy Policy", "href": "/privacy" }
+    ],
+    "/freebies": [
+      { "name": "Home", "href": "/" },
+      { "name": "Freebies", "href": "/freebies" }
+    ],
+    "/blogs": [
+      { "name": "Home", "href": "/" },
+      { "name": "Blogs", "href": "/blogs" }
+    ],
+    "/blog": [
+      { "name": "Home", "href": "/" },
+      { "name": "Blogs", "href": "/blogs" }
+    ]
+  }

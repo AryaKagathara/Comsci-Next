@@ -1,0 +1,14 @@
+[
+  { "name": "PHP development logo", "image": "/images/technologies/php.svg" },
+  { "name": "Python programming language logo", "image": "/images/technologies/python.svg" },
+  { "name": "JavaScript logo", "image": "/images/technologies/javascript.svg" },
+  { "name": "Android app development platform", "image": "/images/technologies/android.svg" },
+  { "name": "iOS app development platform", "image": "/images/technologies/iphone.svg" },
+  { "name": "Figma design tool logo", "image": "/images/technologies/figma.svg" },
+  { "name": "WooCommerce eCommerce platform logo", "image": "/images/technologies/woo.svg" },
+  { "name": "WordPress CMS logo", "image": "/images/technologies/wordpress.svg" },
+  { "name": "Adobe Photoshop logo", "image": "/images/technologies/photoshop.svg" },
+  { "name": "Adobe Illustrator logo", "image": "/images/technologies/ai.svg" },
+  { "name": "Shopify eCommerce platform logo", "image": "/images/technologies/shopify.svg" },
+  { "name": "Laravel PHP framework logo", "image": "/images/technologies/laravel.svg" }
+]

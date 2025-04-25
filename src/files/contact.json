@@ -1,0 +1,33 @@
+{
+  "website": "www.comsci.tech",
+  "contact_form": "https://app.formbricks.com/s/clutpyviv0bfdekwq1il46zje",
+  "email": "hello@comsci.tech",
+  "phone": "+91 96873 79447",
+  "location": "https://maps.app.goo.gl/xhA6c4h8o6aBssnn8",
+  "address": "Rajkot, Gujarat, India-360005",
+  "full_address": "Comsci Technologies LLP, 401 ASMAKAM FLATS, SHAKTINAGAR MAIN ROAD STREET NO. 2, NEAR PANCHAYAT CHOWK, UNIVERSITY ROAD, Rajkot, Gujarat, India-360005",
+  "social_media": [
+    {
+      "name": "Facebook",
+      "link": "https://www.facebook.com/people/Comsci/61557725482494/"
+    },
+    {
+      "name": "Behance",
+      "link": "https://www.behance.net/comsci-technologies"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/company/comsci-technologies"
+    },
+    {
+      "name": "Youtube",
+      "link": "https://www.youtube.com/@comsci-technologies"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://x.com/comsci_tech"
+    }
+  ],
+  "download_book_form": "https://app.formbricks.com/s/cm971er3t0ozors01boy6sfal",
+  "calendly": "https://calendly.com/aryakagathara"
+}

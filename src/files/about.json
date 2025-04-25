@@ -1,0 +1,18 @@
+{
+    "title": "Our Mission",
+    "missionStatement": "Pioneering Transformation Through Innovative Digital Solutions",
+    "steps": [
+      {
+        "number": "01.",
+        "text": "Commitment to Excellence: We don’t settle for mediocrity. As your dedicated partner in design and development, we’re all about delivering top-notch quality. We maintain high standards and nurture exceptional talent in-house to ensure your project thrives, minimizing risks at every turn."
+      },
+      {
+        "number": "02.",
+        "text": "Collaborative Partnership: We know that strong, personal relationships lead to amazing results. Every member of the Comsci team is deeply invested in more than just the code; we prioritize a truly collaborative and customer-focused approach throughout the creative and development journey."
+      },
+      {
+        "number": "03.",
+        "text": "Purpose-Driven Innovation: What fuels our passion? The impact we make. From advanced software solutions to user-friendly UX/UI design, our work is grounded in understanding why it matters – providing solutions that are strategically aligned with your business goals."
+      }
+    ]
+  }

@@ -1,0 +1,25 @@
+{
+    "title": "Comsci: Premier Design & Development Agency | Global Web, App & Branding Solutions",
+    "description": "Partner with Comsci, your expert design & development agency for innovative web design, custom software, mobile apps, branding & SEO. Elevate your business with tailored solutions for global clients in Europe & USA.",
+    "keywords": [
+      "design and development agency", "web design agency", "custom software development", "mobile app development company", "branding agency", "ux ui design services", "seo services", "digital agency solutions", "shopify development", "wordpress development", "website redesign agency", "global tech partner", "design agency usa", "design agency europe"
+    ],
+    "og": {
+      "type": "website",
+      "url": "https://comsci.tech",
+      "title": "Comsci - Leading Design & Development Company",
+      "description": "Unlock unparalleled design and development solutions for your business.",
+      "image": "https://comsci.tech/images/social-share-og/Facebook.webp",
+      "imageAlt": "Comsci Logo" 
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://comsci.tech",
+      "title": "Comsci - Leading Design & Development Company",
+      "description": "Unlock unparalleled design and development solutions for your business.",
+      "image": "https://comsci.tech/images/social-share-og/Twitter.webp",
+      "imageAlt": "Comsci Logo"
+    },
+    "robots": "index, follow",
+    "author": "Comsci"
+}

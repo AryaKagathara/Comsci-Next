@@ -1,0 +1,20 @@
+[
+	{ "id": 1, "src": "/images/clients/client-logo-1.svg", "alt": "FearlessMind" },
+	{ "id": 2, "src": "/images/clients/client-logo-2.svg", "alt": "ImmunoRx" },
+	{ "id": 3, "src": "/images/clients/client-logo-3.svg", "alt": "St. Luke's HealthApp" },
+	{ "id": 4, "src": "/images/clients/client-logo-4.svg", "alt": "Medical Escape Milan" },
+	{ "id": 5, "src": "/images/clients/client-logo-5.svg", "alt": "Inversion" },
+	{ "id": 6, "src": "/images/clients/client-logo-6.svg", "alt": "Mipo" },
+	{ "id": 7, "src": "/images/clients/client-logo-7.svg", "alt": "Black Resumes" },
+	{ "id": 8, "src": "/images/clients/client-logo-8.svg", "alt": "W3Nuts" },
+	{ "id": 9, "src": "/images/clients/client-logo-9.svg", "alt": "W3Dart" },
+	{ "id": 10, "src": "/images/clients/client-logo-10.svg", "alt": "Coslett Chemicals" },
+	{ "id": 11, "src": "/images/clients/client-logo-11.svg", "alt": "CA" },
+	{ "id": 12, "src": "/images/clients/client-logo-12.svg", "alt": "Black Lusion" },
+	{ "id": 13, "src": "/images/clients/client-logo-13.svg", "alt": "Multia" },
+	{ "id": 14, "src": "/images/clients/client-logo-14.svg", "alt": "Nuverse NuAI Health Solutions" },
+	{ "id": 15, "src": "/images/clients/client-logo-15.svg", "alt": "Scozzese" },
+	{ "id": 16, "src": "/images/clients/client-logo-16.svg", "alt": "DTC Canada" },
+	{ "id": 17, "src": "/images/clients/client-logo-17.svg", "alt": "Capmax Canada" },
+	{ "id": 18, "src": "/images/clients/client-logo-18.svg", "alt": "Tomorrow's Health" }
+]

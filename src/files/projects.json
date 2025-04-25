@@ -1,0 +1,730 @@
+[
+    {
+        "id": 1,
+        "title": "NuAI Artificial Intelligence Health App",
+        "description": "Nuverse Health Solutions or NuAI has been formed to place intuitive preventive healthcare in the hands of the end user. Nuverse envisions the discovery of new processes, drugs, diagnostics and devices for efficient healthcare delivery. Using Artifical Intelloigence technology integrated inside mobile application can deliver critical health parameters in hand without any medical device.",
+        "alt": "NuAI AI Healthcare App user interface design by Comsci",
+        "image": "/images/projects/NuAI-0.webp",
+        "images": [
+            "/images/projects/NuAI-1.webp",
+            "/images/projects/NuAI-2.webp",
+            "/images/projects/NuAI-3.webp",
+            "/images/projects/NuAI-4.webp",
+            "/images/projects/NuAI-5.webp",
+            "/images/projects/NuAI-6.webp",
+            "/images/projects/NuAI-7.webp",
+            "/images/projects/NuAI-8.webp",
+            "/images/projects/NuAI-9.webp",
+            "/images/projects/NuAI-10.webp"
+        ],
+        "link": "nuai-artificial-intelligence-health-app",
+        "external-link": "https://www.nuverse.in",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "iOS",
+            "Android",
+            "Swift 5",
+            "Android Kotlin",
+            "Laravel PHP",
+            "SQL Database",
+            "Deep Learning",
+            "Machine Learning"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Development",
+            "Mobile App Development",
+            "Artificial Intelligence"
+        ],
+        "industry": [
+            "Healthcare"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "We developed NuAI, a groundbreaking artificial intelligence health app, specifically to address the global need for enhanced remote patient care and accessible vital sign monitoring, particularly highlighted during the COVID-19 pandemic."
+            },
+            {
+                "tag": "p",
+                "content": "NuAI represents a significant leap in mobile health technology, allowing users (hospital staff, medical professionals, or patients) to obtain essential health metrics like heart rate, respiration rate, blood pressure, and more, via a simple 60-second facial scan using their smartphone camera."
+            },
+            {
+                "tag": "p",
+                "content": "Our technical expertise in deep learning and machine learning is central to NuAI's functionality. These models accurately process real-time biometric data extracted from the facial scan to generate comprehensive and reliable health reports."
+            },
+            {
+                "tag": "p",
+                "content": "The development of this intelligent health monitoring solution involved implementing cutting-edge mobile and backend technologies: Swift 5 for seamless iOS experiences, Android Kotlin for robust Android performance, the Laravel PHP framework for scalable backend services, and secure SQL database management. NuAI demonstrates our capability to build complex, data-driven applications that transform mobile devices into powerful tools for contactless vital sign tracking and remote healthcare management."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Mipo South America FinTech Platform",
+        "description": "MIPO is your trusted partner in financial empowerment. We specialize in turning unpaid invoices into immediate cash flow for small businesses. With seamless and friendly factoring solutions, MIPO accelerates your path to financial freedom, ensuring your business thrives today, not tomorrow.",
+        "alt": "Mipo Fintech Platform dashboard design for invoice factoring - Comsci",
+        "image": "/images/projects/Mipo-1.webp",
+        "images": [
+            "/images/projects/Mipo-1.webp",
+            "/images/projects/Mipo-2.webp",
+            "/images/projects/Mipo-3.webp",
+            "/images/projects/Mipo-4.webp",
+            "/images/projects/Mipo-5.webp",
+            "/images/projects/Mipo-6.webp",
+            "/images/projects/Mipo-7.webp",
+            "/images/projects/Mipo-8.webp",
+            "/images/projects/Mipo-9.webp",
+            "/images/projects/Mipo-10.webp",
+            "/images/projects/Mipo-11.webp"
+        ],
+        "link": "mipo-fintech-platform",
+        "external-link": "https://www.mipo.com.py",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Laravel PHP",
+            "SQL Database",
+            "REST API",
+            "Payment Gateway Integration",
+            "Web Security",
+            "Data Encryption"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design",
+            "Web Development"
+        ],
+        "industry": [
+            "Fintech"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "MIPO stands as a testament to our capability in FinTech platform development. We engineered this solution as an innovative online marketplace specializing in invoice factoring, specifically tailored to address the cash flow needs of small businesses in South America."
+            },
+            {
+                "tag": "p",
+                "content": "The core innovation of MIPO lies in its competitive bidding system. Sellers with outstanding invoices list these assets on the platform. Qualified financial institutions and investors act as buyers, reviewing the invoices and submitting bids based on their desired yield and risk assessment. The seller retains the power to accept the most advantageous offer, thereby optimizing the cash advance received."
+            },
+            {
+                "tag": "p",
+                "content": "This secure and transparent marketplace, developed using the robust Laravel PHP framework for the backend, coupled with dynamic HTML, CSS, and JavaScript for the user interface, and a reliable SQL database for data management, streamlines the entire factoring process. From rapid user verification and intuitive invoice uploading to efficient fund transfer and professional collections management handled by the platform, MIPO facilitates financial transactions and empowers users on both sides of the marketplace. MIPO represents advanced FinTech enabling accessible and efficient receivables financing."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "EatCoast Restaurant Management & Food Delivery Platform",
+        "description": "EatCoast is a comprehensive restaurant management and food delivery platform that streamlines operations, enhances customer experience, and boosts revenue. From online ordering and delivery tracking to inventory management and analytics, EatCoast offers a complete solution for restaurants to thrive in the digital age.",
+        "alt": "EatCoast food delivery app and restaurant management platform UI - Comsci",
+        "image": "/images/projects/EatCoast-0.webp",
+        "images": [
+            "/images/projects/EatCoast-1.webp",
+            "/images/projects/EatCoast-2.webp",
+            "/images/projects/EatCoast-3.webp",
+            "/images/projects/EatCoast-4.webp",
+            "/images/projects/EatCoast-5.webp",
+            "/images/projects/EatCoast-6.webp",
+            "/images/projects/EatCoast-7.webp",
+            "/images/projects/EatCoast-8.webp",
+            "/images/projects/EatCoast-9.webp",
+            "/images/projects/EatCoast-10.webp",
+            "/images/projects/EatCoast-0.webp"
+        ],
+        "link": "eatcoast-food-delivery",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Laravel PHP",
+            "SQL Database",
+            "REST API",
+            "Payment Gateway Integration",
+            "SEO"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design",
+            "Web Development",
+            "Search Engine Optimization (SEO)"
+        ],
+        "industry": [
+            "Luxery & Hospitality"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "We developed EatCoast, a dynamic web platform designed to revolutionize the food ordering experience for both diners and restaurants. As a comprehensive restaurant management and food delivery solution, EatCoast streamlines online ordering and boosts operational efficiency."
+            },
+            {
+                "tag": "p",
+                "content": "Customers effortlessly browse local restaurants and menus, placing orders directly through a user-friendly interface. For restaurant owners, EatCoast provides intuitive tools to manage menus, track orders, handle customer data, and monitor deliveries in real-time, all within an integrated admin system."
+            },
+            {
+                "tag": "p",
+                "content": "Designed first in Figma with a dedicated Design System for a flawless user experience, then built with robust Laravel backend technology and a secure SQL database, EatCoast bridges the gap between culinary delights and digital convenience. This platform showcases our expertise in creating dual-sided marketplaces that enhance online food ordering and restaurant operations, benefiting everyone involved."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Medical Escape Milan Skin Care Clinic",
+        "description": "Choosing our clinic means relying on a team of highly qualified professionals, led by the renowned prof. Dario bertossi",
+        "alt": "Medical Escape Milan skincare clinic website design - Comsci",
+        "image": "/images/projects/Medical-Escape-1.webp",
+        "images": [
+            "/images/projects/Medical-Escape-1.webp",
+            "/images/projects/Medical-Escape-2.webp",
+            "/images/projects/Medical-Escape-3.webp",
+            "/images/projects/Medical-Escape-4.webp",
+            "/images/projects/Medical-Escape-5.webp",
+            "/images/projects/Medical-Escape-6.webp",
+            "/images/projects/Medical-Escape-7.webp"
+        ],
+        "link": "medical-escape-milan",
+        "external-link": "https://medicalescape.it/en/",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "PHP",
+            "SQL Database",
+            "Advanced Custom Fields (ACF)",
+            "SEO"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development",
+            "Search Engine Optimization (SEO)"
+        ],
+        "industry": [
+            "Healthcare"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "We developed the online presence for Medical Escape, a distinguished skin care and aesthetic clinic located in the heart of Milan, Italy, known for its blend of cutting-edge technology and focus on natural results. This project centered around creating a sophisticated and highly functional website that reflects the clinic's luxurious environment, unparalleled expertise under the guidance of renowned Prof. Dario Bertossi and Philippe Magistretti, and deep commitment to patient privacy. The goal was to build a digital platform that not only showcases their advanced treatments for face, body, and skin but also provides visitors with essential information and facilitates consultation requests, serving their international clientele seeking premium medical and cosmetic care."
+            },
+            {
+                "tag": "p",
+                "content": "The website was meticulously designed to convey the clinic's philosophy as a private oasis, blending professional medical context with avant-garde design and guaranteeing a seamless, confidential experience online, mirroring the physical clinic's architecture. Key aspects communicated through the site include highlighting their expert team, the comprehensive range of aesthetic and anti-ageing treatments available (including state-of-the-art devices mentioned on the site), and emphasizing their priority of achieving beautiful, natural-looking outcomes for clients. This online reflection of their brand required careful integration of visual elements and informative content to build trust and attract the ideal patient seeking high-level aesthetic services in Milan."
+            },
+            {
+                "tag": "p",
+                "content": "From a technical perspective, the project involved a detailed design process starting with Figma and a robust Design System to ensure a cohesive and user-friendly interface. Development was executed on the powerful and flexible WordPress platform, utilizing HTML, CSS, and JavaScript for a dynamic frontend, and extensive use of Advanced Custom Fields (ACF). ACF was key in providing Medical Escape's team with easy management of diverse content like treatments, technologies, and team profiles, enabling them to maintain their online presence effectively. This project showcases our ability to build high-end, customized WordPress websites for specialized medical and aesthetic clinics, integrating design excellence with technical precision and flexible content management."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "BLKResumes USA Recruitment Platform",
+        "description": "BLKResumes is a dynamic and inclusive hiring and job search platform designed for professionals seeking career opportunities, with a focus on connecting black and brown talent in various industries.",
+        "image": "/images/projects/BLKResumes-1.webp",
+        "images": [
+            "/images/projects/BLKResumes-1.webp",
+            "/images/projects/BLKResumes-2.webp",
+            "/images/projects/BLKResumes-3.webp",
+            "/images/projects/BLKResumes-4.webp",
+            "/images/projects/BLKResumes-5.webp",
+            "/images/projects/BLKResumes-6.webp",
+            "/images/projects/BLKResumes-7.webp",
+            "/images/projects/BLKResumes-8.webp",
+            "/images/projects/BLKResumes-9.webp"
+        ],
+        "link": "blkresumes-recruitment",
+        "external-link": "https://blkresumes.com",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "PHP",
+            "SQL Database",
+            "Advanced Custom Fields (ACF)",
+            "Stripe API",
+            "REST API",
+            "Payment Gateway Integration",
+            "SEO"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development",
+            "Search Engine Optimization (SEO)"
+        ],
+        "industry": [
+            "Education",
+            "Recruitment"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "We developed BLKResumes, a dynamic web-based hiring and job search platform specifically designed to connect professionals with career opportunities across various industries, with a powerful focus on empowering and showcasing Black and Brown talent. Our goal was to create an inclusive digital space that streamlines the recruitment process for employers while providing robust tools for candidates to find, apply for, and grow in their careers. The platform fosters a community where everyone can search, apply, and thrive together."
+            },
+            {
+                "tag": "p",
+                "content": "This comprehensive platform offers a seamless experience for both recruiters and job seekers. Recruiters gain access to a simplified solution for job posting and advanced candidate matching capabilities, facilitating efficient talent acquisition. Job seekers benefit from intuitive search functionalities, easy application processes, and access to valuable resources like ideas, events, and articles within the BLKResumes ecosystem, all designed to support their professional journey."
+            },
+            {
+                "tag": "p",
+                "content": "The technical execution of BLKResumes leveraged a robust stack to ensure performance and scalability. The project involved detailed UI/UX design using Figma, frontend development with HTML5, CSS3, and JavaScript, and backend architecture built on WordPress and PHP. A secure SQL Database powers the platform, and critical features like secure user accounts, job listings, and recruiter dashboards were implemented. Furthermore, we integrated Stripe for subscription payment processing and implemented REST APIs and other payment gateway integrations to handle transactions securely. Comprehensive SEO was built into the platform to ensure high visibility."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "W3Dart Bug Reporting SaaS Tool",
+        "description": "W3Dart is a powerful visual feedback and bug reporting tool designed for developers and designers. Streamline collaboration with annotated screenshots, video screen capture, and seamless task management.",
+        "image": "/images/projects/W3Dart-1.webp",
+        "images": [
+            "/images/projects/W3Dart-1.webp",
+            "/images/projects/W3Dart-2.webp",
+            "/images/projects/W3Dart-3.webp",
+            "/images/projects/W3Dart-4.webp",
+            "/images/projects/W3Dart-5.webp",
+            "/images/projects/W3Dart-6.webp",
+            "/images/projects/W3Dart-7.webp"
+        ],
+        "link": "w3dart-bug-reporting-saas",
+        "external-link": "https://w3dart.com/",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Laravel PHP",
+            "SQL Database",
+            "REST API",
+            "Payment Gateway Integration",
+            "Web Security",
+            "iOS",
+            "Android",
+            "Swift 5",
+            "Android Kotlin",
+            "Chrome Extension",
+            "Mobile App Development",
+            "Web App",
+            "WebRTC",
+            "WebSocket"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development",
+            "Search Engine Optimization (SEO)",
+            "Mobile App Development"
+        ],
+        "industry": [
+            "Technology",
+            "Software"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "We developed W3dart Web App & Mobile App Tool, a powerful SaaS visual feedback and bug reporting tool designed to significantly accelerate workflows and eliminate common project delays for development teams, design agencies, e-learning platforms, and other web-focused businesses. Addressing the frustration and inefficiency of tracking issues and collecting client feedback through disparate tools like emails and scattered screenshots, W3dart provides a centralized, intuitive platform. Its core value lies in transforming messy communication into clear, actionable insights, dramatically improving collaboration and speeding up project completion while enhancing client satisfaction."
+            },
+            {
+                "tag": "p",
+                "content": "W3dart achieves this through innovative visual feedback features. Key functionalities we implemented include annotated screenshot capabilities and, uniquely, seamless video screen capture with voiceover. This allows users to precisely highlight issues, describe problems verbally in context, and automatically captures essential technical details like browser, OS, and screen size. The platform simplifies User Acceptance Testing (UAT), enhances customer feedback collection, and provides visual task management. Our goal was to build a universal accessibility tool that integrates seamlessly into web-based workflows, usable across different browsers and devices, all while ensuring flexible privacy controls."
+            },
+            {
+                "tag": "p",
+                "content": "The technical foundation for W3dart showcases our expertise in building robust SaaS applications. We architected the web platform using the powerful Laravel PHP framework for the backend and a secure SQL Database for data management. The interactive frontend was built using HTML5, CSS3, and JavaScript. Critical to the visual capture functionality was the development of a custom Chrome Extension. Real-time capabilities, likely for aspects of the visual capture or collaboration, were integrated using WebRTC and WebSockets. The platform also features REST API integrations, Payment Gateway Integration for the SaaS model, and strong Web Security measures. We applied comprehensive SEO strategies during development to maximize the platform's reach."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Roberto Bolle Foundation Italy",
+        "description": "Developed a sleek and engaging website for the Roberto Bolle Foundation, showcasing its mission to promote dance and cultural initiatives worldwide. The site features a seamless user experience, elegant design, and intuitive navigation to highlight the foundation’s impactful work.",
+        "image": "/images/projects/Roberto-Bolle-1.webp",
+        "images": [
+            "/images/projects/Roberto-Bolle-1.webp",
+            "/images/projects/Roberto-Bolle-2.webp",
+            "/images/projects/Roberto-Bolle-3.webp",
+            "/images/projects/Roberto-Bolle-4.webp",
+            "/images/projects/Roberto-Bolle-5.webp",
+            "/images/projects/Roberto-Bolle-6.webp",
+            "/images/projects/Roberto-Bolle-7.webp",
+            "/images/projects/Roberto-Bolle-8.webp",
+            "/images/projects/Roberto-Bolle-9.webp"
+        ],
+        "link": "roberto-bolle-foundation",
+        "external-link": "https://fondazionerobertobolle.org",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "PHP",
+            "SQL Database",
+            "Advanced Custom Fields (ACF)",
+            "SEO"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development",
+            "Search Engine Optimization (SEO)"
+        ],
+        "industry": [
+            "Entertainment & Events"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "Our project focused on designing and developing the authoritative website for the Roberto Bolle Foundation Italy, the organization founded by the internationally acclaimed étoile Roberto Bolle. The Foundation is dedicated to fostering the art of dance and spreading its positive influence, especially for young dancers. The website needed to function as a central digital hub, elegantly showcasing the Foundation's significant work, cultural projects, events, and initiatives while providing easy navigation and comprehensive information for an international audience interested in supporting or learning about dance in Italy."
+            },
+            {
+                "tag": "p",
+                "content": "The development process prioritized creating a high-quality online experience that matched the Foundation's reputation. We implemented a sleek, elegant design and intuitive navigation structure, ensuring a seamless journey for users browsing on any device. Key functionalities developed include dedicated sections for exploring detailed information about ongoing projects, archived events, the Foundation's history, and easy access to contact information. This user-centric approach, refined through stages using Figma and Photoshop, ensures that visitors can efficiently find and engage with the content that matters most, highlighting the Foundation's impact and vision for dance promotion."
+            },
+            {
+                "tag": "p",
+                "content": "From a technical perspective, the Roberto Bolle Foundation website is built upon a flexible WordPress CMS powered by PHP and a robust SQL Database. We implemented modern HTML5, CSS3, and JavaScript for the responsive frontend, ensuring optimal performance and visual integrity. Extensive use of Advanced Custom Fields (ACF) was central to empowering the client to manage diverse content types easily and without technical expertise. Beyond core development, our work included integrating necessary site functionality and applying thorough SEO strategies from the outset to ensure the platform ranks effectively and connects the Foundation with individuals searching for information related to dance foundations, cultural initiatives in Italy, and Roberto Bolle's projects."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Recre Marketing Agency Website",
+        "description": "Crafted a sleek and engaging website for Recre8, a video marketing agency that brings brands to life through compelling visuals. The design captures their creativity, innovation, and storytelling expertise.",
+        "image": "/images/projects/Recre-0.webp",
+        "images": [
+            "/images/projects/Recre-1.webp",
+            "/images/projects/Recre-2.webp",
+            "/images/projects/Recre-3.webp",
+            "/images/projects/Recre-4.webp",
+            "/images/projects/Recre-5.webp",
+            "/images/projects/Recre-6.webp",
+            "/images/projects/Recre-7.webp"
+        ],
+        "link": "recre-marketing-agency",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "PHP",
+            "SQL Database",
+            "Advanced Custom Fields (ACF)",
+            "SEO"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development",
+            "Search Engine Optimization (SEO)"
+        ],
+        "industry": [
+            "Marketing & Advertising"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "This project involved crafting a dynamic and visually compelling website for Recre8, a leading video marketing agency. Known for their ability to bring brands to life through powerful visual storytelling, the website needed to reflect their own creative energy and expertise in the marketing and advertising industry."
+            },
+            {
+                "tag": "p",
+                "content": "The core objective was to design a digital presence that was not only sleek and engaging (focusing on UX/UI principles) but also authentically captured Recre8's unique brand identity. We focused on creating an intuitive navigation and a seamless user experience, making it easy for visitors to explore their portfolio and services. The visual design emphasized their innovation and storytelling prowess through strategic use of imagery and layout, aligning with the initial logo and branding considerations."
+            },
+            {
+                "tag": "p",
+                "content": "Leveraging the flexibility of WordPress, the site was developed with robust back-end functionality using PHP and SQL. Advanced Custom Fields (ACF) were integrated to provide Recre8 with easy control over their content, especially their diverse project portfolio. Beyond development, the project also included initial Search Engine Optimization (SEO) setup to enhance visibility and reach their target audience effectively."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Black Lusion Web3 Games Marketplace",
+        "description": "Crafted a sleek and engaging website for Recre8, a video marketing agency that brings brands to life through compelling visuals. The design captures their creativity, innovation, and storytelling expertise.",
+        "image": "/images/projects/Black-Lusion-1.webp",
+        "images": [
+            "/images/projects/Black-Lusion-1.webp",
+            "/images/projects/Black-Lusion-2.webp",
+            "/images/projects/Black-Lusion-3.webp",
+            "/images/projects/Black-Lusion-4.webp",
+            "/images/projects/Black-Lusion-5.webp"
+        ],
+        "link": "web3-games-marketplace",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "NodeJS",
+            "ExpressJS",
+            "MongoDB",
+            "REST API",
+            "Payment Gateway Integration",
+            "Web Security",
+            "Web3.js",
+            "Solidity",
+            "Ethereum",
+            "Smart Contracts",
+            "Blockchain Development",
+            "NFTs",
+            "Cryptocurrency Integration",
+            "WebRTC",
+            "WebSocket"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development",
+            "Search Engine Optimization (SEO)"
+        ],
+        "industry": [
+            "Web3"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "Developed the Black Lusion Web3 Games Marketplace, a pioneering platform tailored for the rapidly evolving Web3 industry. The project encompassed the full spectrum from initial Logo & Branding and comprehensive UX/UI Design to robust Web Design & Development, specifically creating a centralized hub for discovering and interacting with Web3 game assets like NFTs."
+            },
+            {
+                "tag": "p",
+                "content": "Focusing heavily on UX/UI principles (using Figma and Photoshop for design), the platform was crafted to offer a seamless and engaging experience for both avid gamers and Web3 enthusiasts. The interface prioritizes intuitive navigation and visually appealing presentation of games and digital assets (NFTs), crucial for an effective marketplace, and laid the groundwork for Search Engine Optimization (SEO)."
+            },
+            {
+                "tag": "p",
+                "content": "On the technical side, the marketplace is powered by a robust backend built with NodeJS, ExpressJS, and MongoDB, accessed via a REST API. A significant component involved integrating complex Web3 elements: developing and deploying Smart Contracts on the Ethereum blockchain using Solidity, interacting with the blockchain via Web3.js, handling NFT management, and implementing seamless Cryptocurrency Integration for transactions. Features like Payment Gateway integration, WebRTC, and WebSocket added layers for transactions and potential real-time features, all underpinned by a strong focus on Web Security."
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Carlton West Canada Real Estate Website",
+        "description": "Carlton West offers premium condo-style living next to Westboro, combining modern design with top-tier amenities. Experience the perfect blend of comfort, convenience, and vibrant city life in Ottawa.",
+        "image": "/images/projects/Carlton-West-0.webp",
+        "images": [
+            "/images/projects/Carlton-West-1.webp",
+            "/images/projects/Carlton-West-2.webp",
+            "/images/projects/Carlton-West-3.webp",
+            "/images/projects/Carlton-West-4.webp",
+            "/images/projects/Carlton-West-5.webp",
+            "/images/projects/Carlton-West-6.webp",
+            "/images/projects/Carlton-West-7.webp",
+            "/images/projects/Carlton-West-8.webp",
+            "/images/projects/Carlton-West-9.webp"
+        ],
+        "link": "carlton-west-canada-real-estate",
+        "external-link": "https://carltonwest.ca/",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "PHP",
+            "SQL Database",
+            "Advanced Custom Fields (ACF)",
+            "SEO"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development",
+            "Search Engine Optimization (SEO)"
+        ],
+        "industry": [
+            "Real Estate"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "Our project focused on designing and developing the authoritative website for the Roberto Bolle Foundation Italy, the organization founded by the internationally acclaimed étoile Roberto Bolle. The Foundation is dedicated to fostering the art of dance and spreading its positive influence, especially for young dancers. The website needed to function as a central digital hub, elegantly showcasing the Foundation's significant work, cultural projects, events, and initiatives while providing easy navigation and comprehensive information for an international audience interested in supporting or learning about dance in Italy."
+            },
+            {
+                "tag": "p",
+                "content": "The development process prioritized creating a high-quality online experience that matched the Foundation's reputation. We implemented a sleek, elegant design and intuitive navigation structure, ensuring a seamless journey for users browsing on any device. Key functionalities developed include dedicated sections for exploring detailed information about ongoing projects, archived events, the Foundation's history, and easy access to contact information. This user-centric approach, refined through stages using Figma and Photoshop, ensures that visitors can efficiently find and engage with the content that matters most, highlighting the Foundation's impact and vision for dance promotion."
+            },
+            {
+                "tag": "p",
+                "content": "From a technical perspective, the Roberto Bolle Foundation website is built upon a flexible WordPress CMS powered by PHP and a robust SQL Database. We implemented modern HTML5, CSS3, and JavaScript for the responsive frontend, ensuring optimal performance and visual integrity. Extensive use of Advanced Custom Fields (ACF) was central to empowering the client to manage diverse content types easily and without technical expertise. Beyond core development, our work included integrating necessary site functionality and applying thorough SEO strategies from the outset to ensure the platform ranks effectively and connects the Foundation with individuals searching for information related to dance foundations, cultural initiatives in Italy, and Roberto Bolle's projects."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "DA Studio Interior Designer Branding",
+        "description": "We crafted a sophisticated brand identity for DA Studio, an interior design firm that transforms spaces with elegance and innovation. The branding reflects their vision of timeless aesthetics and functional design.",
+        "image": "/images/projects/DA-Studio-0.webp",
+        "images": [
+            "/images/projects/DA-Studio-1.webp",
+            "/images/projects/DA-Studio-2.webp",
+            "/images/projects/DA-Studio-3.webp",
+            "/images/projects/DA-Studio-4.webp",
+            "/images/projects/DA-Studio-5.webp",
+            "/images/projects/DA-Studio-6.webp",
+            "/images/projects/DA-Studio-7.webp",
+            "/images/projects/DA-Studio-8.webp"
+        ],
+        "link": "interior-designer-branding",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "PHP",
+            "SQL Database",
+            "Advanced Custom Fields (ACF)",
+            "SEO"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development",
+            "Search Engine Optimization (SEO)"
+        ],
+        "industry": [
+            "Entertainment & Events"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "For DA Studio, an interior design firm renowned for transforming spaces with elegance and innovation, we undertook a comprehensive project to craft their sophisticated brand identity and build a complementary website. The goal was to create a cohesive digital presence that truly embodied their vision of timeless aesthetics and functional design, establishing a distinguished online representation in the interior design industry."
+            },
+            {
+                "tag": "p",
+                "content": "Applying principles of UX/UI Design, the website was carefully structured using design tools like Figma and Photoshop to create a seamless and visually engaging user experience. The elegant design prioritizes showcasing DA Studio's exceptional portfolio, allowing potential clients to easily explore their completed projects. Intuitive navigation and thoughtful presentation highlight their expertise and aesthetic, essential for an interior design studio looking to attract new business online."
+            },
+            {
+                "tag": "p",
+                "content": "The website was technically built on the robust WordPress CMS, leveraging PHP and a SQL Database for flexible content management. Modern frontend technologies (HTML5, CSS3, JavaScript) ensure the site is responsive and performs optimally across all devices. Key to this project was the implementation of Advanced Custom Fields (ACF), empowering DA Studio with a user-friendly way to update their project portfolio and site content without technical expertise. Furthermore, Search Engine Optimization (SEO) strategies were integrated from the outset to improve online visibility and connect the studio with clients seeking high-quality interior design services."
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Myotonx Body Reset Clinic",
+        "description": "Myotonx® revolutionizes body alignment with Instant Body Reset™, a groundbreaking approach that restores posture and function without stretching or manipulation. Experience a pain-free, self-correcting transformation that makes you functionally younger—guaranteed!",
+        "image": "/images/projects/Myotonx-0.webp",
+        "images": [
+            "/images/projects/Myotonx-1.webp",
+            "/images/projects/Myotonx-2.webp",
+            "/images/projects/Myotonx-3.webp",
+            "/images/projects/Myotonx-4.webp",
+            "/images/projects/Myotonx-5.webp",
+            "/images/projects/Myotonx-6.webp",
+            "/images/projects/Myotonx-7.webp",
+            "/images/projects/Myotonx-8.webp"
+        ],
+        "link": "myotonx-body-pain-clinic",
+        "external-link": "https://myotonx.com/",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "PHP",
+            "SQL Database",
+            "Advanced Custom Fields (ACF)",
+            "SEO"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development",
+            "Search Engine Optimization (SEO)"
+        ],
+        "industry": [
+            "Entertainment & Events"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "Developed the official website for Myotonx Body Reset Clinic, showcasing their revolutionary Myotonx® NeuroMyofascial Integration method and its unique 'Instant Body Reset™' approach. The project aimed to create a clear, informative, and engaging online presence for this Orlando, Florida-based clinic that offers pain-free body alignment and restores posture and function without stretching or manipulation, appealing directly to individuals seeking advanced wellness solutions."
+            },
+            {
+                "tag": "p",
+                "content": "Utilizing comprehensive UX/UI Design principles (initially mapped with Figma and designed in Photoshop), the website was structured for maximum clarity and user engagement. Key sections effectively explain the science behind NeuroMyofascial Integration, highlight the 'Never Stretch Again' guarantee, detail the 'Instant Body Reset™' process, and introduce the clinic's expertise. A strong focus was placed on the user journey, making it easy for visitors to learn about this groundbreaking therapy and readily access calls-to-action like 'Book An Instant Body Reset' or 'Schedule Your Consultation' for the Orlando clinic."
+            },
+            {
+                "tag": "p",
+                "content": "Technically, the website was built on the flexible and scalable WordPress CMS, powered by PHP and a robust SQL Database. Frontend development leveraged HTML5, CSS3, and JavaScript for a responsive design optimized for performance. Advanced Custom Fields (ACF) provided essential flexibility for content management, enabling the clinic to easily update service details, testimonials, or blog posts. Crucially, dedicated Search Engine Optimization (SEO) strategies were implemented to enhance the clinic's visibility for search terms like 'body reset Orlando', 'NeuroMyofascial Integration Florida', 'pain relief clinic Orlando', and alternative body alignment methods, connecting Myotonx with its target audience."
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "RMS Advance GIS Logistic Tool",
+        "description": "Designed and developed a web-based GIS logistics tool that streamlines route planning and quoting by integrating real-time data with Google Maps. This smart system optimizes delivery efficiency, reducing costs and improving decision-making for logistics managers.",
+        "image": "/images/projects/RMS-0.webp",
+        "images": [
+            "/images/projects/RMS-1.webp",
+            "/images/projects/RMS-2.webp",
+            "/images/projects/RMS-3.webp",
+            "/images/projects/RMS-4.webp",
+            "/images/projects/RMS-5.webp",
+            "/images/projects/RMS-6.webp",
+            "/images/projects/RMS-7.webp",
+            "/images/projects/RMS-8.webp"
+        ],
+        "link": "rms-gis-logistic",
+        "technologies": [
+            "Photoshop",
+            "Figma",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "ReactJS",
+            "NodeJS",
+            "Java",
+            "Spring Boot",
+            "SQL Database",
+            "REST API",
+            "Google Maps API",
+            "OpenStreet Maps",
+            "LeafletJS"
+        ],
+        "category": [
+            "Logo & Branding",
+            "UX UI Design",
+            "Web Design & Development"
+        ],
+        "industry": [
+            "Entertainment & Events"
+        ],
+        "content": [
+            {
+                "tag": "p",
+                "content": "This project involved the design and development of the RMS Advance GIS Logistic Tool, a sophisticated web-based application specifically built for a logistics company in Germany. The primary goal was to create an intelligent system to dramatically streamline route planning and quoting processes, directly addressing the challenges logistics managers face in optimizing complex delivery networks and improving overall operational efficiency."
+            },
+            {
+                "tag": "p",
+                "content": "Applying robust UX/UI Design principles alongside technical requirements, the tool allows users to input detailed logistics parameters including truck specifications, goods weight, height, costs, and other vital criteria. Leveraging powerful mapping technologies such as Google Maps API, OpenStreetMap, and LeafletJS, the system calculates the most efficient route based on user-defined constraints (like cost or time). It then automatically generates precise quotes and comprehensive reports, transforming formerly manual tasks into a fast, accurate, and data-driven workflow essential for effective logistics decision-making."
+            },
+            {
+                "tag": "p",
+                "content": "Technically, the application utilizes a modern and scalable architecture. The frontend was built with ReactJS to provide a dynamic and intuitive user interface, planned through Figma and Photoshop. The backend logic, handling complex calculations and data interactions, is powered by Java with Spring Boot and NodeJS, communicating via a REST API and supported by a SQL Database. The deep integration of various mapping libraries was foundational to the tool's GIS capabilities, enabling real-time data processing and advanced route visualization, making it an indispensable asset for logistics operations seeking reduced costs and improved delivery times."
+            }
+        ]
+    }
+]
