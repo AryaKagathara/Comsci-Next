@@ -406,7 +406,7 @@ to { transform: translateX(calc(-100% - 1rem)); }
 .bookpop_section .modal-dialog .modal-content .modal-body .caption p { margin: 0 auto; color: var(--primary-black); text-align: center; font-weight: 700; max-width: 372px; }
 .bookpop_section .modal-dialog .modal-content .modal-body .button_box { display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 24px; position: relative; z-index: 1; }
 .bookpop_section .modal-dialog .modal-content .modal-body .button_box .btn-secondary { background: var(--primary-orange); border: none; border-radius: 50px; padding: 18px 36px; color: var(--primary-white); font-size: 24px; font-weight: 500; }
-.bookpop_section .modal-dialog .modal-content .modal-body .button_box .btn-primary { background: transparent; border: none; padding: 0; color: var(--primary-black); font-size: 16px; font-weight: 700; }
+.bookpop_section .modal-dialog .modal-content .modal-body .button_box .btn-primary { background: transparent; border: none; padding: 10px; color: var(--primary-black); font-size: 16px; font-weight: 700; }
 .guide_popup { background: var(--primary-white); padding: 0 0 20px 0; }
 .guidepop_section .modal-dialog { max-width: 488px; border-radius: 0; }
 .guidepop_section .modal-dialog .modal-content { border: none; position: relative; overflow: hidden; }
@@ -612,3 +612,4 @@ a.general-link { color: var(--primary-orange); font-size: 16px; font-weight: 500
 .tag-item { background-color: #F5F5F5; border-radius: 57px; padding: 8px 16px; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: background-color 0.3s ease; }
 .tag-item:hover { background-color: #EFEFEF; }
 .tag-text { color: #000; font-family: 'Satoshi', sans-serif; font-weight: 500; font-size: 14px; line-height: 1.35; text-align: left; white-space: nowrap; }
+.popup-head {color: var(--primary-orange); text-align: center;}

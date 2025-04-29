@@ -6,6 +6,7 @@ import '@/styles/responsive.css';
 import '@/styles/fonts.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+// import ModalSection from '@/components/layout/ModalSection';
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -43,6 +44,7 @@ export default function App({ Component, pageProps }) {
         <motion.div key={router.pathname}> {/* Corrected motion.dev to motion.div */}
           <main>
             {!is404Page && <Header />}
+            {/* {!is404Page && <ModalSection />} */}
             <Component {...pageProps} />
             {!is404Page && <Footer />}
           </main>
