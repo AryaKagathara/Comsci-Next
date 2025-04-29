@@ -1,35 +1,51 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image";
 import metaData from '../../files/meta.json'; // Assuming path
-import quizQuestionsData from '../../files/other/colorquiz.json'; // <-- Renamed and used as primary source
+import quizQuestionsData from '../../files/other/colorquiz.json'; // Used as primary source
 import colorBubbles from "@/../public/images/extras/color-bubble.webp";
 import Head from "next/head";
 
-// No need for API key anymore
-// const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
-
 export default function BrandColorQuiz() {
 
-    // ... (state variables remain the same) ...
     const [currentQuestion, setCurrentQuestion] = useState(null);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [answerStatus, setAnswerStatus] = useState(null);
     const [shakeButton, setShakeButton] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
-    // No need for previousResponse state as we're picking from a static list
-    // const [previousResponse, setPreviousResponse] = useState(null);
-    const [score, setScore] = useState(1); // Still track score, though difficulty isn't used for selecting JSON Q
+    const [score, setScore] = useState(1);
     const [streak, setStreak] = useState(0);
     const [highScore, setHighScore] = useState(0);
 
-    // Function to determine difficulty level based on score (kept for display or future use, but not used to fetch JSON)
+    // Function to determine difficulty level based on score (not used for JSON Q selection, but kept)
     const getDifficultyLevel = (score) => {
         if (score >= 8) return "hard";
         if (score >= 4 && score <= 7) return "medium";
         return "easy";
     };
 
-    // --- Local Storage Effects (remain the same) ---
+    // Helper function to shuffle an array
+    function shuffleArray(array) {
+        let currentIndex = array.length;
+        let randomIndex;
+
+        // While there remain elements to shuffle.
+        while (currentIndex !== 0) {
+
+            // Pick a remaining element.
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+
+            // And swap it with the current element.
+            [array[currentIndex], array[randomIndex]] = [
+                array[randomIndex], array[currentIndex]
+            ];
+        }
+
+        return array;
+    }
+
+
+    // Local Storage Effects
     useEffect(() => {
         // Only access localStorage on the client-side (after the component mounts)
         if (typeof window !== 'undefined') {
@@ -47,8 +63,8 @@ export default function BrandColorQuiz() {
     }, [streak, highScore]);
 
 
-    // --- Function to Fetch Question from JSON ---
-    async function fetchNewQuestion() { // async is okay, although not strictly needed for sync file read
+    // Function to Fetch Question from JSON
+    async function fetchNewQuestion() {
         setIsLoading(true);
 
         try {
@@ -56,13 +72,16 @@ export default function BrandColorQuiz() {
 
             if (!Array.isArray(quizQuestionsData) || quizQuestionsData.length === 0) {
                 console.error("Local quiz questions data is missing or empty.");
-                // Throw to the catch block
                 throw new Error("No quiz questions available in the local file.");
             }
 
             // Select a random question from the array
             const randomIndex = Math.floor(Math.random() * quizQuestionsData.length);
-            const questionData = quizQuestionsData[randomIndex];
+            // Create a copy of the question data to avoid modifying the original imported array
+            const questionData = JSON.parse(JSON.stringify(quizQuestionsData[randomIndex]));
+
+            // Randomize the order of options
+            shuffleArray(questionData.options);
 
             // Basic Validation for selected JSON structure
             if (
@@ -79,6 +98,7 @@ export default function BrandColorQuiz() {
                  console.error("Selected local quiz question has invalid structure:", questionData);
                  throw new Error("Invalid structure in local quiz question data.");
             }
+
 
             console.log("Successfully loaded question from JSON:", questionData.question);
             setCurrentQuestion(questionData);
@@ -101,12 +121,12 @@ export default function BrandColorQuiz() {
         }
     }
 
-    // --- Meta Tags Logic (remain the same) ---
+    // Meta Tags Logic
       const customMeta = {
         "title": "Color Game - How well do you know the colors - Comsci: Your Trusted Design & Development Partner",
         "description": "Test your knowledge of colors with our fun quiz! Answer questions about color psychology, branding, and marketing. Challenge yourself and learn more about the fascinating world of colors.",
         "keywords": [
-            "color quiz", "color game", "color psychology", "branding quiz", "marketing quiz", "color knowledge", "color trivia", "free online quiz" // Added "free online quiz"
+            "color quiz", "color game", "color psychology", "branding quiz", "marketing quiz", "color knowledge", "color trivia", "free online quiz"
         ],
         "robots": "index, follow",
         "author": "Comsci"
@@ -139,12 +159,12 @@ export default function BrandColorQuiz() {
       };
 
 
-    // --- Initial Fetch Effect (remain the same, just calls the new function) ---
+    // Initial Fetch Effect
     useEffect(() => {
         fetchNewQuestion();
     }, []);
 
-    // --- Answer Handling Logic (remain the same) ---
+    // Answer Handling Logic
     const handleAnswer = (isCorrect, hex) => {
         // Prevent selecting multiple answers while waiting
         if (selectedAnswer !== null) return;
@@ -153,25 +173,25 @@ export default function BrandColorQuiz() {
         setAnswerStatus(isCorrect ? 'correct' : 'wrong');
 
         if (isCorrect) {
-            setScore(prevScore => Math.min(10, prevScore + 1)); // Cap score at 10
+            setScore(prevScore => Math.min(10, prevScore + 1));
             setStreak(prevStreak => prevStreak + 1);
         } else {
-            setScore(prevScore => Math.max(0, prevScore - 1)); // Minimum score 0
+            setScore(prevScore => Math.max(0, prevScore - 1));
             setStreak(0);
             setShakeButton(hex);
         }
 
         // Reset after a short delay and fetch the next question
-        const nextQuestionDelay = isCorrect ? 1500 : 2500; // Slightly longer delays for clarity
+        const nextQuestionDelay = isCorrect ? 1500 : 2500;
         setTimeout(() => {
             setSelectedAnswer(null);
             setAnswerStatus(null);
             setShakeButton(null);
-            fetchNewQuestion(); // Fetch the next question from JSON
+            fetchNewQuestion();
         }, nextQuestionDelay);
     };
 
-    // --- Button Class Name Logic (remain the same, includes disabled state) ---
+    // Button Class Name Logic
     const getButtonClassName = (option) => {
         let className = 'ui_btn';
          if (selectedAnswer !== null) {
@@ -185,7 +205,8 @@ export default function BrandColorQuiz() {
                 className += ' wrong-answer';
             }
         } else if (answerStatus === 'wrong' && option.correct) {
-            className += ' correct-answer'; // Highlight correct answer when user was wrong
+            // Highlight the correct answer if the user was wrong
+            className += ' correct-answer';
         }
 
          if (shakeButton === option.hex) {
@@ -195,7 +216,7 @@ export default function BrandColorQuiz() {
         return className;
     };
 
-    // --- Loading State Render ---
+    // Loading State Render
     if (isLoading) {
         return (
             <div className="quiz-wrapper">
@@ -203,7 +224,7 @@ export default function BrandColorQuiz() {
                     <div className="quiz-content">
                         <div className="d-flex flex-column align-items-center justify-content-center">
                             <Image src={colorBubbles} alt="Color Quiz" width={160} height={130} quality={100} className="quiz-logo" />
-                             <p className="mt-3">Loading Question...</p> {/* Updated text */}
+                             <p className="mt-3">Loading Question...</p>
                             <div className="spinner-border" role="status">
                                 <span className="visually-hidden">Loading...</span>
                             </div>
@@ -214,8 +235,7 @@ export default function BrandColorQuiz() {
         );
     }
 
-    // --- Ultimate Error State Render ---
-    // Check if the question is null or malformed after loading attempts
+    // Ultimate Error State Render
     if (!currentQuestion || !currentQuestion.question || !Array.isArray(currentQuestion.options) || currentQuestion.options.length !== 4) {
         console.error("Failed to load or parse quiz question from local JSON.");
         return (
@@ -223,7 +243,7 @@ export default function BrandColorQuiz() {
                 <div className="quiz-container">
                     <div className="quiz-content">
                         <p>Sorry, we encountered an issue loading the quiz questions from the local data file. Please try refreshing the page.</p>
-                         <button className="ui_btn mt-3" onClick={() => window.location.reload()}>Refresh Page</button> {/* Clearer text */}
+                         <button className="ui_btn mt-3" onClick={() => window.location.reload()}>Refresh Page</button>
                     </div>
                 </div>
             </div>
@@ -231,7 +251,7 @@ export default function BrandColorQuiz() {
     }
 
 
-    // --- Main Quiz Render ---
+    // Main Quiz Render
     return (
         <>
               <Head>
@@ -241,7 +261,6 @@ export default function BrandColorQuiz() {
             <div className="quiz-container">
                 <Image src={colorBubbles} alt="Color Quiz" width={160} height={130} quality={100} className="quiz-logo" />
                 <div className="quiz-content">
-                   {/* Using score as display could still be interesting, even if not controlling JSON difficulty */}
                    <h3 className="quiz-title">
                      SCORE: {score} -  Streak: {streak} | High Score: {highScore}
                   </h3>
@@ -250,7 +269,7 @@ export default function BrandColorQuiz() {
                         <h3 className="quiz-title">SELECT THE CORRECT OPTION</h3>
                         {currentQuestion.options.map((option, index) => (
                             <button
-                                key={index}
+                                key={index} // Using index as key is okay here as array is small and keys stable per render cycle after shuffle
                                 onClick={() => handleAnswer(option.correct, option.hex)}
                                 className={getButtonClassName(option)}
                                 // Disable button click while processing answer/loading next Q
