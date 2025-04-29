@@ -1,0 +1,2324 @@
+[
+  {
+    "question": "Which color is commonly used by banks and financial institutions to evoke trust and stability?",
+    "options": [
+      { "name": "Red", "hex": "#e74c3c", "correct": false },
+      { "name": "Green", "hex": "#2ecc71", "correct": false },
+      { "name": "Blue", "hex": "#3498db", "correct": true },
+      { "name": "Yellow", "hex": "#f1c40f", "correct": false }
+    ]
+  },
+  {
+    "question": "What color is often associated with luxury, creativity, and wisdom?",
+    "options": [
+      { "name": "Orange", "hex": "#e67e22", "correct": false },
+      { "name": "Pink", "hex": "#e84393", "correct": false },
+      { "name": "Purple", "hex": "#9b59b6", "correct": true },
+      { "name": "Brown", "hex": "#a0522d", "correct": false }
+    ]
+  },
+  {
+    "question": "In marketing, which color is known to stimulate appetite and is often used by food brands?",
+    "options": [
+      { "name": "Blue", "hex": "#3498db", "correct": false },
+      { "name": "Green", "hex": "#2ecc71", "correct": false },
+      { "name": "Red", "hex": "#c0392b", "correct": true },
+      { "name": "Gray", "hex": "#bdc3c7", "correct": false }
+    ]
+  },
+   {
+    "question": "Which color is often used to represent nature, health, and tranquility?",
+    "options": [
+      { "name": "Purple", "hex": "#8e44ad", "correct": false },
+      { "name": "Yellow", "hex": "#f39c12", "correct": false },
+      { "name": "Green", "hex": "#27ae60", "correct": true },
+      { "name": "Black", "hex": "#2c3e50", "correct": false }
+    ]
+  },
+   {
+    "question": "What is the complementary color to blue on a standard color wheel?",
+    "options": [
+      { "name": "Red", "hex": "#e74c3c", "correct": false },
+      { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+      { "name": "Orange", "hex": "#f39c12", "correct": true },
+      { "name": "Green", "hex": "#27ae71", "correct": false }
+    ]
+  },
+  {
+      "question": "Which color often evokes feelings of energy, excitement, and urgency in branding?",
+      "options": [
+        { "name": "Blue", "hex": "#2980b9", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": true },
+        { "name": "Purple", "hex": "#9b59b6", "correct": false },
+        { "name": "Grey", "hex": "#7f8c8d", "correct": false }
+      ]
+    },
+    {
+      "question": "What color is commonly associated with caution and is often used in warning signs?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": true },
+        { "name": "Green", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color in branding is often seen as warm, friendly, and youthful?",
+      "options": [
+        { "name": "Grey", "hex": "#bdc3c7", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": false },
+        { "name": "Pink", "hex": "#ffb6c1", "correct": true },
+        { "name": "Dark Blue", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+    {
+      "question": "What color is often used by technology companies to suggest innovation and futuristic concepts?",
+      "options": [
+        { "name": "Brown", "hex": "#a0522d", "correct": false },
+        { "name": "Pastel Yellow", "hex": "#fadd60", "correct": false },
+        { "name": "Silver/Grey tones", "hex": "#95a5a6", "correct": true },
+        { "name": "Burgundy", "hex": "#800020", "correct": false }
+      ]
+    },
+    {
+      "question": "In design, what do tints, tones, and shades refer to?",
+      "options": [
+        { "name": "Different types of lighting", "hex": "#f4a460", "correct": false },
+        { "name": "Variations of a single color", "hex": "#5f9ea0", "correct": true },
+        { "name": "Primary and secondary colors", "hex": "#da70d6", "correct": false },
+        { "name": "Color temperature (warm/cool)", "hex": "#dda0dd", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color combination creates the highest contrast for text readability?",
+      "options": [
+        { "name": "Red on Green", "hex": "#ff4500", "correct": false },
+        { "name": "Blue on Yellow", "hex": "#00bfff", "correct": false },
+        { "name": "Black on White", "hex": "#000000", "correct": true },
+        { "name": "Purple on Orange", "hex": "#9400d3", "correct": false }
+      ]
+    },
+    {
+      "question": "What does it mean when colors are described as 'saturated'?",
+      "options": [
+        { "name": "They are dark and deep", "hex": "#00008b", "correct": false },
+        { "name": "They have high purity and intensity", "hex": "#b22222", "correct": true },
+        { "name": "They are pale and muted", "hex": "#fffafa", "correct": false },
+        { "name": "They are metallic or reflective", "hex": "#c0c0c0", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following colors is a primary color?",
+      "options": [
+        { "name": "Green", "hex": "#228b22", "correct": false },
+        { "name": "Orange", "hex": "#ffa500", "correct": false },
+        { "name": "Blue", "hex": "#0000ff", "correct": true },
+        { "name": "Purple", "hex": "#800080", "correct": false }
+      ]
+    },
+    {
+      "question": "Mixing two primary colors results in what type of color?",
+      "options": [
+        { "name": "Tertiary", "hex": "#a52a2a", "correct": false },
+        { "name": "Primary", "hex": "#dc143c", "correct": false },
+        { "name": "Secondary", "hex": "#32cd32", "correct": true },
+        { "name": "Neutral", "hex": "#808080", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the most common association of the color black in Western cultures?",
+      "options": [
+        { "name": "Joy", "hex": "#ffff00", "correct": false },
+        { "name": "Beginnings", "hex": "#98fb98", "correct": false },
+        { "name": "Sleekness, Formality, Mourning", "hex": "#000000", "correct": true },
+        { "name": "Excitement", "hex": "#ff7f50", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is often associated with spirituality and luxury in many cultures?",
+      "options": [
+        { "name": "Brown", "hex": "#8b4513", "correct": false },
+        { "name": "Grey", "hex": "#a9a9a9", "correct": false },
+        { "name": "Turquoise", "hex": "#40e0d0", "correct": false },
+        { "name": "Purple", "hex": "#8a2be2", "correct": true }
+      ]
+    },
+    {
+      "question": "In color theory, what is 'Hue'?",
+      "options": [
+        { "name": "How light or dark a color is", "hex": "#a0a0a0", "correct": false },
+        { "name": "The purity or intensity of a color", "hex": "#cd5c5c", "correct": false },
+        { "name": "The pure spectrum color (e.g., red, blue)", "hex": "#ff0000", "correct": true },
+        { "name": "Whether a color is warm or cool", "hex": "#ffd700", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color system is additive, meaning colors are created by combining light?",
+      "options": [
+        { "name": "CMYK", "hex": "#4682b4", "correct": false },
+        { "name": "RGB", "hex": "#4169e1", "correct": true },
+        { "name": "Pantone", "hex": "#b8860b", "correct": false },
+        { "name": "HEX", "hex": "#20b2aa", "correct": false }
+      ]
+    },
+    {
+      "question": "What color system is subtractive, meaning colors are created by combining pigments, typically used in printing?",
+      "options": [
+        { "name": "RGB", "hex": "#1e90ff", "correct": false },
+        { "name": "CMYK", "hex": "#00ced1", "correct": true },
+        { "name": "HEX", "hex": "#5f9ea0", "correct": false },
+        { "name": "HSV", "hex": "#afeeee", "correct": false }
+      ]
+    },
+    {
+      "question": "What does a red stop sign convey through its color?",
+      "options": [
+        { "name": "Go", "hex": "#32cd32", "correct": false },
+        { "name": "Caution", "hex": "#ffff00", "correct": false },
+        { "name": "Danger or Stop", "hex": "#dc143c", "correct": true },
+        { "name": "Proceed slowly", "hex": "#f4a460", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is frequently used for eco-friendly or organic branding?",
+      "options": [
+        { "name": "Silver", "hex": "#c0c0c0", "correct": false },
+        { "name": "Orange", "hex": "#ff8c00", "correct": false },
+        { "name": "Brown or Green", "hex": "#a0522d", "correct": true },
+        { "name": "Deep Purple", "hex": "#4b0082", "correct": false }
+      ]
+    },
+    {
+      "question": "What emotion is most commonly associated with the color Yellow?",
+      "options": [
+        { "name": "Sadness", "hex": "#808080", "correct": false },
+        { "name": "Anger", "hex": "#ff4500", "correct": false },
+        { "name": "Optimism and Happiness", "hex": "#ffd700", "correct": true },
+        { "name": "Calmness", "hex": "#afeeee", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color can symbolize freshness, growth, and wealth?",
+      "options": [
+        { "name": "Black", "hex": "#2f4f4f", "correct": false },
+        { "name": "White", "hex": "#f5f5dc", "correct": false },
+        { "name": "Green", "hex": "#008000", "correct": true },
+        { "name": "Pink", "hex": "#ff69b4", "correct": false }
+      ]
+    },
+    {
+      "question": "What color is often used for 'Call to Action' buttons in marketing to create urgency?",
+      "options": [
+        { "name": "Soft Blue", "hex": "#add8e6", "correct": false },
+        { "name": "Light Grey", "hex": "#d3d3d3", "correct": false },
+        { "name": "Bright Red or Orange", "hex": "#ff6347", "correct": true },
+        { "name": "Pale Green", "hex": "#98fb98", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is perceived as sterile, clean, and often used in healthcare?",
+      "options": [
+        { "name": "Deep Red", "hex": "#b22222", "correct": false },
+        { "name": "Mustard Yellow", "hex": "#bdb76b", "correct": false },
+        { "name": "White", "hex": "#ffffff", "correct": true },
+        { "name": "Rustic Brown", "hex": "#8b0000", "correct": false }
+      ]
+    },
+    {
+      "question": "What does it mean if two colors are analogous?",
+      "options": [
+        { "name": "They are opposite each other on the color wheel", "hex": "#4682b4", "correct": false },
+        { "name": "They are side-by-side on the color wheel", "hex": "#f0e68c", "correct": true },
+        { "name": "They are variations of the same hue", "hex": "#d8bfd8", "correct": false },
+        { "name": "They have the same lightness", "hex": "#deb887", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color pairing creates a vibrant contrast when used together?",
+      "options": [
+        { "name": "Blue and light blue", "hex": "#6495ed", "correct": false },
+        { "name": "Red and Green", "hex": "#dc143c", "correct": true },
+        { "name": "Yellow and pale yellow", "hex": "#ffb6c1", "correct": false },
+        { "name": "Brown and grey", "hex": "#cd853f", "correct": false }
+      ]
+    },
+     {
+      "question": "What does the term 'monochromatic' refer to in color schemes?",
+      "options": [
+        { "name": "Using colors opposite each other on the wheel", "hex": "#daa520", "correct": false },
+        { "name": "Using colors from only one hue with varying tints and shades", "hex": "#add8e6", "correct": true },
+        { "name": "Using three colors evenly spaced on the color wheel", "hex": "#ffa07a", "correct": false },
+        { "name": "Using only black, white, and grey", "hex": "#808080", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is often linked to feelings of calm, coolness, and peace?",
+      "options": [
+        { "name": "Orange", "hex": "#ff7f50", "correct": false },
+        { "name": "Purple", "hex": "#a52a2a", "correct": false },
+        { "name": "Blue", "hex": "#4682b4", "correct": true },
+        { "name": "Yellow", "hex": "#ffd700", "correct": false }
+      ]
+    },
+    {
+      "question": "In some Eastern cultures, what color traditionally represents prosperity and happiness?",
+      "options": [
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": true },
+        { "name": "Blue", "hex": "#2980b9", "correct": false }
+      ]
+    },
+    {
+      "question": "What type of colors include Red, Orange, and Yellow?",
+      "options": [
+        { "name": "Cool Colors", "hex": "#3498db", "correct": false },
+        { "name": "Primary Colors", "hex": "#0000ff", "correct": false },
+        { "name": "Warm Colors", "hex": "#f39c12", "correct": true },
+        { "name": "Analogous Colors", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+    {
+      "question": "Which type of colors include Blue, Green, and Purple?",
+      "options": [
+        { "name": "Warm Colors", "hex": "#c0392b", "correct": false },
+        { "name": "Secondary Colors", "hex": "#f39c12", "correct": false },
+        { "name": "Cool Colors", "hex": "#2980b9", "correct": true },
+        { "name": "Complementary Colors", "hex": "#e74c3c", "correct": false }
+      ]
+    },
+    {
+      "question": "What feeling is Pink most often used to evoke in marketing?",
+      "options": [
+        { "name": "Aggression", "hex": "#c0392b", "correct": false },
+        { "name": "Authority", "hex": "#2c3e50", "correct": false },
+        { "name": "Romance, Gentleness, Youth", "hex": "#ffb6c1", "correct": true },
+        { "name": "Mystery", "hex": "#8e44ad", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color scheme uses colors that are opposite each other on the color wheel?",
+      "options": [
+        { "name": "Analogous", "hex": "#2ecc71", "correct": false },
+        { "name": "Triadic", "hex": "#f39c12", "correct": false },
+        { "name": "Complementary", "hex": "#e74c3c", "correct": true },
+        { "name": "Monochromatic", "hex": "#3498db", "correct": false }
+      ]
+    },
+    {
+      "question": "When white is added to a pure hue, what is the resulting color called?",
+      "options": [
+        { "name": "Shade", "hex": "#2c3e50", "correct": false },
+        { "name": "Tone", "hex": "#bdc3c7", "correct": false },
+        { "name": "Tint", "hex": "#ecf0f1", "correct": true },
+        { "name": "Saturation", "hex": "#c0392b", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the result when black is added to a pure hue?",
+      "options": [
+        { "name": "Tint", "hex": "#d35400", "correct": false },
+        { "name": "Tone", "hex": "#9b59b6", "correct": false },
+        { "name": "Shade", "hex": "#34495e", "correct": true },
+        { "name": "Hue", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color represents sophistication, formality, and often mystery?",
+      "options": [
+        { "name": "White", "hex": "#ecf0f1", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Grey", "hex": "#95a5a6", "correct": false },
+        { "name": "Black", "hex": "#2c3e50", "correct": true }
+      ]
+    },
+    {
+      "question": "What does adding grey to a pure hue create?",
+      "options": [
+        { "name": "A Shade", "hex": "#2c3e50", "correct": false },
+        { "name": "A Tint", "hex": "#ecf0f1", "correct": false },
+        { "name": "A Tone", "hex": "#bdc3c7", "correct": true },
+        { "name": "High Saturation", "hex": "#e74c3c", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color scheme uses three colors that are evenly spaced around the color wheel?",
+      "options": [
+        { "name": "Monochromatic", "hex": "#3498db", "correct": false },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": false },
+        { "name": "Triadic", "hex": "#9b59b6", "correct": true },
+        { "name": "Complementary", "hex": "#e67e22", "correct": false }
+      ]
+    },
+    {
+      "question": "What is a common association of the color Brown in branding?",
+      "options": [
+        { "name": "Innovation", "hex": "#95a5a6", "correct": false },
+        { "name": "Youth", "hex": "#ffb6c1", "correct": false },
+        { "name": "Natural, Earthy, Dependable", "hex": "#a0522d", "correct": true },
+        { "name": "Excitement", "hex": "#e74c3c", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is sometimes associated with mourning or emptiness in some cultures?",
+      "options": [
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": true },
+        { "name": "Orange", "hex": "#f39c12", "correct": false }
+      ]
+    },
+    {
+      "question": "In traffic signals, what color signifies 'Go' or 'Proceed'?",
+      "options": [
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Yellow", "hex": "#f39c12", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": true },
+        { "name": "Blue", "hex": "#3498db", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is perceived as friendly, energetic, and cheerful?",
+      "options": [
+        { "name": "Purple", "hex": "#8e44ad", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": true },
+        { "name": "Blue", "hex": "#2980b9", "correct": false },
+        { "name": "Gray", "hex": "#7f8c8d", "correct": false }
+      ]
+    },
+     {
+      "question": "What is the traditional meaning of White in Western wedding attire?",
+      "options": [
+        { "name": "Passion", "hex": "#c0392b", "correct": false },
+        { "name": "Sadness", "hex": "#7f8c8d", "correct": false },
+        { "name": "Purity, Innocence", "hex": "#ffffff", "correct": true },
+        { "name": "Wealth", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color scheme uses one base color and two colors adjacent to its complement on the color wheel?",
+      "options": [
+        { "name": "Split-Complementary", "hex": "#f39c12", "correct": true },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": false },
+        { "name": "Tetradic", "hex": "#e74c3c", "correct": false },
+        { "name": "Monochromatic", "hex": "#3498db", "correct": false }
+      ]
+    },
+    {
+      "question": "In many digital designs, what does the hex code `#000000` represent?",
+      "options": [
+        { "name": "Pure White", "hex": "#ffffff", "correct": false },
+        { "name": "Middle Grey", "hex": "#808080", "correct": false },
+        { "name": "Pure Red", "hex": "#ff0000", "correct": false },
+        { "name": "Pure Black", "hex": "#000000", "correct": true }
+      ]
+    },
+    {
+      "question": "What does the term 'Saturation' in color theory describe?",
+      "options": [
+        { "name": "How light or dark a color is", "hex": "#bdc3c7", "correct": false },
+        { "name": "The strength, purity, or intensity of a color", "hex": "#c0392b", "correct": true },
+        { "name": "The temperature (warmth or coolness)", "hex": "#f39c12", "correct": false },
+        { "name": "The amount of white or black mixed in", "hex": "#3498db", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is often used to convey freshness and cleanliness, commonly seen in cleaning products?",
+      "options": [
+        { "name": "Deep Orange", "hex": "#d35400", "correct": false },
+        { "name": "Maroon", "hex": "#800000", "correct": false },
+        { "name": "Light Blue", "hex": "#add8e6", "correct": true },
+        { "name": "Forest Green", "hex": "#008000", "correct": false }
+      ]
+    },
+    {
+      "question": "In marketing, which color might appeal to those seeking energy and vibrancy?",
+      "options": [
+        { "name": "Pastel Blue", "hex": "#aed6f1", "correct": false },
+        { "name": "Earthy Brown", "hex": "#a0522d", "correct": false },
+        { "name": "Vibrant Yellow or Orange", "hex": "#f39c12", "correct": true },
+        { "name": "Muted Grey", "hex": "#7f8c8d", "correct": false }
+      ]
+    },
+     {
+      "question": "What color is associated with mourning in some Asian countries?",
+      "options": [
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": true },
+        { "name": "Green", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color often symbolizes creativity, mystery, and sophistication?",
+      "options": [
+        { "name": "Grey", "hex": "#bdc3c7", "correct": false },
+        { "name": "Pink", "hex": "#e84393", "correct": false },
+        { "name": "Purple", "hex": "#8e44ad", "correct": true },
+        { "name": "Brown", "hex": "#a0522d", "correct": false }
+      ]
+    },
+    {
+      "question": "In RGB color values, what color is represented by (255, 0, 0)?",
+      "options": [
+        { "name": "Blue", "hex": "#0000ff", "correct": false },
+        { "name": "Green", "hex": "#00ff00", "correct": false },
+        { "name": "Red", "hex": "#ff0000", "correct": true },
+        { "name": "Black", "hex": "#000000", "correct": false }
+      ]
+    },
+     {
+      "question": "What color scheme uses four colors arranged into two complementary pairs?",
+      "options": [
+        { "name": "Triadic", "hex": "#f39c12", "correct": false },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": false },
+        { "name": "Tetradic (or Rectangular)", "hex": "#c0392b", "correct": true },
+        { "name": "Monochromatic", "hex": "#3498db", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is associated with envy, greed, and sometimes illness in Western cultures?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": true },
+        { "name": "Orange", "hex": "#e67e22", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the primary emotional association of the color Gray?",
+      "options": [
+        { "name": "Excitement", "hex": "#e74c3c", "correct": false },
+        { "name": "Boldness", "hex": "#f39c12", "correct": false },
+        { "name": "Neutrality, Balance, Conservatism", "hex": "#95a5a6", "correct": true },
+        { "name": "Liveliness", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is most effective for urgent calls to action online?",
+      "options": [
+        { "name": "Pale Pink", "hex": "#ffdab9", "correct": false },
+        { "name": "Navy Blue", "hex": "#1a2e3a", "correct": false },
+        { "name": "Bright Red or Orange", "hex": "#ff6347", "correct": true },
+        { "name": "Muted Brown", "hex": "#8b4513", "correct": false }
+      ]
+    },
+    {
+      "question": "What type of color harmony uses one color with two colors directly adjacent to it on the color wheel?",
+      "options": [
+        { "name": "Complementary", "hex": "#c0392b", "correct": false },
+        { "name": "Analogous", "hex": "#27ae60", "correct": true },
+        { "name": "Triadic", "hex": "#8e44ad", "correct": false },
+        { "name": "Monochromatic", "hex": "#3498db", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color might a high-end or luxury brand use to suggest elegance and sophistication?",
+      "options": [
+        { "name": "Bright Green", "hex": "#7fff00", "correct": false },
+        { "name": "Bubblegum Pink", "hex": "#ffc0cb", "correct": false },
+        { "name": "Black or Deep Purple", "hex": "#2c3e50", "correct": true },
+        { "name": "Vivid Yellow", "hex": "#ffff00", "correct": false }
+      ]
+    },
+    {
+      "question": "What does the term 'Value' refer to in color theory?",
+      "options": [
+        { "name": "The purity of a color", "hex": "#e74c3c", "correct": false },
+        { "name": "The specific color (hue)", "hex": "#3498db", "correct": false },
+        { "name": "How light or dark a color is", "hex": "#000000", "correct": true },
+        { "name": "Whether it's warm or cool", "hex": "#f39c12", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is often associated with affordability and excitement, sometimes seen in clearance sales?",
+      "options": [
+        { "name": "Navy Blue", "hex": "#1a2e3a", "correct": false },
+        { "name": "Emerald Green", "hex": "#50c878", "correct": false },
+        { "name": "Orange", "hex": "#ff8c00", "correct": true },
+        { "name": "Charcoal Grey", "hex": "#36454f", "correct": false }
+      ]
+    },
+    {
+      "question": "In healthcare, why is Blue commonly used for sterile areas or uniforms?",
+      "options": [
+        { "name": "It stimulates hunger", "hex": "#e74c3c", "correct": false },
+        { "name": "It makes you feel stressed", "hex": "#f39c12", "correct": false },
+        { "name": "It evokes calmness and trustworthiness", "hex": "#3498db", "correct": true },
+        { "name": "It symbolizes growth", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+     {
+      "question": "What color is used on flags internationally to signify surrender?",
+      "options": [
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": true }
+      ]
+    },
+     {
+      "question": "Which color represents mourning or bad luck in some cultures, notably China?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": true },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Gold", "hex": "#ffd700", "correct": false }
+      ]
+    },
+    {
+      "question": "What emotional state is Brown most likely to evoke?",
+      "options": [
+        { "name": "Surprise", "hex": "#8e44ad", "correct": false },
+        { "name": "Artificiality", "hex": "#c0c0c0", "correct": false },
+        { "name": "Stability, Warmth, Reliability", "hex": "#a0522d", "correct": true },
+        { "name": "Alertness", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+    {
+      "question": "In branding, what does the use of Muted Colors suggest?",
+      "options": [
+        { "name": "Loudness and High Energy", "hex": "#e74c3c", "correct": false },
+        { "name": "Shyness and weakness", "hex": "#fff0f5", "correct": false },
+        { "name": "Subtlety, Sophistication, Naturalness", "hex": "#95a5a6", "correct": true },
+        { "name": "Aggression and boldness", "hex": "#ff4500", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color scheme involves one base color and two colors adjacent to it on the color wheel?",
+      "options": [
+        { "name": "Triadic", "hex": "#9b59b6", "correct": false },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": true },
+        { "name": "Complementary", "hex": "#e74c3c", "correct": false },
+        { "name": "Split-Complementary", "hex": "#f39c12", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is best for conveying authority and strength in formal branding?",
+      "options": [
+        { "name": "Light Yellow", "hex": "#fffacd", "correct": false },
+        { "name": "Coral", "hex": "#ff7f50", "correct": false },
+        { "name": "Navy Blue or Black", "hex": "#2c3e50", "correct": true },
+        { "name": "Pastel Green", "hex": "#afeeee", "correct": false }
+      ]
+    },
+    {
+      "question": "What type of feeling is evoked by colors like Magenta and Cyan in design?",
+      "options": [
+        { "name": "Tradition and History", "hex": "#a0522d", "correct": false },
+        { "name": "Dullness and boredom", "hex": "#bdc3c7", "correct": false },
+        { "name": "Vibrancy, Modernity, Fun", "hex": "#e84393", "correct": true },
+        { "name": "Seriousness and restraint", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+     {
+      "question": "What color is often associated with cleanliness and purity in many cultures?",
+      "options": [
+        { "name": "Brown", "hex": "#8b4513", "correct": false },
+        { "name": "Grey", "hex": "#a9a9a9", "correct": false },
+        { "name": "White", "hex": "#ffffff", "correct": true },
+        { "name": "Black", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+     {
+      "question": "In CMYK, what does 'K' stand for?",
+      "options": [
+        { "name": "Kindness", "hex": "#3498db", "correct": false },
+        { "name": "Cyan", "hex": "#00ffff", "correct": false },
+        { "name": "Key (Black)", "hex": "#000000", "correct": true },
+        { "name": "Magenta", "hex": "#ff00ff", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is widely used to symbolize danger and warning?",
+      "options": [
+        { "name": "Purple", "hex": "#8e44ad", "correct": false },
+        { "name": "Yellow or Red", "hex": "#e74c3c", "correct": true },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": false }
+      ]
+    },
+    {
+      "question": "What effect can contrasting colors (like red and green) have when placed next to each other?",
+      "options": [
+        { "name": "Make them look lighter", "hex": "#ecf0f1", "correct": false },
+        { "name": "Make them appear less saturated", "hex": "#bdc3c7", "correct": false },
+        { "name": "Make them appear more vibrant or jarring", "hex": "#e74c3c", "correct": true },
+        { "name": "Make them blend together", "hex": "#d35400", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the complementary color to Green?",
+      "options": [
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Purple", "hex": "#9b59b6", "correct": false },
+        { "name": "Red", "hex": "#c0392b", "correct": true },
+        { "name": "Orange", "hex": "#f39c12", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color might a budget-friendly brand use to convey accessibility and friendliness?",
+      "options": [
+        { "name": "Gold", "hex": "#b8860b", "correct": false },
+        { "name": "Navy Blue", "hex": "#2c3e50", "correct": false },
+        { "name": "Bright Blue or Orange", "hex": "#e67e22", "correct": true },
+        { "name": "Burgundy", "hex": "#8b0000", "correct": false }
+      ]
+    },
+    {
+      "question": "What does a low-value color mean in terms of lightness/darkness?",
+      "options": [
+        { "name": "It is very bright and pure", "hex": "#ffff00", "correct": false },
+        { "name": "It is a warm color", "hex": "#ff7f50", "correct": false },
+        { "name": "It is very dark", "hex": "#000000", "correct": true },
+        { "name": "It is a cool color", "hex": "#3498db", "correct": false }
+      ]
+    },
+    {
+      "question": "In branding for relaxation or meditation, which color is often chosen?",
+      "options": [
+        { "name": "Bright Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Neon Yellow", "hex": "#fafa66", "correct": false },
+        { "name": "Blue or Green", "hex": "#add8e6", "correct": true },
+        { "name": "Black", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+     {
+      "question": "What feeling does using Grey often convey in fashion branding?",
+      "options": [
+        { "name": "Playfulness", "hex": "#ffb6c1", "correct": false },
+        { "name": "Edgy and Rebellious", "hex": "#a0522d", "correct": false },
+        { "name": "Neutrality, Practicality, Understated Style", "hex": "#bdc3c7", "correct": true },
+        { "name": "High energy", "hex": "#e67e22", "correct": false }
+      ]
+    },
+     {
+      "question": "What are colors adjacent to each other on the color wheel called?",
+      "options": [
+        { "name": "Complementary", "hex": "#c0392b", "correct": false },
+        { "name": "Triadic", "hex": "#9b59b6", "correct": false },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": true },
+        { "name": "Tetradic", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color might be used for emergency services branding to indicate urgency?",
+      "options": [
+        { "name": "Muted Brown", "hex": "#a0522d", "correct": false },
+        { "name": "Pastel Purple", "hex": "#d8bfd8", "correct": false },
+        { "name": "Bright Red", "hex": "#e74c3c", "correct": true },
+        { "name": "Dark Grey", "hex": "#34495e", "correct": false }
+      ]
+    },
+     {
+      "question": "What color is often linked to royalty, ambition, and fantasy?",
+      "options": [
+        { "name": "Red", "hex": "#dc143c", "correct": false },
+        { "name": "Green", "hex": "#008000", "correct": false },
+        { "name": "Yellow", "hex": "#ffd700", "correct": false },
+        { "name": "Purple", "hex": "#800080", "correct": true }
+      ]
+    },
+    {
+      "question": "Which color has conflicting associations, representing both passion/danger and good luck/celebration in different contexts?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Red", "hex": "#c0392b", "correct": true },
+        { "name": "Grey", "hex": "#95a5a6", "correct": false }
+      ]
+    },
+    {
+      "question": "What does a 'High Key' image often mean in photography?",
+      "options": [
+        { "name": "It is mostly composed of dark colors", "hex": "#2c3e50", "correct": false },
+        { "name": "It has low contrast", "hex": "#bdc3c7", "correct": false },
+        { "name": "It is predominantly light or white colors", "hex": "#ecf0f1", "correct": true },
+        { "name": "It has very high saturation", "hex": "#e74c3c", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color combination forms an Achromatic color scheme?",
+      "options": [
+        { "name": "Red, Green, Blue", "hex": "#c0392b", "correct": false },
+        { "name": "Cyan, Magenta, Yellow", "hex": "#f39c12", "correct": false },
+        { "name": "Black, White, and Greys", "hex": "#95a5a6", "correct": true },
+        { "name": "Yellow, Orange, Red", "hex": "#e67e22", "correct": false }
+      ]
+    },
+    {
+      "question": "What type of emotion does Orange generally convey in Western culture?",
+      "options": [
+        { "name": "Melancholy", "hex": "#7f8c8d", "correct": false },
+        { "name": "Calmness", "hex": "#3498db", "correct": false },
+        { "name": "Enthusiasm, Warmth, Friendliness", "hex": "#e67e22", "correct": true },
+        { "name": "Seriousness", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+    {
+      "question": "Why might a brand use Pastel colors?",
+      "options": [
+        { "name": "To seem very strong and aggressive", "hex": "#e74c3c", "correct": false },
+        { "name": "To appear formal and conservative", "hex": "#34495e", "correct": false },
+        { "name": "To evoke softness, calmness, or innocence", "hex": "#ffb6c1", "correct": true },
+        { "name": "To appear cutting-edge and technical", "hex": "#95a5a6", "correct": false }
+      ]
+    },
+     {
+      "question": "What does 'Luminance' measure in a color?",
+      "options": [
+        { "name": "Its saturation", "hex": "#c0392b", "correct": false },
+        { "name": "Its hue", "hex": "#2ecc71", "correct": false },
+        { "name": "Its perceived brightness or lightness", "hex": "#ecf0f1", "correct": true },
+        { "name": "Its temperature", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is most associated with nature, peace, and good health?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f39c12", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": true },
+        { "name": "Purple", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+    {
+      "question": "In design accessibility, why is color contrast ratio important?",
+      "options": [
+        { "name": "To make the design look modern", "hex": "#95a5a6", "correct": false },
+        { "name": "To speed up page load times", "hex": "#bdc3c7", "correct": false },
+        { "name": "To ensure text and elements are readable for all users", "hex": "#2c3e50", "correct": true },
+        { "name": "To determine the printing method", "hex": "#3498db", "correct": false }
+      ]
+    },
+    {
+      "question": "What feeling does using metallic colors (like gold or silver) often evoke in branding?",
+      "options": [
+        { "name": "Cheapness", "hex": "#c0392b", "correct": false },
+        { "name": "Dullness", "hex": "#7f8c8d", "correct": false },
+        { "name": "Luxury, Elegance, Quality", "hex": "#b8860b", "correct": true },
+        { "name": "Childishness", "hex": "#ffb6c1", "correct": false }
+      ]
+    },
+     {
+      "question": "Which primary color cannot be mixed from other colors in the additive (light-based) RGB model?",
+      "options": [
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Red", "hex": "#ff0000", "correct": true },
+        { "name": "Purple", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+     {
+      "question": "In the CMYK model, which color is primary?",
+      "options": [
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Cyan", "hex": "#00ffff", "correct": true },
+        { "name": "Green", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+     {
+      "question": "Mixing all primary colors (Red, Green, Blue) in equal amounts in the RGB model produces what color?",
+      "options": [
+        { "name": "Black", "hex": "#000000", "correct": false },
+        { "name": "Grey", "hex": "#808080", "correct": false },
+        { "name": "White", "hex": "#ffffff", "correct": true },
+        { "name": "Purple", "hex": "#800080", "correct": false }
+      ]
+    },
+    {
+      "question": "Mixing all primary colors (Cyan, Magenta, Yellow, Black) in equal amounts in CMYK model produces what color?",
+      "options": [
+        { "name": "White", "hex": "#ffffff", "correct": false },
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "A very dark Brown/Black", "hex": "#2c3e50", "correct": true },
+        { "name": "Vibrant Green", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is most often associated with energy, passion, and sometimes aggression?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": true }
+      ]
+    },
+     {
+      "question": "What does using Neon colors suggest in branding?",
+      "options": [
+        { "name": "Subtlety and Seriousness", "hex": "#7f8c8d", "correct": false },
+        { "name": "Formality and Tradition", "hex": "#2c3e50", "correct": false },
+        { "name": "Modernity, Excitement, Vibrancy, Youth", "hex": "#00ffff", "correct": true },
+        { "name": "Elegance and Luxury", "hex": "#b8860b", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color symbolizes peace, purity, and innocence in many cultures?",
+      "options": [
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "White", "hex": "#ffffff", "correct": true },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+     {
+      "question": "What kind of mood do 'Cool' colors typically evoke?",
+      "options": [
+        { "name": "Energetic and Loud", "hex": "#ff8c00", "correct": false },
+        { "name": "Comforting and Warm", "hex": "#f39c12", "correct": false },
+        { "name": "Calmness, Tranquility, Stability", "hex": "#3498db", "correct": true },
+        { "name": "Mysterious and Luxurious", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+     {
+      "question": "What kind of mood do 'Warm' colors typically evoke?",
+      "options": [
+        { "name": "Peaceful and Restful", "hex": "#add8e6", "correct": false },
+        { "name": "Formal and Serious", "hex": "#2c3e50", "correct": false },
+        { "name": "Energy, Passion, Excitement, Happiness", "hex": "#e74c3c", "correct": true },
+        { "name": "Mysterious and Distant", "hex": "#800080", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is most commonly associated with royalty and dignity?",
+      "options": [
+        { "name": "Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Purple", "hex": "#8e44ad", "correct": true },
+        { "name": "Brown", "hex": "#a0522d", "correct": false }
+      ]
+    },
+     {
+      "question": "What is the effect called when adjacent colors affect how each other is perceived?",
+      "options": [
+        { "name": "Colorblindness", "hex": "#cccccc", "correct": false },
+        { "name": "Grayscale", "hex": "#808080", "correct": false },
+        { "name": "Simultaneous Contrast", "hex": "#c0392b", "correct": true },
+        { "name": "Desaturation", "hex": "#bdc3c7", "correct": false }
+      ]
+    },
+     {
+      "question": "In many fast-food restaurant logos, which colors are frequently used to stimulate appetite and create urgency?",
+      "options": [
+        { "name": "Blue and Green", "hex": "#3498db", "correct": false },
+        { "name": "White and Grey", "hex": "#ecf0f1", "correct": false },
+        { "name": "Red and Yellow/Orange", "hex": "#e74c3c", "correct": true },
+        { "name": "Purple and Pink", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the term for the visible spectrum of colors that we see?",
+      "options": [
+        { "name": "Greyscale", "hex": "#808080", "correct": false },
+        { "name": "Monochromatic", "hex": "#add8e6", "correct": false },
+        { "name": "Rainbow or Spectrum", "hex": "#ff0000", "correct": true },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is often associated with wealth, success, and grandeur?",
+      "options": [
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Silver", "hex": "#c0c0c0", "correct": false },
+        { "name": "Gold", "hex": "#b8860b", "correct": true },
+        { "name": "Brown", "hex": "#a0522d", "correct": false }
+      ]
+    },
+     {
+      "question": "What does using Glossy colors or finishes suggest in branding?",
+      "options": [
+        { "name": "Rustic and traditional", "hex": "#a0522d", "correct": false },
+        { "name": "Understated and humble", "hex": "#bdc3c7", "correct": false },
+        { "name": "Modernity, Sophistication, Premium feel", "hex": "#00ced1", "correct": true },
+        { "name": "Rough and natural", "hex": "#27ae60", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color can evoke feelings of calm, safety, and responsibility, commonly used by social media brands?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": true },
+        { "name": "Purple", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+     {
+      "question": "In UX/UI design, which color is commonly used for positive feedback, success messages, or 'Go' indicators?",
+      "options": [
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": true },
+        { "name": "Yellow", "hex": "#f39c12", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color might be associated with warnings, errors, or urgent negative feedback in UX/UI design?",
+      "options": [
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "Blue", "hex": "#2980b9", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": true },
+        { "name": "Grey", "hex": "#7f8c8d", "correct": false }
+      ]
+    },
+     {
+      "question": "What type of energy does a predominantly Orange website or app design often convey?",
+      "options": [
+        { "name": "Calm and stable", "hex": "#3498db", "correct": false },
+        { "name": "Formal and traditional", "hex": "#2c3e50", "correct": false },
+        { "name": "Energetic, Enthusiastic, Friendly", "hex": "#e67e22", "correct": true },
+        { "name": "Luxury and Mystery", "hex": "#8e44ad", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is considered neutral, representing professionalism, balance, and classic design?",
+      "options": [
+        { "name": "Purple", "hex": "#9b59b6", "correct": false },
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Grey", "hex": "#95a5a6", "correct": true },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the effect when the colors surrounding a grey square make it appear tinted?",
+      "options": [
+        { "name": "Colorblindness effect", "hex": "#cccccc", "correct": false },
+        { "name": "Additive mixing", "hex": "#ffffff", "correct": false },
+        { "name": "Color Illusion or Optical Mixing", "hex": "#c0392b", "correct": true },
+        { "name": "Subtractive mixing", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is often associated with sadness, solemnity, and formality?",
+      "options": [
+        { "name": "Pink", "hex": "#ffb6c1", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Black", "hex": "#2c3e50", "correct": true },
+        { "name": "Orange", "hex": "#e67e22", "correct": false }
+      ]
+    },
+     {
+      "question": "In children's branding, which colors are most often used to convey playfulness and excitement?",
+      "options": [
+        { "name": "Dark Grey and Black", "hex": "#34495e", "correct": false },
+        { "name": "Brown and Beige", "hex": "#a0522d", "correct": false },
+        { "name": "Bright and Primary colors (Red, Blue, Yellow, Green)", "hex": "#ff0000", "correct": true },
+        { "name": "Muted Greens and Browns", "hex": "#5f9ea0", "correct": false }
+      ]
+    },
+    {
+      "question": "What kind of appearance do 'Satin' finish colors usually have?",
+      "options": [
+        { "name": "Rough and matte", "hex": "#bdc3c7", "correct": false },
+        { "name": "Very shiny and reflective", "hex": "#00ced1", "correct": false },
+        { "name": "Smooth, subtle sheen (between matte and glossy)", "hex": "#a9a9a9", "correct": true },
+        { "name": "Glittery", "hex": "#d8bfd8", "correct": false }
+      ]
+    },
+     {
+      "question": "In the realm of sustainability and environmentalism, which color is predominantly used?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": true },
+        { "name": "Purple", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+    {
+      "question": "What emotion is strongly associated with the color Blue?",
+      "options": [
+        { "name": "Anger", "hex": "#c0392b", "correct": false },
+        { "name": "Jealousy", "hex": "#2ecc71", "correct": false },
+        { "name": "Trust, Stability, Calm", "hex": "#3498db", "correct": true },
+        { "name": "Enthusiasm", "hex": "#e67e22", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is commonly used in food packaging to convey warmth, energy, and flavor?",
+      "options": [
+        { "name": "Blue", "hex": "#2980b9", "correct": false },
+        { "name": "Grey", "hex": "#95a5a6", "correct": false },
+        { "name": "Red or Orange", "hex": "#f39c12", "correct": true },
+        { "name": "White", "hex": "#ecf0f1", "correct": false }
+      ]
+    },
+     {
+      "question": "What type of colors appear closest to the viewer in design due to how our eyes perceive them?",
+      "options": [
+        { "name": "Cool Colors", "hex": "#add8e6", "correct": false },
+        { "name": "Muted Colors", "hex": "#bdc3c7", "correct": false },
+        { "name": "Warm Colors", "hex": "#e74c3c", "correct": true },
+        { "name": "Pastel Colors", "hex": "#ffb6c1", "correct": false }
+      ]
+    },
+    {
+      "question": "What feeling does using Dark, Deep colors like Navy or Burgundy suggest in branding?",
+      "options": [
+        { "name": "Playfulness and lightness", "hex": "#ffffb3", "correct": false },
+        { "name": "Cheapness and low quality", "hex": "#c0392b", "correct": false },
+        { "name": "Seriousness, Formality, Luxury, Depth", "hex": "#4b0082", "correct": true },
+        { "name": "Extreme speed and urgency", "hex": "#ff4500", "correct": false }
+      ]
+    },
+     {
+      "question": "In web design, which model is most commonly used to define colors?",
+      "options": [
+        { "name": "CMYK", "hex": "#00ced1", "correct": false },
+        { "name": "Pantone", "hex": "#daa520", "correct": false },
+        { "name": "RGB / HEX", "hex": "#1e90ff", "correct": true },
+        { "name": "Natural Color System", "hex": "#5f9ea0", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color can be associated with illness or decay?",
+      "options": [
+        { "name": "Bright Orange", "hex": "#ffa500", "correct": false },
+        { "name": "Vibrant Blue", "hex": "#0000ff", "correct": false },
+        { "name": "Certain shades of Green", "hex": "#98fb98", "correct": true },
+        { "name": "Warm Red", "hex": "#ff0000", "correct": false }
+      ]
+    },
+     {
+      "question": "What emotion is Black primarily used to evoke in modern fashion branding?",
+      "options": [
+        { "name": "Vulnerability", "hex": "#ffc0cb", "correct": false },
+        { "name": "Approachability", "hex": "#f0e68c", "correct": false },
+        { "name": "Sleekness, Sophistication, Elegance", "hex": "#2f4f4f", "correct": true },
+        { "name": "Energy", "hex": "#ff4500", "correct": false }
+      ]
+    },
+    {
+      "question": "Which type of color represents cleanliness, minimalism, and space?",
+      "options": [
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Brown", "hex": "#a0522d", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": true }
+      ]
+    },
+     {
+      "question": "What is a 'Swatch' in design context?",
+      "options": [
+        { "name": "A type of font", "hex": "#bdc3c7", "correct": false },
+        { "name": "A small sample of a color", "hex": "#f1c40f", "correct": true },
+        { "name": "A method of mixing colors", "hex": "#e67e22", "correct": false },
+        { "name": "A pattern or texture", "hex": "#95a5a6", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color can represent sadness or a lack of vitality?",
+      "options": [
+        { "name": "Bright Yellow", "hex": "#ffd700", "correct": false },
+        { "name": "Pink", "hex": "#ffb6c1", "correct": false },
+        { "name": "Certain shades of Grey or Blue", "hex": "#7f8c8d", "correct": true },
+        { "name": "Vibrant Orange", "hex": "#ff8c00", "correct": false }
+      ]
+    },
+    {
+      "question": "In branding, what does using colors with low saturation typically suggest?",
+      "options": [
+        { "name": "High energy and excitement", "hex": "#c0392b", "correct": false },
+        { "name": "Playfulness and vibrancy", "hex": "#f39c12", "correct": false },
+        { "name": "Restraint, Calmness, Professionalism", "hex": "#bdc3c7", "correct": true },
+        { "name": "Aggression and dominance", "hex": "#e74c3c", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color combination often creates a sense of dynamism and excitement?",
+      "options": [
+        { "name": "Analogous blues and greens", "hex": "#3498db", "correct": false },
+        { "name": "Achromatic grey scale", "hex": "#95a5a6", "correct": false },
+        { "name": "Complementary colors", "hex": "#c0392b", "correct": true },
+        { "name": "Monochromatic pale colors", "hex": "#ecf0f1", "correct": false }
+      ]
+    },
+    {
+      "question": "What emotion is typically evoked by the color Teal?",
+      "options": [
+        { "name": "Anger", "hex": "#e74c3c", "correct": false },
+        { "name": "Nostalgia", "hex": "#a0522d", "correct": false },
+        { "name": "Sophistication, Serenity, Calm (Mix of Blue/Green)", "hex": "#008080", "correct": true },
+        { "name": "Cheerfulness", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color scheme uses three colors forming a triangle on the color wheel?",
+      "options": [
+        { "name": "Complementary", "hex": "#c0392b", "correct": false },
+        { "name": "Analogous", "hex": "#27ae60", "correct": false },
+        { "name": "Triadic", "hex": "#9b59b6", "correct": true },
+        { "name": "Split-Complementary", "hex": "#f39c12", "correct": false }
+      ]
+    },
+    {
+      "question": "In branding, which color might be used to make a product feel playful or whimsical?",
+      "options": [
+        { "name": "Charcoal Grey", "hex": "#36454f", "correct": false },
+        { "name": "Olive Green", "hex": "#808000", "correct": false },
+        { "name": "Pink or Purple", "hex": "#e84393", "correct": true },
+        { "name": "Navy Blue", "hex": "#1a2e3a", "correct": false }
+      ]
+    },
+     {
+      "question": "What does the term 'Chroma' refer to?",
+      "options": [
+        { "name": "How light or dark a color is", "hex": "#808080", "correct": false },
+        { "name": "The pure spectrum color", "hex": "#ff0000", "correct": false },
+        { "name": "The intensity or purity of a color (similar to saturation)", "hex": "#f39c12", "correct": true },
+        { "name": "The amount of white added", "hex": "#ecf0f1", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is often associated with sadness or coolness?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": true },
+        { "name": "Orange", "hex": "#e67e22", "correct": false }
+      ]
+    },
+    {
+      "question": "What does using White space (or negative space) in design contribute?",
+      "options": [
+        { "name": "Makes the design cluttered", "hex": "#a0522d", "correct": false },
+        { "name": "Only adds visual noise", "hex": "#c0392b", "correct": false },
+        { "name": "Adds clarity, hierarchy, and breathability", "hex": "#ecf0f1", "correct": true },
+        { "name": "Distracts from the content", "hex": "#bdc3c7", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color can be used effectively to create a bold contrast against a black or dark background?",
+      "options": [
+        { "name": "Dark Brown", "hex": "#a0522d", "correct": false },
+        { "name": "Charcoal Grey", "hex": "#34495e", "correct": false },
+        { "name": "Bright White or Yellow", "hex": "#f1c40f", "correct": true },
+        { "name": "Navy Blue", "hex": "#1a2e3a", "correct": false }
+      ]
+    },
+    {
+      "question": "What kind of products might use shades of Brown in their packaging?",
+      "options": [
+        { "name": "Electronics", "hex": "#95a5a6", "correct": false },
+        { "name": "Luxury Jewelry", "hex": "#b8860b", "correct": false },
+        { "name": "Natural, Organic, Coffee/Chocolate products", "hex": "#a0522d", "correct": true },
+        { "name": "Healthcare Supplies", "hex": "#ffffff", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color often stimulates conversations and creates a sense of excitement?",
+      "options": [
+        { "name": "Muted Green", "hex": "#5f9ea0", "correct": false },
+        { "name": "Pastel Pink", "hex": "#ffb6c1", "correct": false },
+        { "name": "Bright Red or Orange", "hex": "#e67e22", "correct": true },
+        { "name": "Grey", "hex": "#bdc3c7", "correct": false }
+      ]
+    },
+    {
+      "question": "In accessibility, what does a good color contrast ratio ensure?",
+      "options": [
+        { "name": "The design is fashionable", "hex": "#e84393", "correct": false },
+        { "name": "The website loads faster", "hex": "#cccccc", "correct": false },
+        { "name": "That users with visual impairments can distinguish text from background", "hex": "#2c3e50", "correct": true },
+        { "name": "The colors look good on all screens", "hex": "#3498db", "correct": false }
+      ]
+    },
+     {
+      "question": "What feeling is sometimes associated with excessive use of Yellow?",
+      "options": [
+        { "name": "Boredom", "hex": "#7f8c8d", "correct": false },
+        { "name": "Calmness", "hex": "#3498db", "correct": false },
+        { "name": "Anxiety or Overstimulation", "hex": "#f39c12", "correct": true },
+        { "name": "Formality", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is considered the least appetizing by some psychologists?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Blue (true blue without yellow)", "hex": "#0000ff", "correct": true },
+        { "name": "Orange", "hex": "#e67e22", "correct": false }
+      ]
+    },
+     {
+      "question": "What effect can adding black to a color have?",
+      "options": [
+        { "name": "Make it brighter", "hex": "#ffd700", "correct": false },
+        { "name": "Increase its saturation", "hex": "#c0392b", "correct": false },
+        { "name": "Create a Shade (make it darker)", "hex": "#2c3e50", "correct": true },
+        { "name": "Create a Tint (make it lighter)", "hex": "#ecf0f1", "correct": false }
+      ]
+    },
+    {
+      "question": "What does 'color temperature' (warm/cool) refer to?",
+      "options": [
+        { "name": "How much light is on the color", "hex": "#bdc3c7", "correct": false },
+        { "name": "The physical temperature the color makes you feel", "hex": "#a0522d", "correct": false },
+        { "name": "Whether a color is seen as evoking warmth (red/orange/yellow) or coolness (blue/green/purple)", "hex": "#e74c3c", "correct": true },
+        { "name": "Its purity or saturation", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is often used to market diet or health food?",
+      "options": [
+        { "name": "Bright Red", "hex": "#c0392b", "correct": false },
+        { "name": "Purple", "hex": "#9b59b6", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": true },
+        { "name": "Deep Blue", "hex": "#34495e", "correct": false }
+      ]
+    },
+    {
+      "question": "What kind of branding feels are often conveyed by Muted Blues and Greens?",
+      "options": [
+        { "name": "Energetic and Urgent", "hex": "#e67e22", "correct": false },
+        { "name": "Luxurious and High-End", "hex": "#b8860b", "correct": false },
+        { "name": "Calm, Peaceful, Natural", "hex": "#5f9ea0", "correct": true },
+        { "name": "Bold and Aggressive", "hex": "#dc143c", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color scheme uses colors from a straight line segment of the color wheel?",
+      "options": [
+        { "name": "Complementary", "hex": "#c0392b", "correct": false },
+        { "name": "Monochromatic", "hex": "#add8e6", "correct": true },
+        { "name": "Triadic", "hex": "#9b59b6", "correct": false },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the complementary color to Yellow?",
+      "options": [
+        { "name": "Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Purple", "hex": "#8e44ad", "correct": true },
+        { "name": "Orange", "hex": "#f39c12", "correct": false }
+      ]
+    },
+     {
+      "question": "Why might a tech brand choose a predominantly Blue logo?",
+      "options": [
+        { "name": "To appear fun and playful", "hex": "#ffb6c1", "correct": false },
+        { "name": "To suggest high cost", "hex": "#b8860b", "correct": false },
+        { "name": "To convey trust, innovation, and reliability", "hex": "#3498db", "correct": true },
+        { "name": "To stimulate appetite", "hex": "#e74c3c", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is sometimes used to symbolize death or evil in Western cultures?",
+      "options": [
+        { "name": "White", "hex": "#ecf0f1", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Black", "hex": "#2c3e50", "correct": true }
+      ]
+    },
+    {
+      "question": "What does using Beige or Tan colors often suggest in branding?",
+      "options": [
+        { "name": "Aggression", "hex": "#e74c3c", "correct": false },
+        { "name": "High Tech", "hex": "#95a5a6", "correct": false },
+        { "name": "Naturalness, Calmness, Simplicity", "hex": "#f5f5dc", "correct": true },
+        { "name": "Excitement", "hex": "#e67e22", "correct": false }
+      ]
+    },
+    {
+      "question": "In print design, what does 'Spot Color' refer to?",
+      "options": [
+        { "name": "Any color printed using CMYK inks", "hex": "#00ced1", "correct": false },
+        { "name": "Colors selected randomly", "hex": "#f1c40f", "correct": false },
+        { "name": "A specially mixed ink (like Pantone) not made from CMYK", "hex": "#b8860b", "correct": true },
+        { "name": "Colors that create visual 'spots' on the page", "hex": "#ff4500", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is sometimes avoided for critical information in web design due to common types of colorblindness?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Red (especially in combination with Green)", "hex": "#e74c3c", "correct": true },
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+     {
+      "question": "What emotion is associated with Turquoise?",
+      "options": [
+        { "name": "Formality", "hex": "#34495e", "correct": false },
+        { "name": "Intensity", "hex": "#c0392b", "correct": false },
+        { "name": "Calmness, Sophistication, Clarity", "hex": "#40e0d0", "correct": true },
+        { "name": "Heavy Seriousness", "hex": "#a0522d", "correct": false }
+      ]
+    },
+    {
+      "question": "What is a common purpose of using warm colors (red, orange, yellow) in retail store interiors?",
+      "options": [
+        { "name": "To make the space feel smaller", "hex": "#bdc3c7", "correct": false },
+        { "name": "To reduce sales", "hex": "#7f8c8d", "correct": false },
+        { "name": "To energize shoppers and encourage faster browsing/buying", "hex": "#f39c12", "correct": true },
+        { "name": "To make customers feel sleepy", "hex": "#add8e6", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is sometimes seen as cold or aloof?",
+      "options": [
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": true }
+      ]
+    },
+     {
+      "question": "What color might a fitness brand use to convey vitality, energy, and passion?",
+      "options": [
+        { "name": "Soft Beige", "hex": "#f5f5dc", "correct": false },
+        { "name": "Dark Grey", "hex": "#34495e", "correct": false },
+        { "name": "Red or Bright Orange", "hex": "#e74c3c", "correct": true },
+        { "name": "Pastel Green", "hex": "#afeeee", "correct": false }
+      ]
+    },
+    {
+      "question": "In the context of food branding, what emotion does Green primarily convey?",
+      "options": [
+        { "name": "Sweetness", "hex": "#ffb6c1", "correct": false },
+        { "name": "Luxury", "hex": "#8e44ad", "correct": false },
+        { "name": "Freshness, Health, Natural", "hex": "#27ae60", "correct": true },
+        { "name": "Spiciness", "hex": "#ff8c00", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color represents warmth, safety, and contentment, often used in cozy or rustic branding?",
+      "options": [
+        { "name": "Neon Pink", "hex": "#f441a7", "correct": false },
+        { "name": "Silver", "hex": "#c0c0c0", "correct": false },
+        { "name": "Brown", "hex": "#a0522d", "correct": true },
+        { "name": "Electric Blue", "hex": "#00ffff", "correct": false }
+      ]
+    },
+     {
+      "question": "What does 'Transparency' refer to in digital color?",
+      "options": [
+        { "name": "How pure a color is", "hex": "#e74c3c", "correct": false },
+        { "name": "How visible or invisible a color is", "hex": "#00ced1", "correct": true },
+        { "name": "How reflective a color is", "hex": "#b8860b", "correct": false },
+        { "name": "Its perceived temperature", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+    {
+      "question": "What kind of colors recede or appear further away in a design?",
+      "options": [
+        { "name": "Warm colors", "hex": "#e67e22", "correct": false },
+        { "name": "Bright colors", "hex": "#f1c40f", "correct": false },
+        { "name": "Cool colors", "hex": "#3498db", "correct": true },
+        { "name": "High saturated colors", "hex": "#c0392b", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is often associated with affordability and value?",
+      "options": [
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Purple", "hex": "#8e44ad", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": true },
+        { "name": "Gold", "hex": "#b8860b", "correct": false }
+      ]
+    },
+    {
+      "question": "In traditional Chinese culture, what color is associated with good luck and celebration?",
+      "options": [
+        { "name": "White", "hex": "#ecf0f1", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": true },
+        { "name": "Blue", "hex": "#3498db", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color combination tends to make people impatient or stressed when used excessively?",
+      "options": [
+        { "name": "Soft Blues and Greys", "hex": "#add8e6", "correct": false },
+        { "name": "Muted Greens and Browns", "hex": "#5f9ea0", "correct": false },
+        { "name": "High Contrast Red and Yellow/Black", "hex": "#c0392b", "correct": true },
+        { "name": "Pastel Purples and Pinks", "hex": "#d8bfd8", "correct": false }
+      ]
+    },
+     {
+      "question": "What color is commonly used by educational institutions to convey wisdom and intelligence?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Blue", "hex": "#2980b9", "correct": true },
+        { "name": "Green", "hex": "#27ae60", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the most striking complementary pair on the color wheel?",
+      "options": [
+        { "name": "Yellow and Orange", "hex": "#f1c40f", "correct": false },
+        { "name": "Blue and Purple", "hex": "#3498db", "correct": false },
+        { "name": "Red and Green", "hex": "#e74c3c", "correct": true },
+        { "name": "Black and White", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color can be used effectively to draw attention but should be used sparingly due to its intensity?",
+      "options": [
+        { "name": "Grey", "hex": "#bdc3c7", "correct": false },
+        { "name": "Light Blue", "hex": "#add8e6", "correct": false },
+        { "name": "Bright Red", "hex": "#ff0000", "correct": true },
+        { "name": "Beige", "hex": "#f5f5dc", "correct": false }
+      ]
+    },
+    {
+      "question": "What does using Matte colors suggest in branding?",
+      "options": [
+        { "name": "High reflectivity", "hex": "#00ced1", "correct": false },
+        { "name": "Low budget", "hex": "#c0392b", "correct": false },
+        { "name": "Sophistication, Smoothness, often Luxury (Understated)", "hex": "#a9a9a9", "correct": true },
+        { "name": "Loudness and chaos", "hex": "#f39c12", "correct": false }
+      ]
+    },
+     {
+      "question": "In the visible spectrum, what color has the shortest wavelength?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Violet/Purple", "hex": "#800080", "correct": true },
+        { "name": "Green", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+     {
+      "question": "In the visible spectrum, what color has the longest wavelength?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Red", "hex": "#c0392b", "correct": true }
+      ]
+    },
+     {
+      "question": "What emotional effect is often intended by using Blue in bedrooms?",
+      "options": [
+        { "name": "Increased energy", "hex": "#e74c3c", "correct": false },
+        { "name": "Making you feel hungry", "hex": "#e67e22", "correct": false },
+        { "name": "Promoting relaxation and sleep", "hex": "#add8e6", "correct": true },
+        { "name": "Stimulating creativity", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color represents warmth, hospitality, and approachability?",
+      "options": [
+        { "name": "Dark Grey", "hex": "#34495e", "correct": false },
+        { "name": "Electric Blue", "hex": "#00ffff", "correct": false },
+        { "name": "Orange", "hex": "#f39c12", "correct": true },
+        { "name": "Cold White", "hex": "#f0f8ff", "correct": false }
+      ]
+    },
+    {
+      "question": "What type of lighting gives a warmer, more yellow hue?",
+      "options": [
+        { "name": "Fluorescent light", "hex": "#ecf0f1", "correct": false },
+        { "name": "LED (Cool White)", "hex": "#d3d3d3", "correct": false },
+        { "name": "Incandescent light", "hex": "#fffacd", "correct": true },
+        { "name": "Natural daylight (overcast)", "hex": "#bdc3c7", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is traditionally associated with joy and celebration in Japan?",
+      "options": [
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": true },
+        { "name": "Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false }
+      ]
+    },
+     {
+      "question": "What does the Hexadecimal color format (like #RRGGBB) primarily represent?",
+      "options": [
+        { "name": "CMYK values", "hex": "#00ced1", "correct": false },
+        { "name": "Color temperature", "hex": "#f39c12", "correct": false },
+        { "name": "RGB values", "hex": "#1e90ff", "correct": true },
+        { "name": "Pantone codes", "hex": "#b8860b", "correct": false }
+      ]
+    },
+    {
+      "question": "What color is sometimes linked to illness and decay in various superstitions?",
+      "options": [
+        { "name": "Bright Red", "hex": "#c0392b", "correct": false },
+        { "name": "Royal Purple", "hex": "#800080", "correct": false },
+        { "name": "Green or sickly Yellow", "hex": "#98fb98", "correct": true },
+        { "name": "Trusty Blue", "hex": "#3498db", "correct": false }
+      ]
+    },
+     {
+      "question": "In user interfaces, which color provides visual cues that elements are inactive or disabled?",
+      "options": [
+        { "name": "Bright Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Vibrant Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Grey or Pale colors", "hex": "#bdc3c7", "correct": true },
+        { "name": "Electric Blue", "hex": "#00ffff", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color suggests seriousness, authority, and minimalism?",
+      "options": [
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Pink", "hex": "#ffb6c1", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Black", "hex": "#2c3e50", "correct": true }
+      ]
+    },
+     {
+      "question": "What emotion is often associated with shades of Purple?",
+      "options": [
+        { "name": "Anxiety", "hex": "#f39c12", "correct": false },
+        { "name": "Dependability", "hex": "#3498db", "correct": false },
+        { "name": "Luxury, Creativity, Mystery", "hex": "#8e44ad", "correct": true },
+        { "name": "Simplicity", "hex": "#bdc3c7", "correct": false }
+      ]
+    },
+     {
+      "question": "What color might an ethical or socially responsible brand predominantly use?",
+      "options": [
+        { "name": "Aggressive Red", "hex": "#c0392b", "correct": false },
+        { "name": "Techy Grey", "hex": "#95a5a6", "correct": false },
+        { "name": "Green or Brown", "hex": "#27ae60", "correct": true },
+        { "name": "Party Pink", "hex": "#e84393", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color symbolizes power, formality, and authority?",
+      "options": [
+        { "name": "Light Blue", "hex": "#add8e6", "correct": false },
+        { "name": "Pastel Purple", "hex": "#d8bfd8", "correct": false },
+        { "name": "Black", "hex": "#2c3e50", "correct": true },
+        { "name": "Beige", "hex": "#f5f5dc", "correct": false }
+      ]
+    },
+     {
+      "question": "In marketing, which color can increase the heart rate and create excitement?",
+      "options": [
+        { "name": "Calm Blue", "hex": "#3498db", "correct": false },
+        { "name": "Neutral Grey", "hex": "#bdc3c7", "correct": false },
+        { "name": "Exciting Red", "hex": "#e74c3c", "correct": true },
+        { "name": "Muted Green", "hex": "#5f9ea0", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is often used in brands targeting women, signifying femininity, romance, or gentleness?",
+      "options": [
+        { "name": "Brown", "hex": "#a0522d", "correct": false },
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Blue", "hex": "#2980b9", "correct": false },
+        { "name": "Pink", "hex": "#ffb6c1", "correct": true }
+      ]
+    },
+    {
+      "question": "What feeling does the color Orange often promote in social environments or children's spaces?",
+      "options": [
+        { "name": "Aggression", "hex": "#c0392b", "correct": false },
+        { "name": "Shyness", "hex": "#bdc3c7", "correct": false },
+        { "name": "Enthusiasm, Warmth, Social Interaction", "hex": "#ff8c00", "correct": true },
+        { "name": "Loneliness", "hex": "#3498db", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color represents happiness, optimism, and sunlight?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": true }
+      ]
+    },
+     {
+      "question": "In food packaging, what is Red often used to suggest?",
+      "options": [
+        { "name": "Being cold", "hex": "#3498db", "correct": false },
+        { "name": "Lack of flavor", "hex": "#bdc3c7", "correct": false },
+        { "name": "Energy, Excitement, Appetite Stimulation", "hex": "#c0392b", "correct": true },
+        { "name": "Calmness", "hex": "#add8e6", "correct": false }
+      ]
+    },
+     {
+      "question": "What does using vibrant colors suggest in a brand's personality?",
+      "options": [
+        { "name": "Formality and Conservatism", "hex": "#2c3e50", "correct": false },
+        { "name": "Seriousness and Authority", "hex": "#34495e", "correct": false },
+        { "name": "Energetic, Bold, Expressive", "hex": "#ff6347", "correct": true },
+        { "name": "Neutrality and Balance", "hex": "#95a5a6", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color represents reliability, trustworthiness, and conservative approach?",
+      "options": [
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Pink", "hex": "#e84393", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": true }
+      ]
+    },
+    {
+      "question": "What emotional reaction might the color Brown trigger?",
+      "options": [
+        { "name": "Aggression", "hex": "#e74c3c", "correct": false },
+        { "name": "Cleanliness", "hex": "#ffffff", "correct": false },
+        { "name": "Security, Comfort, Naturalness", "hex": "#a0522d", "correct": true },
+        { "name": "Awe", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color can sometimes be perceived as cheap or too youthful if not used carefully in branding?",
+      "options": [
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Dark Blue", "hex": "#34495e", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": true },
+        { "name": "Maroon", "hex": "#800000", "correct": false }
+      ]
+    },
+    {
+      "question": "What color is widely recognized for its association with love, romance, and Valentine's Day?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Red or Pink", "hex": "#e84393", "correct": true },
+        { "name": "Green", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color can represent jealousy or misfortune in some superstitions?",
+      "options": [
+        { "name": "Yellow", "hex": "#f39c12", "correct": true },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": false }
+      ]
+    },
+    {
+      "question": "What type of products are often branded using Teal or Turquoise colors?",
+      "options": [
+        { "name": "Financial services", "hex": "#3498db", "correct": false },
+        { "name": "Heavy Machinery", "hex": "#36454f", "correct": false },
+        { "name": "Travel, Spas, Water/Ocean related products", "hex": "#40e0d0", "correct": true },
+        { "name": "Construction", "hex": "#a0522d", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color represents professionalism, stability, and trustworthiness, often used by corporate brands?",
+      "options": [
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Pink", "hex": "#ffb6c1", "correct": false },
+        { "name": "Blue or Grey", "hex": "#2c3e50", "correct": true },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+     {
+      "question": "In art and design, what does 'Contrast' refer to?",
+      "options": [
+        { "name": "The similarity between two colors", "hex": "#add8e6", "correct": false },
+        { "name": "The dullness of a color", "hex": "#bdc3c7", "correct": false },
+        { "name": "The difference between two colors or elements", "hex": "#2c3e50", "correct": true },
+        { "name": "How much black is in a color", "hex": "#a0522d", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color often evokes a sense of calm, rest, and expansiveness?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": true }
+      ]
+    },
+     {
+      "question": "What color might be used in marketing to appear fun, optimistic, and approachable?",
+      "options": [
+        { "name": "Dark Green", "hex": "#008000", "correct": false },
+        { "name": "Navy Blue", "hex": "#2c3e50", "correct": false },
+        { "name": "Bright Yellow or Orange", "hex": "#ff8c00", "correct": true },
+        { "name": "Formal Grey", "hex": "#95a5a6", "correct": false }
+      ]
+    },
+     {
+      "question": "In web design, what does the term 'Hex Code' represent?",
+      "options": [
+        { "name": "A color's position on the color wheel", "hex": "#2ecc71", "correct": false },
+        { "name": "The name of the color", "hex": "#a0522d", "correct": false },
+        { "name": "A hexadecimal value specifying a color (usually RGB)", "hex": "#1e90ff", "correct": true },
+        { "name": "Its brightness level", "hex": "#ecf0f1", "correct": false }
+      ]
+    },
+    {
+      "question": "What feeling does the color Green most commonly evoke?",
+      "options": [
+        { "name": "Passion", "hex": "#e74c3c", "correct": false },
+        { "name": "Authority", "hex": "#2c3e50", "correct": false },
+        { "name": "Nature, Growth, Health", "hex": "#27ae60", "correct": true },
+        { "name": "Royalty", "hex": "#8e44ad", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color might a discount retailer heavily feature?",
+      "options": [
+        { "name": "Deep Purple", "hex": "#4b0082", "correct": false },
+        { "name": "Navy Blue", "hex": "#1a2e3a", "correct": false },
+        { "name": "Bright Red or Yellow", "hex": "#e74c3c", "correct": true },
+        { "name": "Muted Teal", "hex": "#5f9ea0", "correct": false }
+      ]
+    },
+    {
+      "question": "What emotional response does the color Pink usually generate?",
+      "options": [
+        { "name": "Anger", "hex": "#c0392b", "correct": false },
+        { "name": "Suspicion", "hex": "#bdc3c7", "correct": false },
+        { "name": "Sweetness, Nurturing, Playfulness, Femininity", "hex": "#ffb6c1", "correct": true },
+        { "name": "Formality", "hex": "#34495e", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color symbolizes cleanliness, peace, and beginnings?",
+      "options": [
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "White", "hex": "#ffffff", "correct": true },
+        { "name": "Orange", "hex": "#e67e22", "correct": false }
+      ]
+    },
+     {
+      "question": "What emotion is Blue most associated with in Western psychology?",
+      "options": [
+        { "name": "Danger", "hex": "#e74c3c", "correct": false },
+        { "name": "Excitement", "hex": "#f1c40f", "correct": false },
+        { "name": "Calmness, Trust, Security", "hex": "#3498db", "correct": true },
+        { "name": "Liveliness", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+     {
+      "question": "What kind of energy does Yellow bring to a design?",
+      "options": [
+        { "name": "Cool and calm", "hex": "#add8e6", "correct": false },
+        { "name": "Serious and conservative", "hex": "#34495e", "correct": false },
+        { "name": "Warmth, Optimism, Cheerfulness", "hex": "#f1c40f", "correct": true },
+        { "name": "Mysterious and introverted", "hex": "#8e44ad", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color represents nature, freshness, and environmental consciousness?",
+      "options": [
+        { "name": "Purple", "hex": "#9b59b6", "correct": false },
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": true }
+      ]
+    },
+    {
+      "question": "In the context of marketing, which color attracts attention quickly due to its strong visibility?",
+      "options": [
+        { "name": "Subtle Grey", "hex": "#bdc3c7", "correct": false },
+        { "name": "Pale Green", "hex": "#98fb98", "correct": false },
+        { "name": "Bright Red or Yellow", "hex": "#f39c12", "correct": true },
+        { "name": "Dark Brown", "hex": "#a0522d", "correct": false }
+      ]
+    },
+     {
+      "question": "What kind of products often use deep, rich Purple colors?",
+      "options": [
+        { "name": "Everyday groceries", "hex": "#27ae60", "correct": false },
+        { "name": "Basic cleaning supplies", "hex": "#3498db", "correct": false },
+        { "name": "Luxury goods, Beauty products, Creative services", "hex": "#8e44ad", "correct": true },
+        { "name": "Hardware tools", "hex": "#c0392b", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color often conveys a sense of authority and power, popular in government or law branding?",
+      "options": [
+        { "name": "Light Yellow", "hex": "#fffacd", "correct": false },
+        { "name": "Coral Pink", "hex": "#ff7f50", "correct": false },
+        { "name": "Navy Blue or Black", "hex": "#2c3e50", "correct": true },
+        { "name": "Pastel Blue", "hex": "#aed6f1", "correct": false }
+      ]
+    },
+    {
+      "question": "What does it mean for colors to be 'warm'?",
+      "options": [
+        { "name": "They are predominantly blues and greens", "hex": "#3498db", "correct": false },
+        { "name": "They have low saturation", "hex": "#bdc3c7", "correct": false },
+        { "name": "They contain yellow or red undertones and evoke heat/energy", "hex": "#f39c12", "correct": true },
+        { "name": "They appear transparent", "hex": "#ecf0f1", "correct": false }
+      ]
+    },
+    {
+      "question": "What does it mean for colors to be 'cool'?",
+      "options": [
+        { "name": "They appear close in a design", "hex": "#e74c3c", "correct": false },
+        { "name": "They are predominantly reds and yellows", "hex": "#e67e22", "correct": false },
+        { "name": "They contain blue, green, or purple undertones and evoke calm/cold", "hex": "#3498db", "correct": true },
+        { "name": "They are highly saturated", "hex": "#c0392b", "correct": false }
+      ]
+    },
+    {
+      "question": "In UX design, a prominent Red button often suggests?",
+      "options": [
+        { "name": "It's a minor action", "hex": "#bdc3c7", "correct": false },
+        { "name": "It leads to a safe, reversible action", "hex": "#2ecc71", "correct": false },
+        { "name": "It's a destructive, alert, or important primary action", "hex": "#e74c3c", "correct": true },
+        { "name": "It's purely decorative", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color palette is created using colors from one hue family with variations in value and saturation?",
+      "options": [
+        { "name": "Triadic", "hex": "#9b59b6", "correct": false },
+        { "name": "Complementary", "hex": "#c0392b", "correct": false },
+        { "name": "Monochromatic", "hex": "#3498db", "correct": true },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+     {
+      "question": "What kind of brands often use Yellow to attract attention and seem approachable?",
+      "options": [
+        { "name": "Funeral Homes", "hex": "#2c3e50", "correct": false },
+        { "name": "Financial Advisors", "hex": "#3498db", "correct": false },
+        { "name": "Fast food, Children's products, Websites needing quick attention", "hex": "#f39c12", "correct": true },
+        { "name": "Luxury Watchmakers", "hex": "#b8860b", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color signifies energy, heat, or warning?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": true },
+        { "name": "Purple", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the psychological effect of using the color Black in advertising?",
+      "options": [
+        { "name": "Makes products seem cheaper", "hex": "#f1c40f", "correct": false },
+        { "name": "Increases feelings of casualness", "hex": "#a0522d", "correct": false },
+        { "name": "Adds perceived value, sophistication, and formality", "hex": "#2c3e50", "correct": true },
+        { "name": "Causes hunger", "hex": "#e74c3c", "correct": false }
+      ]
+    },
+    {
+      "question": "What emotion is Orange most likely to stimulate?",
+      "options": [
+        { "name": "Sadness", "hex": "#7f8c8d", "correct": false },
+        { "name": "Fear", "hex": "#c0392b", "correct": false },
+        { "name": "Enthusiasm and Energy", "hex": "#e67e22", "correct": true },
+        { "name": "Calmness", "hex": "#add8e6", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is often used to evoke masculinity and strength in branding?",
+      "options": [
+        { "name": "Pink", "hex": "#ffb6c1", "correct": false },
+        { "name": "Purple", "hex": "#e84393", "correct": false },
+        { "name": "Blue or Black", "hex": "#34495e", "correct": true },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+    {
+      "question": "What type of color evokes elegance, quality, and exclusivity?",
+      "options": [
+        { "name": "Bright Green", "hex": "#7fff00", "correct": false },
+        { "name": "Pale Pink", "hex": "#ffdbd5", "correct": false },
+        { "name": "Black, Gold, Silver", "hex": "#b8860b", "correct": true },
+        { "name": "Vivid Yellow", "hex": "#ffff00", "correct": false }
+      ]
+    },
+    {
+      "question": "What color is often used to signify a refund, return, or cancelled action in interfaces?",
+      "options": [
+        { "name": "Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": true },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color signifies wealth and prosperity in Western cultures?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green (especially with money)", "hex": "#27ae60", "correct": true },
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Black", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+    {
+      "question": "What does using 'Earthy' color palettes typically suggest?",
+      "options": [
+        { "name": "High Tech", "hex": "#95a5a6", "correct": false },
+        { "name": "Formality and Structure", "hex": "#2c3e50", "correct": false },
+        { "name": "Nature, Groundedness, Sustainability", "hex": "#a0522d", "correct": true },
+        { "name": "Urgency and Excitement", "hex": "#e74c3c", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color can enhance feelings of hunger?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Grey", "hex": "#bdc3c7", "correct": false },
+        { "name": "Red or Orange", "hex": "#f39c12", "correct": true },
+        { "name": "Green", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+    {
+      "question": "What feeling does a 'low contrast' design often evoke?",
+      "options": [
+        { "name": "High excitement and readability", "hex": "#e74c3c", "correct": false },
+        { "name": "Sharpness and attention-grabbing", "hex": "#f1c40f", "correct": false },
+        { "name": "Calmness, Subtlety, Sophistication (if intentional); otherwise difficult readability", "hex": "#bdc3c7", "correct": true },
+        { "name": "Aggression and urgency", "hex": "#c0392b", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color pairing creates a strong contrast but can cause vibration or retinal fatigue when side-by-side?",
+      "options": [
+        { "name": "Blue on Blue", "hex": "#3498db", "correct": false },
+        { "name": "Yellow on White", "hex": "#f1c40f", "correct": false },
+        { "name": "Red and Green", "hex": "#e74c3c", "correct": true },
+        { "name": "Black on Dark Grey", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+     {
+      "question": "What type of color makes small objects look larger?",
+      "options": [
+        { "name": "Dark colors", "hex": "#2c3e50", "correct": false },
+        { "name": "Muted colors", "hex": "#bdc3c7", "correct": false },
+        { "name": "Light and Bright colors", "hex": "#f1c40f", "correct": true },
+        { "name": "Cool colors", "hex": "#3498db", "correct": false }
+      ]
+    },
+    {
+      "question": "What type of color makes large objects look smaller?",
+      "options": [
+        { "name": "Light colors", "hex": "#ecf0f1", "correct": false },
+        { "name": "Bright colors", "hex": "#ff4500", "correct": false },
+        { "name": "Dark colors", "hex": "#2c3e50", "correct": true },
+        { "name": "Warm colors", "hex": "#e67e22", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is widely seen as a gender-neutral or balancing color?",
+      "options": [
+        { "name": "Pink", "hex": "#ffb6c1", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Grey or White", "hex": "#bdc3c7", "correct": true }
+      ]
+    },
+    {
+      "question": "What emotion does the color Red strongly evoke?",
+      "options": [
+        { "name": "Calmness", "hex": "#3498db", "correct": false },
+        { "name": "Jealousy", "hex": "#2ecc71", "correct": false },
+        { "name": "Passion, Energy, Urgency", "hex": "#c0392b", "correct": true },
+        { "name": "Boredom", "hex": "#7f8c8d", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color represents sadness, detachment, or emotional distance?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": true },
+        { "name": "Green", "hex": "#2ecc71", "correct": false }
+      ]
+    },
+     {
+      "question": "What color signifies danger or urgency?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": true },
+        { "name": "Purple", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color can be used to signify discounts or warnings in marketing?",
+      "options": [
+        { "name": "Brown", "hex": "#a0522d", "correct": false },
+        { "name": "Grey", "hex": "#95a5a6", "correct": false },
+        { "name": "Red", "hex": "#c0392b", "correct": true },
+        { "name": "White", "hex": "#ecf0f1", "correct": false }
+      ]
+    },
+    {
+      "question": "What feeling is Yellow often associated with?",
+      "options": [
+        { "name": "Mystery", "hex": "#8e44ad", "correct": false },
+        { "name": "Formality", "hex": "#2c3e50", "correct": false },
+        { "name": "Happiness, Optimism, Caution", "hex": "#f1c40f", "correct": true },
+        { "name": "Seriousness", "hex": "#bdc3c7", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color palette evokes softness, innocence, or lightheartedness?",
+      "options": [
+        { "name": "Primary colors", "hex": "#ff0000", "correct": false },
+        { "name": "Jewel tones", "hex": "#4b0082", "correct": false },
+        { "name": "Pastel colors", "hex": "#ffb6c1", "correct": true },
+        { "name": "Dark colors", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+     {
+      "question": "What color is most effective for stimulating positive emotions and grab attention quickly?",
+      "options": [
+        { "name": "Dark Blue", "hex": "#34495e", "correct": false },
+        { "name": "Muddy Green", "hex": "#808000", "correct": false },
+        { "name": "Bright Red or Yellow", "hex": "#f1c40f", "correct": true },
+        { "name": "Charcoal Grey", "hex": "#36454f", "correct": false }
+      ]
+    },
+    {
+      "question": "In western culture, which color is typically used for warning signs and danger?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": true },
+        { "name": "White", "hex": "#ffffff", "correct": false }
+      ]
+    },
+     {
+      "question": "What color is strongly associated with luxury and exclusivity?",
+      "options": [
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Black or Gold/Silver", "hex": "#b8860b", "correct": true },
+        { "name": "Orange", "hex": "#e67e22", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color often represents health, tranquility, and nature?",
+      "options": [
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": true }
+      ]
+    },
+    {
+      "question": "What color evokes a sense of freshness and cleanliness, often in bathrooms or cleaning supplies?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f39c12", "correct": false },
+        { "name": "White or Light Blue", "hex": "#ecf0f1", "correct": true },
+        { "name": "Brown", "hex": "#a0522d", "correct": false }
+      ]
+    },
+     {
+      "question": "What type of brand identity does using Neon colors primarily help create?",
+      "options": [
+        { "name": "Classic and Elegant", "hex": "#b8860b", "correct": false },
+        { "name": "Conservative and Formal", "hex": "#2c3e50", "correct": false },
+        { "name": "Modern, Youthful, High-Energy", "hex": "#00ffff", "correct": true },
+        { "name": "Natural and Earthy", "hex": "#a0522d", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is linked to sadness, coolness, and conservatism?",
+      "options": [
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Pink", "hex": "#ffb6c1", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Blue or Grey", "hex": "#3498db", "correct": true }
+      ]
+    },
+     {
+      "question": "What emotion does Brown frequently convey in interior design?",
+      "options": [
+        { "name": "Anxiety", "hex": "#f39c12", "correct": false },
+        { "name": "Clinical coldness", "hex": "#bdc3c7", "correct": false },
+        { "name": "Comfort, Stability, Warmth", "hex": "#a0522d", "correct": true },
+        { "name": "Urgency", "hex": "#e74c3c", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color scheme uses colors that are close neighbors on the color wheel?",
+      "options": [
+        { "name": "Complementary", "hex": "#c0392b", "correct": false },
+        { "name": "Triadic", "hex": "#9b59b6", "correct": false },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": true },
+        { "name": "Monochromatic", "hex": "#3498db", "correct": false }
+      ]
+    },
+     {
+      "question": "What is a primary psychological association of Black?",
+      "options": [
+        { "name": "Happiness", "hex": "#f1c40f", "correct": false },
+        { "name": "Weakness", "hex": "#ffb6c1", "correct": false },
+        { "name": "Power, Formality, Authority", "hex": "#2c3e50", "correct": true },
+        { "name": "Growth", "hex": "#27ae60", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color often feels vibrant, cheerful, and attention-grabbing?",
+      "options": [
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Red or Yellow/Orange", "hex": "#ff8c00", "correct": true },
+        { "name": "Grey", "hex": "#95a5a6", "correct": false }
+      ]
+    },
+    {
+      "question": "What does using the color Pink in branding often target?",
+      "options": [
+        { "name": "Automotive enthusiasts", "hex": "#c0392b", "correct": false },
+        { "name": "Business professionals (strictly)", "hex": "#2c3e50", "correct": false },
+        { "name": "Brands associated with femininity, romance, children", "hex": "#ffb6c1", "correct": true },
+        { "name": "Serious financial services", "hex": "#3498db", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color signifies security and protection?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Green (in some contexts), Blue (common)", "hex": "#3498db", "correct": true },
+        { "name": "Pink", "hex": "#ffb6c1", "correct": false }
+      ]
+    },
+     {
+      "question": "What kind of businesses are likely to use Yellow extensively?",
+      "options": [
+        { "name": "Funeral homes", "hex": "#2c3e50", "correct": false },
+        { "name": "Legal firms", "hex": "#3498db", "correct": false },
+        { "name": "Fast Food, Retail Sales, Children's brands", "hex": "#f39c12", "correct": true },
+        { "name": "Luxury Jewelry stores", "hex": "#b8860b", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color conveys depth, seriousness, and stability?",
+      "options": [
+        { "name": "Bright Pink", "hex": "#e84393", "correct": false },
+        { "name": "Sunny Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Deep Blue or Black", "hex": "#2c3e50", "correct": true },
+        { "name": "Light Green", "hex": "#98fb98", "correct": false }
+      ]
+    },
+     {
+      "question": "What feeling is Yellow often associated with?",
+      "options": [
+        { "name": "Trust and Reliability", "hex": "#3498db", "correct": false },
+        { "name": "Formality and Seriousness", "hex": "#2c3e50", "correct": false },
+        { "name": "Happiness, Optimism, Caution", "hex": "#f39c12", "correct": true },
+        { "name": "Peace and Calm", "hex": "#add8e6", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color suggests health, naturalness, and vitality?",
+      "options": [
+        { "name": "Purple", "hex": "#9b59b6", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": true }
+      ]
+    },
+    {
+      "question": "What emotion does Brown evoke?",
+      "options": [
+        { "name": "Excitement", "hex": "#ff8c00", "correct": false },
+        { "name": "Aloofness", "hex": "#bdc3c7", "correct": false },
+        { "name": "Warmth, Stability, Groundedness", "hex": "#a0522d", "correct": true },
+        { "name": "Envy", "hex": "#27ae60", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is used for positive or go signals in design?",
+      "options": [
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Yellow", "hex": "#f1c40f", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Green", "hex": "#2ecc71", "correct": true }
+      ]
+    },
+    {
+      "question": "What type of color scheme relies on different values and saturations of a single base color?",
+      "options": [
+        { "name": "Complementary", "hex": "#e74c3c", "correct": false },
+        { "name": "Analogous", "hex": "#2ecc71", "correct": false },
+        { "name": "Monochromatic", "hex": "#3498db", "correct": true },
+        { "name": "Triadic", "hex": "#9b59b6", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color is commonly associated with technology and the future?",
+      "options": [
+        { "name": "Red", "hex": "#c0392b", "correct": false },
+        { "name": "Orange", "hex": "#e67e22", "correct": false },
+        { "name": "Green", "hex": "#27ae60", "correct": false },
+        { "name": "Blue or Silver/Grey", "hex": "#95a5a6", "correct": true }
+      ]
+    },
+     {
+      "question": "What emotional response is Yellow intended to trigger?",
+      "options": [
+        { "name": "Sadness", "hex": "#7f8c8d", "correct": false },
+        { "name": "Trust", "hex": "#3498db", "correct": false },
+        { "name": "Happiness and Cheerfulness", "hex": "#f1c40f", "correct": true },
+        { "name": "Luxury", "hex": "#8e44ad", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color can evoke royalty, sophistication, and spirituality?",
+      "options": [
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Yellow", "hex": "#f39c12", "correct": false },
+        { "name": "Blue", "hex": "#3498db", "correct": false },
+        { "name": "Purple", "hex": "#8e44ad", "correct": true }
+      ]
+    },
+    {
+      "question": "What does a low-saturated color feel like in design?",
+      "options": [
+        { "name": "Very vibrant and bright", "hex": "#e74c3c", "correct": false },
+        { "name": "Overly aggressive", "hex": "#f1c40f", "correct": false },
+        { "name": "Subdued, Muted, Relaxed", "hex": "#bdc3c7", "correct": true },
+        { "name": "Formal and stark", "hex": "#2c3e50", "correct": false }
+      ]
+    },
+    {
+      "question": "Which color is perceived as clean, crisp, and spacious?",
+      "options": [
+        { "name": "Black", "hex": "#2c3e50", "correct": false },
+        { "name": "Red", "hex": "#e74c3c", "correct": false },
+        { "name": "Brown", "hex": "#a0522d", "correct": false },
+        { "name": "White", "hex": "#ecf0f1", "correct": true }
+      ]
+    },
+     {
+      "question": "What emotion is most closely tied to the color Green?",
+      "options": [
+        { "name": "Power", "hex": "#2c3e50", "correct": false },
+        { "name": "Excitement", "hex": "#e74c3c", "correct": false },
+        { "name": "Nature, Health, Growth", "hex": "#27ae60", "correct": true },
+        { "name": "Anxiety", "hex": "#f39c12", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color creates urgency and is used for immediate actions like 'Buy Now'?",
+      "options": [
+        { "name": "Passive Green", "hex": "#98fb98", "correct": false },
+        { "name": "Calm Blue", "hex": "#add8e6", "correct": false },
+        { "name": "Bold Red or Orange", "hex": "#ff6347", "correct": true },
+        { "name": "Formal Grey", "hex": "#95a5a6", "correct": false }
+      ]
+    },
+     {
+      "question": "What is the common psychological association with Blue in the U.S.?",
+      "options": [
+        { "name": "Danger", "hex": "#c0392b", "correct": false },
+        { "name": "Affordability", "hex": "#f1c40f", "correct": false },
+        { "name": "Trust, Reliability, Stability", "hex": "#3498db", "correct": true },
+        { "name": "Luxury", "hex": "#8e44ad", "correct": false }
+      ]
+    },
+     {
+      "question": "Which color scheme combines one color with the two colors on either side of its complementary color?",
+      "options": [
+        { "name": "Analogous", "hex": "#2ecc71", "correct": false },
+        { "name": "Triadic", "hex": "#9b59b6", "correct": false },
+        { "name": "Split-Complementary", "hex": "#f39c12", "correct": true },
+        { "name": "Tetradic", "hex": "#e74c3c", "correct": false }
+      ]
+    }
+]
