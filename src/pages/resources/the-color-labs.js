@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image";
-import metaData from '../files/meta.json';
+import metaData from '../../files/meta.json';
 import colorBubbles from "@/../public/images/extras/color-bubble.webp";
 import Head from "next/head";
 
