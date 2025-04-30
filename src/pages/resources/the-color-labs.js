@@ -1,9 +1,12 @@
+
 import { useState, useEffect } from 'react';
 import Image from "next/image";
-import metaData from '../../files/meta.json'; // Assuming path
-import quizQuestionsData from '../../files/other/colorquiz.json'; // Used as primary source
-import colorBubbles from "@/../public/images/extras/color-bubble.webp";
+import metaData from '../../files/meta.json'; 
+import quizQuestionsData from '../../files/other/colorquiz.json'; 
+import colorBubbles from "@/../public/images/extras/color-bubble.webp"; 
 import Head from "next/head";
+
+import { organizationSchema, websiteSchema, BASE_URL } from '../../lib/commonSchema'; 
 
 export default function BrandColorQuiz() {
 
@@ -16,26 +19,21 @@ export default function BrandColorQuiz() {
     const [streak, setStreak] = useState(0);
     const [highScore, setHighScore] = useState(0);
 
-    // Function to determine difficulty level based on score (not used for JSON Q selection, but kept)
     const getDifficultyLevel = (score) => {
         if (score >= 8) return "hard";
         if (score >= 4 && score <= 7) return "medium";
         return "easy";
     };
 
-    // Helper function to shuffle an array
     function shuffleArray(array) {
         let currentIndex = array.length;
         let randomIndex;
 
-        // While there remain elements to shuffle.
         while (currentIndex !== 0) {
 
-            // Pick a remaining element.
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex--;
 
-            // And swap it with the current element.
             [array[currentIndex], array[randomIndex]] = [
                 array[randomIndex], array[currentIndex]
             ];
@@ -44,10 +42,8 @@ export default function BrandColorQuiz() {
         return array;
     }
 
-
-    // Local Storage Effects
     useEffect(() => {
-        // Only access localStorage on the client-side (after the component mounts)
+        
         if (typeof window !== 'undefined') {
             const storedHighScore = localStorage.getItem('brandColorQuizHighScoreStreak');
             setHighScore(parseInt(storedHighScore || '0', 10));
@@ -55,15 +51,13 @@ export default function BrandColorQuiz() {
     }, []);
 
     useEffect(() => {
-        // Update high score in local storage whenever the streak changes. Highscore = MAX streak!
+        
         if (typeof window !== 'undefined' && streak > highScore) {
             setHighScore(streak);
             localStorage.setItem('brandColorQuizHighScoreStreak', streak.toString());
         }
     }, [streak, highScore]);
 
-
-    // Function to Fetch Question from JSON
     async function fetchNewQuestion() {
         setIsLoading(true);
 
@@ -75,45 +69,41 @@ export default function BrandColorQuiz() {
                 throw new Error("No quiz questions available in the local file.");
             }
 
-            // Select a random question from the array
             const randomIndex = Math.floor(Math.random() * quizQuestionsData.length);
-            // Create a copy of the question data to avoid modifying the original imported array
-            const questionData = JSON.parse(JSON.stringify(quizQuestionsData[randomIndex]));
 
-            // Randomize the order of options
+             const questionData = JSON.parse(JSON.stringify(quizQuestionsData[randomIndex]));
+            
             shuffleArray(questionData.options);
 
-            // Basic Validation for selected JSON structure
             if (
                 typeof questionData !== 'object' || questionData === null ||
-                !questionData.question ||
-                !Array.isArray(questionData.options) || questionData.options.length !== 4 ||
+                typeof questionData.question !== 'string' || questionData.question.trim() === '' || 
+                !Array.isArray(questionData.options) || questionData.options.length !== 4 || 
                  !questionData.options.every(option =>
                     typeof option === 'object' && option !== null &&
-                    typeof option.hex === 'string' && /^#([0-9A-Fa-f]{3}){1,2}$/.test(option.hex) && // Basic HEX format check
-                    typeof option.name === 'string' && // Ensure name is a string
-                    typeof option.correct === 'boolean' // Ensure correct is boolean
-                )
+                    typeof option.hex === 'string' && /^#([0-9A-Fa-f]{3}){1,2}$/.test(option.hex.trim()) && 
+                    typeof option.name === 'string' && option.name.trim() !== '' && 
+                    typeof option.correct === 'boolean' 
+                ) || !questionData.options.some(option => option.correct === true) 
             ) {
                  console.error("Selected local quiz question has invalid structure:", questionData);
                  throw new Error("Invalid structure in local quiz question data.");
             }
 
-
             console.log("Successfully loaded question from JSON:", questionData.question);
             setCurrentQuestion(questionData);
 
         } catch (error) {
-            // Handle errors during JSON loading or processing
+            
             console.error("Error loading or processing local quiz data:", error);
 
             setCurrentQuestion({
-                question: "Couldn't load the quiz questions right now. Please check the data file.",
+                question: "Sorry, couldn't load quiz questions right now. Please check data file.",
                 options: [
-                     { name: 'Data Error', hex: '#cccccc', correct: false },
-                    { name: 'File Missing', hex: '#cccccc', correct: false },
-                    { name: 'Parse Failed', hex: '#cccccc', correct: false },
-                     { name: 'Try Reload', hex: '#cccccc', correct: false }
+                    { name: 'Error', hex: '#dc3545', correct: false },
+                    { name: 'Loading Failed', hex: '#ffc107', correct: false },
+                    { name: 'Try Again Later', hex: '#17a2b8', correct: false },
+                    { name: 'Quiz Data Missing', hex: '#6c757d', correct: false }
                 ]
             });
         } finally {
@@ -121,67 +111,120 @@ export default function BrandColorQuiz() {
         }
     }
 
-    // Meta Tags Logic
+     const quizPageUrl = `${BASE_URL}/quiz`; 
+
       const customMeta = {
-        "title": "Color Game - How well do you know the colors - Comsci: Your Trusted Design & Development Partner",
-        "description": "Test your knowledge of colors with our fun quiz! Answer questions about color psychology, branding, and marketing. Challenge yourself and learn more about the fascinating world of colors.",
+        
+        "title": "Brand Color Quiz: Test Your Design & Branding Color Knowledge | Comsci",
+
+        "description": "Challenge yourself with the Comsci Technologies Brand Color Quiz! Test your knowledge of branding colors, design principles, and color psychology. A fun game for designers, marketers, and color enthusiasts.",
+
         "keywords": [
-            "color quiz", "color game", "color psychology", "branding quiz", "marketing quiz", "color knowledge", "color trivia", "free online quiz"
+            "brand color quiz", "color quiz", "branding colors", "color psychology", "design quiz",
+            "graphic design colors", "web design colors", "color game", "color trivia", "test color knowledge",
+            "Comsci Technologies", "design agency India", "branding agency"
         ],
+
         "robots": "index, follow",
-        "author": "Comsci"
+        
+        "author": "Comsci Technologies", 
+
+        "canonical": quizPageUrl, 
+
+        "og": {
+            "title": "Test Your Branding Color Knowledge!", 
+            "description": "Are you a color expert? Take our fun quiz to challenge your understanding of famous brand colors and design psychology. By Comsci Technologies.", 
+            "type": "website", 
+            "url": quizPageUrl, 
+            
+            "image": `${BASE_URL}/images/extras/color-bubble.webp`, 
+            "site_name": metaData?.site_name || "Comsci Technologies", 
+        },
+
+        "twitter": {
+            "card": "summary_large_image", 
+             "site": metaData?.twitter?.site || "@YourTwitterHandle", 
+            "title": "How Well Do You Know Brand Colors?", 
+            "description": "Play the Brand Color Quiz! Test your knowledge of branding, design, and color psychology with this fun challenge from Comsci Technologies. #branding #design #quiz #colors", 
+            "image": `${BASE_URL}/images/extras/color-bubble.webp`, 
+        },
+
       };
 
       const getMetaTags = (metaData, customMeta = {}) => {
+        
         const mergedMeta = { ...metaData, ...customMeta };
+
         if (customMeta.og) {
           mergedMeta.og = { ...metaData.og, ...customMeta.og }
         }
         if (customMeta.twitter) {
           mergedMeta.twitter = { ...metaData.twitter, ...customMeta.twitter }
         }
-        return Object.keys(mergedMeta).map((key) => {
-          if (key === "title") {
-            return <title key={key}>{mergedMeta[key]}</title>;
-          }
 
-          if (key === "og" || key === "twitter") {
-            return Object.keys(mergedMeta[key]).map((property) => (
-              <meta
-                key={`${key}:${property}`}
-                property={`${key}:${property}`}
-                content={mergedMeta[key][property]}
-              />
-            ));
-          }
-          return <meta key={key} name={key} content={mergedMeta[key]} />;
-        });
+         const tags = [];
+
+         Object.keys(mergedMeta).forEach(key => {
+            const value = mergedMeta[key];
+
+            if (key === "title") {
+                 tags.push(<title key="title">{value}</title>);
+            } else if (key === "og" || key === "twitter") {
+                if (value && typeof value === 'object') { 
+                     Object.keys(value).forEach(property => {
+                        if (value[property]) { 
+                             tags.push(
+                               <meta
+                                 key={`${key}:${property}`}
+                                 property={`${key}:${property}`}
+                                 content={value[property]}
+                               />
+                            );
+                        }
+                    });
+                }
+            } else if (key === "keywords" && Array.isArray(value)) {
+                
+                if (value.length > 0) {
+                     tags.push(<meta key={key} name={key} content={value.join(', ')} />);
+                }
+            } else if (typeof value === 'string') {
+                
+                 if (key === "canonical") { 
+                     tags.push(<link key="canonical" rel="canonical" href={value} />);
+                 } else {
+                     if (value.trim() !== '') { 
+                        tags.push(<meta key={key} name={key} content={value} />);
+                     }
+                 }
+            }
+             
+         });
+
+        return tags;
       };
 
-
-    // Initial Fetch Effect
     useEffect(() => {
         fetchNewQuestion();
     }, []);
 
-    // Answer Handling Logic
     const handleAnswer = (isCorrect, hex) => {
-        // Prevent selecting multiple answers while waiting
+        
         if (selectedAnswer !== null) return;
 
         setSelectedAnswer(hex);
         setAnswerStatus(isCorrect ? 'correct' : 'wrong');
 
         if (isCorrect) {
-            setScore(prevScore => Math.min(10, prevScore + 1));
+            
+            setScore(prevScore => prevScore + 1);
             setStreak(prevStreak => prevStreak + 1);
         } else {
-            setScore(prevScore => Math.max(0, prevScore - 1));
+            setScore(prevScore => Math.max(0, prevScore - 1)); 
             setStreak(0);
             setShakeButton(hex);
         }
 
-        // Reset after a short delay and fetch the next question
         const nextQuestionDelay = isCorrect ? 1500 : 2500;
         setTimeout(() => {
             setSelectedAnswer(null);
@@ -191,7 +234,6 @@ export default function BrandColorQuiz() {
         }, nextQuestionDelay);
     };
 
-    // Button Class Name Logic
     const getButtonClassName = (option) => {
         let className = 'ui_btn';
          if (selectedAnswer !== null) {
@@ -205,7 +247,7 @@ export default function BrandColorQuiz() {
                 className += ' wrong-answer';
             }
         } else if (answerStatus === 'wrong' && option.correct) {
-            // Highlight the correct answer if the user was wrong
+            
             className += ' correct-answer';
         }
 
@@ -216,16 +258,24 @@ export default function BrandColorQuiz() {
         return className;
     };
 
-    // Loading State Render
     if (isLoading) {
         return (
             <div className="quiz-wrapper">
                 <div className="quiz-container">
                     <div className="quiz-content">
                         <div className="d-flex flex-column align-items-center justify-content-center">
-                            <Image src={colorBubbles} alt="Color Quiz" width={160} height={130} quality={100} className="quiz-logo" />
-                             <p className="mt-3">Loading Question...</p>
-                            <div className="spinner-border" role="status">
+                            {/* Use optimized Next.js Image component */}
+                             <Image
+                                src={colorBubbles}
+                                alt="Color Quiz Game Loading" 
+                                width={160}
+                                height={130}
+                                quality={100}
+                                priority 
+                                className="quiz-logo"
+                             />
+                             <p className="mt-3">Loading the next colorful question...</p>
+                            <div className="spinner-border text-primary" role="status"> {/* Added text-primary for better color in case*/}
                                 <span className="visually-hidden">Loading...</span>
                             </div>
                         </div>
@@ -235,14 +285,26 @@ export default function BrandColorQuiz() {
         );
     }
 
-    // Ultimate Error State Render
-    if (!currentQuestion || !currentQuestion.question || !Array.isArray(currentQuestion.options) || currentQuestion.options.length !== 4) {
-        console.error("Failed to load or parse quiz question from local JSON.");
+    if (!currentQuestion || !currentQuestion.question || !Array.isArray(currentQuestion.options) || currentQuestion.options.length < 4 || !currentQuestion.options.some(opt => opt.correct)) {
+        console.error("Render error: Quiz question data is invalid after loading attempt.");
+         
+         const displayQuestion = currentQuestion?.question || "An unexpected error occurred while loading the quiz.";
+
         return (
             <div className="quiz-wrapper">
                 <div className="quiz-container">
                     <div className="quiz-content">
-                        <p>Sorry, we encountered an issue loading the quiz questions from the local data file. Please try refreshing the page.</p>
+                        {/* Use optimized Next.js Image component */}
+                         <Image
+                            src={colorBubbles}
+                            alt="Color Quiz Error" 
+                            width={160}
+                            height={130}
+                            quality={100}
+                            className="quiz-logo"
+                        />
+                        <p className="mt-3">{displayQuestion}</p>
+                        <p>Please try refreshing the page to load a new question.</p>
                          <button className="ui_btn mt-3" onClick={() => window.location.reload()}>Refresh Page</button>
                     </div>
                 </div>
@@ -250,42 +312,92 @@ export default function BrandColorQuiz() {
         );
     }
 
+    const currentPageMeta = { ...metaData, ...customMeta }; 
+    const pageUrl = customMeta.canonical || `${BASE_URL}/quiz`; 
 
-    // Main Quiz Render
+     const quizSchema = {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        "name": customMeta.title, 
+        "url": pageUrl,
+        "description": customMeta.description, 
+        "learningResourceType": "Quiz", 
+         
+        "about": [
+            { "@type": "Thing", "name": "Color Psychology" },
+            { "@type": "Thing", "name": "Branding Colors" },
+             { "@type": "Thing", "name": "Graphic Design" },
+             { "@type": "Thing", "name": "Web Design" },
+            { "@type": "Thing", "name": "Visual Identity" }
+         ],
+        
+         "provider": organizationSchema, 
+         
+         "image": customMeta?.og?.image || customMeta?.twitter?.image || `${BASE_URL}/images/extras/color-bubble.webp` 
+
+     };
+
+      const finalSchema = [
+        organizationSchema, 
+        websiteSchema,      
+         quizSchema
+      ];
+
     return (
         <>
-              <Head>
-        {getMetaTags(metaData, customMeta)}
-      </Head>
-        <div className="quiz-wrapper">
-            <div className="quiz-container">
-                <Image src={colorBubbles} alt="Color Quiz" width={160} height={130} quality={100} className="quiz-logo" />
-                <div className="quiz-content">
-                   <h3 className="quiz-title">
-                     SCORE: {score} -  Streak: {streak} | High Score: {highScore}
-                  </h3>
-                    <h2 className="quiz-question">{currentQuestion.question}</h2>
-                    <div className="quiz-options">
-                        <h3 className="quiz-title">SELECT THE CORRECT OPTION</h3>
-                        {currentQuestion.options.map((option, index) => (
-                            <button
-                                key={index} // Using index as key is okay here as array is small and keys stable per render cycle after shuffle
-                                onClick={() => handleAnswer(option.correct, option.hex)}
-                                className={getButtonClassName(option)}
-                                // Disable button click while processing answer/loading next Q
-                                disabled={selectedAnswer !== null}
-                            >
-                                 {/* Only show the color dot if the hex code is valid */}
-                                {option.hex && /^#([0-9A-Fa-f]{3}){1,2}$/.test(option.hex) ? (
-                                     <span className="color-dot" style={{ backgroundColor: option.hex }}></span>
-                                ) : null}
-                                {option.name || 'N/A'}
-                            </button>
-                        ))}
+            <Head>
+                {/* Apply generated meta tags */}
+                {getMetaTags(metaData, customMeta)}
+
+                {/* Add Schema Markup script */}
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{ __html: JSON.stringify(finalSchema, null, 2) }}
+                  key="jsonld-quiz-schema" 
+                />
+             </Head>
+            <div className="quiz-wrapper">
+                <div className="quiz-container">
+                     {/* Use optimized Next.js Image component */}
+                    <Image
+                        src={colorBubbles}
+                        alt="Color Quiz Game Illustration by Comsci Technologies" 
+                        width={160}
+                        height={130}
+                        quality={100}
+                        className="quiz-logo"
+                    />
+                    <div className="quiz-content">
+                        <h3 className="quiz-title">
+                            SCORE: {score} - Streak: {streak} | High Score: {highScore}
+                        </h3>
+                        <h2 className="quiz-question">{currentQuestion?.question}</h2>{/* Added optional chaining */}
+                        <div className="quiz-options">
+                            <h3 className="quiz-title">SELECT THE CORRECT OPTION</h3>
+                            {/* Ensure currentQuestion and options exist before mapping */}
+                            {currentQuestion?.options && Array.isArray(currentQuestion.options) && currentQuestion.options.map((option, index) => (
+                                <button
+                                    key={option.hex || index} 
+                                    onClick={() => handleAnswer(option.correct, option.hex)}
+                                    className={getButtonClassName(option)}
+                                    
+                                    disabled={selectedAnswer !== null}
+                                >
+                                     {/* Only show the color dot if the hex code is valid and the name is provided*/}
+                                    {option.hex && /^#([0-9A-Fa-f]{3}){1,2}$/.test(option.hex.trim()) && option.name ? (
+                                         <span className="color-dot" style={{ backgroundColor: option.hex.trim() }}></span>
+                                    ) : null}
+                                    {option.name || 'Option Unavailable'} {/* Fallback text for name */}
+                                </button>
+                            ))}
+                            {/* Fallback message if options aren't available unexpectedly */}
+                            {(!currentQuestion?.options || !Array.isArray(currentQuestion.options) || currentQuestion.options.length === 0) && (
+                                 <p className="text-danger mt-2">Error displaying options.</p>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </>
     );
 }
