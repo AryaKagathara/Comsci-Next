@@ -111,7 +111,7 @@ export default function BrandColorQuiz() {
         }
     }
 
-     const quizPageUrl = `${BASE_URL}/quiz`; 
+     const quizPageUrl = `${BASE_URL}/resources/the-color-labs`; 
 
       const customMeta = {
         
