@@ -88,7 +88,7 @@
       {
         "tag": "img",
         "image": "/images/blogs/secret-of-branding/Color.webp",
-        "content": "Color Shape - Red, Blue, Yellow"
+        "content": "Color shapes representing red, blue, and yellow"
       },
       {
         "tag": "p",
@@ -97,7 +97,7 @@
       {
         "tag": "img",
         "image": "/images/blogs/secret-of-branding/Fonts.webp",
-        "content": "Fonts - Serif, Sans-Serif, Script"
+        "content": "Examples of different fonts - Serif, Sans-Serif, Script"
       },
       {
         "tag": "p",
@@ -114,7 +114,7 @@
       {
         "tag": "img",
         "image": "/images/blogs/secret-of-branding/Competitors.webp",
-        "content": "Competitors - Burger King, McDonald's, KFC"
+        "content": "Fast food competitor logos including Burger King, McDonald's, and KFC"
       },
       {
         "tag": "p",
@@ -236,7 +236,7 @@
     "id": 100,
     "title": "Website or Mobile App: Which Should Your Business Launch First?",
     "subtitle": "Website or Mobile App",
-    "alt": "Illustration comparing website and mobile app strategy - Comsci Insights",
+    "alt": "Split screen showing a website on a desktop and a mobile app on a smartphone for comparison",
     "category": "Website",
     "author": "Arya Kagathara",
     "date": "24-04-2024",
@@ -267,7 +267,7 @@
       {
         "tag": "img",
         "image": "/images/blogs/website-vs-mobile-app/Desktop.webp",
-        "content": "Website on Desktop"
+        "content": "Website displayed on a desktop computer screen"
       },
       {
         "tag": "p",
@@ -284,7 +284,7 @@
       {
         "tag": "img",
         "image": "/images/blogs/website-vs-mobile-app/SearchEngine.webp",
-        "content": "Search Engine - Google, Bing, DuckDuckGo"
+        "content": "Search engine logos including Google, Bing, and DuckDuckGo"
       },
       {
         "tag": "h4",
@@ -318,7 +318,7 @@
       {
         "tag": "img",
         "image": "/images/blogs/website-vs-mobile-app/Mobile-App.webp",
-        "content": "Mobile App"
+        "content": "Illustration of a mobile app on a smartphone screen"
       },
       {
         "tag": "p",
@@ -335,7 +335,7 @@
       {
         "tag": "img",
         "image": "/images/blogs/website-vs-mobile-app/Stores.webp",
-        "content": "App Store, Play Store"
+        "content": "Logos for the Apple App Store and Google Play Store"
       },
       {
         "tag": "h4",
@@ -410,7 +410,7 @@
       {
         "tag": "img",
         "image": "/images/blogs/website-vs-mobile-app/Cost.webp",
-        "content": "Website VS Mobile App Cost"
+        "content": "Infographic comparing the typical costs of building a website versus a mobile app"
       },
       {
         "tag": "p",

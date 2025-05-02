@@ -348,6 +348,7 @@ export default function BrandColorQuiz() {
             <Head>
                 {/* Apply generated meta tags */}
                 {getMetaTags(metaData, customMeta)}
+                <link rel="canonical" href={pageUrl} key="canonical-link" />
 
                 {/* Add Schema Markup script */}
                 <script

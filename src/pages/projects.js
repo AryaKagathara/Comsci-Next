@@ -103,6 +103,7 @@ export default function Projects({ projectsData }) {
     <>
       <Head>
         {getMetaTags(baseMetaData, customMeta)}
+        <link rel="canonical" href={pageUrl} key="canonical-link" />
         <script
           type="application/ld+json"
 

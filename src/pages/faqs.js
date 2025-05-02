@@ -100,6 +100,7 @@ export default function Faqs({ faqsData }) {
     <>
       <Head>
         {getMetaTags(baseMetaData, customMeta)}
+        <link rel="canonical" href={pageUrl} key="canonical-link" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(finalSchema, null, 2) }}

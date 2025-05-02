@@ -5,7 +5,7 @@
     "description": "Revolutionizing patient care with innovative digital solutions for telehealth, remote monitoring, data analytics, and EHR integration.",
     "image": "/images/industries/Healthcare-Small.webp",
     "fullImage": "/images/industries/Healthcare-Full.webp",
-    "alt": "Comsci digital solutions for the Healthcare industry",
+    "alt": "Full width banner illustrating digital innovation in the healthcare sector",
     "link": "healthcare",
     "keywords": [
       "healthcare",
@@ -84,7 +84,7 @@
     "description": "Building the decentralized future with blockchain technology, specializing in smart contracts, dApps, and decentralized infrastructure.",
     "image": "/images/industries/Web3-Small.webp",
     "fullImage": "/images/industries/Web3-Full.webp",
-    "alt": "Comsci Web3 and Blockchain development services",
+    "alt": "Image representing Comsci's Web3 and Blockchain development services",
     "link": "web3",
     "keywords": [
       "Web3",
@@ -169,7 +169,7 @@
     "description": "Revolutionizing the real estate market with blockchain technology, tokenization, and fractional ownership.",
     "image": "/images/industries/RealEstate-Small.webp",
     "fullImage": "/images/industries/RealEstate-Full.webp",
-    "alt": "Comsci tech solutions for Real Estate",
+    "alt": "Image representing Comsci Technologies' solutions for Real Estate",
     "link": "real-estate",
     "keywords": [
       "real estate",
@@ -248,6 +248,7 @@
     "description": "Comsci Technologies provides tailored software and website development for hotels, restaurants, and other hospitality businesses to enhance operations, improve customer experience, and drive revenue.",
     "image": "/images/industries/Hospitality-Small.webp",
     "fullImage": "/images/industries/Hospitality-Full.webp",
+    "alt": "Full width image showcasing digital solutions for the luxury and hospitality industry",
     "link": "hospitality",
     "keywords": [
       "hospitality software",
@@ -331,6 +332,7 @@
     "image": "/images/industries/Educational-Small.webp",
     "fullImage": "/images/industries/Educational-Full.webp",
     "link": "education",
+    "alt": "Image representing Comsci's custom technology solutions for the education sector",
     "keywords": ["education software", "learning management system (LMS)", "student portal", "school management software", "online learning platform", "education website design", "India"],
     "content": [
       {
@@ -404,6 +406,7 @@
     "image": "/images/industries/Entertainment-Small.webp",
     "fullImage": "/images/industries/Entertainment-Full.webp",
     "link": "entertainment-events",
+    "alt": "Visual representing Comsci's technology solutions for the entertainment and events industry",
     "keywords": ["event management software", "ticketing system", "fan engagement platform", "event website design", "artist website", "music streaming platform", "India"],  
     "content": [
       {
@@ -473,6 +476,7 @@
     "image": "/images/industries/Ecommerce-Small.webp",
     "fullImage": "/images/industries/Ecommerce-Full.webp",
     "link": "ecommerce",
+    "alt": "Image representing Comsci's custom e-commerce website and app development services",
     "keywords": ["e-commerce website development", "online store", "shopping cart", "e-commerce app development", "Shopify development", "WooCommerce development", "Magento development", "India"],
     "content": [
       {
@@ -546,6 +550,7 @@
     "image": "/images/industries/Fintech-Small.webp",
     "fullImage": "/images/industries/Fintech-Full.webp",
     "link": "fintech",
+    "alt": "Image representing Comsci's custom software solutions for the Fintech industry",
     "keywords": ["Fintech software development", "financial software", "payment gateway integration", "loan management software", "investment platform", "personal finance app", "India"],
     "content": [
       {

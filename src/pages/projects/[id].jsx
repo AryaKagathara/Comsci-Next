@@ -243,6 +243,7 @@ export default function ProjectDetail({ project }) {
       <Head>
         {/* Generate standard meta tags using the merged metadata */}
         {getMetaTags(baseMetaData, customMeta)}
+        <link rel="canonical" href={pageUrl} key="canonical-link" />
 
         {/* Add the JSON-LD Schema script */}
         <script
