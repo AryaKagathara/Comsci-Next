@@ -7,9 +7,26 @@
     "category": "Branding",
     "author": "Arya Kagathara",
     "date": "17-06-2024",
+    "dateModified": "17-06-2024",
     "readingTime": "10 min",
     "image": "/images/blogs/secret-of-branding/Creative.webp",
     "link": "unveiling-the-secrets-of-branding",
+    "meta_title": "Branding Secrets: Why Some Business Logos Truly Stick",
+    "meta_description": "Unlock branding secrets: Learn why certain logos are memorable. Discover psychology of color, typography, consistency in building an effective business brand.",
+    "keywords": [
+        "branding",
+        "logo design",
+        "brand identity",
+        "brand strategy",
+        "marketing psychology",
+        "color psychology",
+        "typography in branding",
+        "brand consistency",
+        "memorable logos",
+        "visual identity",
+        "graphic design",
+        "business branding"
+    ],
     "content": [
       {
         "tag": "h2",
@@ -155,10 +172,6 @@
       {
         "tag": "img",
         "image": "/images/blogs/secret-of-branding/Consistency.webp",
-        "content": "Consistency - Mobile App, Website"
-      },
-      {
-        "tag": "p",
         "content": "Whether on your phone or your laptop, a consistent brand feels reliable and instantly recognisable."
       },
       {
@@ -207,8 +220,8 @@
         "content": "Check out this short video for a great perspective on what truly makes a brand stand out:"
       },
       {
-        "tag": "a",
-        "src": "https://www.youtube.com/embed/wm-o6-OUoMo?si=UdYSUSqq75sb9lSU"
+         "tag": "iframe",
+         "src": "https://www.youtube.com/embed/wm-o6-OUoMo?si=UdYSUSqq75sb9lSU"
       },
       {
         "tag": "h3",
@@ -236,13 +249,30 @@
     "id": 100,
     "title": "Website or Mobile App: Which Should Your Business Launch First?",
     "subtitle": "Website or Mobile App",
-    "alt": "Split screen showing a website on a desktop and a mobile app on a smartphone for comparison",
+    "alt": "Split screen showing a website on a desktop and a mobile app on a smartphone for comparison - Comsci Blog",
     "category": "Website",
     "author": "Arya Kagathara",
     "date": "24-04-2024",
+     "dateModified": "24-04-2024",
     "readingTime": "10 min",
     "image": "/images/blogs/website-vs-mobile-app/website-vs-mobile-app.webp",
     "link": "website-or-mobile-app",
+    "meta_title": "Website or Mobile App First? Business Launch Guide",
+    "meta_description": "Explore whether your business should launch a website or mobile app first. Compare cost, audience, features to make the best initial digital presence choice.",
+     "keywords": [
+        "website vs app",
+        "mobile app development",
+        "website development",
+        "business online presence",
+        "digital strategy",
+        "startup launch guide",
+        "app development cost",
+        "website cost",
+        "user experience design",
+        "discoverability",
+        "web development",
+        "app vs website features"
+    ],
     "content": [
       {
         "tag": "p",

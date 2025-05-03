@@ -14,19 +14,26 @@ export default function JobPosition({ jobsData = [] }) {
     const currentPath = router.pathname;
     const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
+    const pageUrl = `${BASE_URL}${router.asPath}`;
+
     const customMeta = {
-        title: "Job Openings | Careers at Comsci Technologies",
-        description: "Explore current job opportunities at Comsci Technologies and join our team of talented software developers, designers, and engineers.",
+        title: "Comsci Careers | Join Our Design & Development Team",
+        description: "Explore exciting job opportunities at Comsci! Join our talented team of design, development, and tech professionals. Apply now to build innovative digital solutions.",
+        keywords: [
+          "comsci jobs", "careers at comsci", "design development jobs", "web design careers", "mobile app developer jobs", "software engineer jobs", "tech company jobs india", "digital agency jobs", "it jobs rajkot", "creative agency careers", "join tech team", "job openings design dev"
+        ],
         og: {
-            title: "Join Our Team! | Comsci Technologies Careers",
-            description: "We're hiring! Discover exciting career opportunities at Comsci Technologies and help us build innovative software solutions.",
+          title: "Comsci Careers - Explore Job Opportunities",
+          description: "Ready to advance your career in tech? Explore current job openings and join the Comsci team.",
+          url: pageUrl,
         },
         twitter: {
-            card: "summary_large_image",
-            title: "Careers at Comsci Technologies - Now Hiring!",
-            description: "Find your dream job in software development, design, and engineering at Comsci Technologies. Apply today!",
+          title: "Comsci Careers - Explore Job Opportunities",
+          description: "Ready to advance your career in tech? Explore current job openings and join the Comsci team.",
+          url: pageUrl,
         },
-    };
+        author: "Comsci - Arya Kagathara",
+      };
 
     const getMetaTags = (metaData, customMeta = {}) => {
         const mergedMeta = { ...metaData, ...customMeta };
@@ -50,7 +57,6 @@ export default function JobPosition({ jobsData = [] }) {
         });
     };
 
-    const pageUrl = `${BASE_URL}${router.asPath}`;
     const currentPageMeta = { ...baseMetaData, ...customMeta };
 
     const pageSchema = {

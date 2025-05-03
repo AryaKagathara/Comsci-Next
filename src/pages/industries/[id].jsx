@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from "next/image";
 import React, { useEffect, useState } from 'react';
-import metaData from '../../files/meta.json';
+
 import breadcrumbData from '../../files/breadcrumbs.json';
 import Breadcrumb from '@/components/Breadcrumb';
 import { useRouter } from 'next/router';
@@ -34,129 +34,149 @@ export default function IndustryDetail({ industry }) {
   const [breadcrumbItems, setBreadcrumbItems] = useState([]);
 
   useEffect(() => {
+    
+    if (!breadcrumbData || typeof breadcrumbData !== 'object') {
+      console.error("Breadcrumb data is missing or not an object.");
+      return;
+    }
+
     const pathSegments = router.pathname.split('/').filter(Boolean);
-    let parentPath = '/';
+    
+    let parentPath = '/'; 
     if (pathSegments.length > 1) {
+       
       parentPath = '/' + pathSegments.slice(0, -1).join('/');
     }
-    const parentBreadcrumbs = breadcrumbData[parentPath];
+     
+     const parentBreadcrumbs = breadcrumbData[parentPath] || breadcrumbData['/'] || [];
 
-    if (parentBreadcrumbs && industry?.title && router.asPath) {
-      const itemsCopy = JSON.parse(JSON.stringify(parentBreadcrumbs));
-      const currentIndustryItem = {
-        label: industry.title,
-        name: industry.title,
-        href: router.asPath
-      };
-      itemsCopy.push(currentIndustryItem);
-      setBreadcrumbItems(itemsCopy);
-    } else {
-      setBreadcrumbItems(breadcrumbData['/'] || []);
+    let itemsCopy = JSON.parse(JSON.stringify(parentBreadcrumbs)); 
+    if (industry?.title && router.asPath) {
+       const currentIndustryItem = {
+          label: industry.title,
+          name: industry.title, 
+          href: router.asPath
+       };
+       
+       if (!itemsCopy.find(item => item.href === router.asPath)) {
+            itemsCopy.push(currentIndustryItem);
+       }
+    } else if (itemsCopy.length === 0) {
+        
+        if(industry?.title && router.asPath) {
+             itemsCopy = [{ label: industry.title, name: industry.title, href: router.asPath }];
+        }
     }
-  }, [router.pathname, router.asPath, industry?.title]);
+
+    setBreadcrumbItems(itemsCopy);
+
+  }, [router.pathname, router.asPath, industry?.title, breadcrumbData]); 
 
   if (!industry) {
+     
     return <div>Industry details not found.</div>;
   }
 
-  const fullSocialImageUrl = industry.fullImage ? (industry.fullImage.startsWith('http') ? industry.fullImage : `${BASE_URL}${industry.fullImage}`) : `${BASE_URL}/images/social-share-og/Facebook.webp`;
-  const customMeta = {
-    title: `${industry.title} Industry Solutions | Comsci`,
-    description: industry.description,
-    keywords: industry.keywords || [],
-    og: {
-      title: `${industry.title} Industry Solutions | Comsci`,
-      description: industry.description,
-      image: fullSocialImageUrl,
-      imageAlt: `Comsci's expertise in the ${industry.title} Industry`,
-    },
-    twitter: {
+   const fullSocialImageUrl = industry.fullImage ?
+    (industry.fullImage.startsWith('http') ? industry.fullImage : `${BASE_URL}${industry.fullImage}`)
+    : `${BASE_URL}/images/social-share-og/Facebook.webp`; 
 
-      title: `${industry.title} Industry Solutions | Comsci`,
-      description: industry.description,
-      image: fullSocialImageUrl,
-      imageAlt: `Comsci's expertise in the ${industry.title} Industry`,
-    },
+   const pageTitle = industry.meta_title || `${industry.title} Industry Solutions | Comsci`; 
+   const pageDescription = industry.meta_description || industry.description || `Explore Comsci's software solutions for the ${industry.title} industry.`; 
 
-  };
+   const pageKeywords = Array.isArray(industry.keywords) && industry.keywords.length > 0 ?
+                        industry.keywords.join(', ') :
+                        (typeof industry.keywords === 'string' && industry.keywords.length > 0 ? industry.keywords : ''); 
 
-  const getMetaTags = (metaData, customMeta = {}) => {
-    const mergedMeta = { ...metaData, ...customMeta };
-    if (customMeta.og) mergedMeta.og = { ...metaData.og, ...customMeta.og };
-    if (customMeta.twitter) mergedMeta.twitter = { ...metaData.twitter, ...customMeta.twitter };
+   const pageRobots = baseMetaData.robots || 'index, follow'; 
+   const pageAuthor = baseMetaData.author || 'Comsci'; 
+   const pageUrl = `${BASE_URL}${router.asPath}`; 
 
-    return Object.keys(mergedMeta).map((key) => {
-      if (key === "title") return <title key={key}>{mergedMeta[key]}</title>;
-      if (key === "og" || key === "twitter") {
-        return Object.keys(mergedMeta[key]).map((property) => (
-          <meta key={`${key}:${property}`} property={`${key}:${property}`} content={mergedMeta[key][property]} />
-        ));
-      }
-      if (key === "keywords" && Array.isArray(mergedMeta[key])) {
-        return <meta key={key} name={key} content={mergedMeta[key].join(', ')} />;
-      }
-      if (key === "robots") return <meta key={key} name="robots" content={mergedMeta[key]} />;
+   const headMetaTags = [
+      <title key="title">{pageTitle}</title>,
+      <meta key="description" name="description" content={pageDescription} />,
+      
+       ...(pageKeywords ? [<meta key="keywords" name="keywords" content={pageKeywords} />] : []),
+      <meta key="robots" name="robots" content={pageRobots} />,
+      <meta key="author" name="author" content={pageAuthor} />,
 
-      if (key !== 'og' && key !== 'twitter' && key !== 'title' && key !== 'keywords' && typeof mergedMeta[key] === 'string') {
-        return <meta key={key} name={key} content={mergedMeta[key]} />;
-      }
-      return null;
-    });
-  };
+      <meta key="og:title" property="og:title" content={pageTitle} />,
+      <meta key="og:description" property="og:description" content={pageDescription} />,
+      <meta key="og:type" property="og:type" content="website" />, 
+      <meta key="og:url" property="og:url" content={pageUrl} />,
+       ...(fullSocialImageUrl ? [<meta key="og:image" property="og:image" content={fullSocialImageUrl} />] : []),
+       ...(industry.alt ? [<meta key="og:image:alt" property="og:image:alt" content={industry.alt} />] : []), 
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
-  const currentPageMeta = { ...baseMetaData, ...customMeta };
+      <meta key="twitter:card" name="twitter:card" content="summary_large_image" />, 
+      <meta key="twitter:title" name="twitter:title" content={pageTitle} />,
+      <meta key="twitter:description" name="twitter:description" content={pageDescription} />,
+      ...(fullSocialImageUrl ? [<meta key="twitter:image" name="twitter:image" content={fullSocialImageUrl} />] : []),
+       ...(industry.alt ? [<meta key="twitter:image:alt" name="twitter:image:alt" content={industry.alt} />] : []), 
+
+     <link rel="canonical" href={pageUrl} key="canonical-link" />
+   ];
 
   const pageSchema = {
-
-    "@type": "WebPage",
+    "@context": "https://schema.org",
+    "@type": "WebPage", 
     "@id": pageUrl,
     "url": pageUrl,
-    "name": currentPageMeta.title,
-    "description": currentPageMeta.description,
-    "isPartOf": {
-      "@id": websiteSchema["@id"]
-    },
+    "name": pageTitle, 
+    "description": pageDescription, 
 
-    "about": {
-      "@type": "Thing",
-      "name": industry.title
-    },
+    ...(websiteSchema ? { "isPartOf": { "@id": websiteSchema["@id"] } } : {}),
 
-    "keywords": industry.keywords ? industry.keywords.join(', ') : undefined,
+     ...(industry.title ? {
+       "about": {
+         "@type": "Thing", 
+         "name": industry.title
+       }
+     } : {}),
 
-    "image": industry.fullImage ? (industry.fullImage.startsWith('http') ? industry.fullImage : `${BASE_URL}${industry.fullImage}`) : undefined,
+    ...(fullSocialImageUrl && industry.alt ? {
+       "primaryImageOfPage": { 
+          "@type": "ImageObject",
+          "url": fullSocialImageUrl,
+          "caption": industry.alt,
+          
+       }
+    } : {}),
 
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": pageUrl
-    }
+    ...(pageKeywords ? { "keywords": pageKeywords } : undefined),
+
+     "mainEntityOfPage": { 
+       "@type": "WebPage",
+       "@id": pageUrl
+     }
+      
   };
 
   let breadcrumbSchema = null;
+  
   if (breadcrumbItems && breadcrumbItems.length > 0) {
-    breadcrumbSchema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": breadcrumbItems.map((item, index) => ({
-        "@type": "ListItem",
-        "position": index + 1,
-        "name": item.name || item.label,
-        "item": item.href.startsWith('/') ? `${BASE_URL}${item.href}` : item.href
-      }))
-    };
+      breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbItems.map((item, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": item.name || item.label, 
+            
+            "item": item.href.startsWith('/') ? `${BASE_URL}${item.href}` : item.href
+        }))
+      };
   }
 
-  const finalSchema = [
-    organizationSchema,
-    websiteSchema,
-    pageSchema,
-    ...(breadcrumbSchema ? [breadcrumbSchema] : [])
-  ];
+   const finalSchema = [
+       ...(organizationSchema ? [organizationSchema] : []), 
+       ...(websiteSchema ? [websiteSchema] : []),      
+       pageSchema,         
+       ...(breadcrumbSchema ? [breadcrumbSchema] : []) 
+   ].filter(Boolean); 
 
   const renderContent = (content) => {
     if (!Array.isArray(content)) {
-
+       
       return (typeof content === 'string') ? <div dangerouslySetInnerHTML={{ __html: content }}></div> : null;
     }
 
@@ -168,65 +188,111 @@ export default function IndustryDetail({ industry }) {
         case 'ol':
           if (!Array.isArray(item.content)) return null;
           const listItems = item.content.map((listItem, listIndex) => {
-
+             
             if (!listItem || typeof listItem.content !== 'string') return null;
             return <li key={listIndex} dangerouslySetInnerHTML={{ __html: listItem.content }}></li>;
           }).filter(Boolean);
-          return React.createElement(item.tag, { key: index }, listItems);
+          
+          return listItems.length > 0 ? React.createElement(item.tag, { key: index }, listItems) : null;
+
         case 'img':
-          const width = item.width || 768;
-          const height = item.height || 432;
-          const altText = typeof item.alt === 'string' ? item.alt : (typeof item.content === 'string' ? item.content : `Industry Content Image ${index + 1}`);
+          
+          const width = item.width || 768; 
+          const height = item.height || 432; 
+          
+          const imgAltText = typeof item.alt === 'string' && item.alt.trim() !== '' ? item.alt : (typeof item.content === 'string' && item.content.trim() !== '' ? item.content : `Industry Content Image ${index + 1}`);
+
           return item.src ? (
-            <div className="image" key={index} style={{ position: 'relative', width: '100%', maxWidth: `${width}px`, height: 'auto', margin: '20px 0' }}>
-              <Image src={item.src} alt={altText} width={width} height={height} style={{ width: '100%', height: 'auto' }} quality={90} priority={index < 2} />
+            
+            <div className="industry-content-image-wrap" key={index}>
+               <Image
+                   src={item.src}
+                   alt={imgAltText}
+                   width={1000}
+                  height={1000} 
+                   quality={100}
+                   priority={index < 2} 
+               />
             </div>
           ) : null;
         case 'iframe':
+           
           return item.src ? (
-            <div className="video-embed" key={index} style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', background: '#000', margin: '20px 0' }}>
-              <iframe src={item.src} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allowFullScreen title={`Embedded Content ${index + 1}`}></iframe>
+            <div className="video-embed-container" key={index} >
+              <iframe
+                src={item.src}
+                title={`Embedded Content ${index + 1}`} 
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
             </div>
           ) : null;
+        
+        case 'h1':
+        case 'h2':
+        case 'h3':
+        case 'h4':
+        case 'h5':
+        case 'h6':
+        case 'p':
+        case 'div': 
+          
+           return (typeof item.content === 'string') ?
+                   React.createElement(item.tag, { key: index, dangerouslySetInnerHTML: { __html: item.content } }) :
+                   null; 
+
         default:
-          return (typeof item.content === 'string') ? React.createElement(item.tag, { key: index, dangerouslySetInnerHTML: { __html: item.content } }) : null;
+           
+          console.warn(`Unsupported tag in content renderer: ${item.tag}`);
+          return (typeof item.content === 'string') ? <p key={`unsupported-${index}`} dangerouslySetInnerHTML={{ __html: item.content }} /> : null; 
       }
-    }).filter(Boolean);
+    }).filter(Boolean); 
   };
 
   return (
     <>
+      {/* Head component for meta tags and schema */}
       <Head>
-        {getMetaTags(baseMetaData, customMeta)}
-        <link rel="canonical" href={pageUrl} key="canonical-link" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(finalSchema, null, 2) }}
-          key="jsonld-schema"
-        />
-      </Head>
-      <Breadcrumb items={breadcrumbItems} />
+         {/* Render standard meta tags and canonical */}
+         {headMetaTags}
 
-      {/* Industry Detail Banner - Make sure image path is correct */}
+        {/* Add the JSON-LD Schema script */}
+         {finalSchema && finalSchema.length > 0 && (
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(finalSchema, null, 2) }}
+                key="jsonld-schema" 
+              />
+         )}
+      </Head>
+
+       {breadcrumbItems && breadcrumbItems.length > 0 && <Breadcrumb items={breadcrumbItems} />}
+
       {industry.fullImage && (
         <div className="industrie_detail_banner">
-          <div className="detail_img_block" style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
-            {/* Use fill layout or fixed dimensions - ensure responsiveness */}
-            <Image src={industry.fullImage} alt={industry.title} quality={90} layout="fill" objectFit="cover" priority />
-          </div>
+           <div className="detail_img_block">
+              <Image
+                  src={industry.fullImage}
+                  alt={industry.alt || `Industry banner for ${industry.title}`} 
+                  quality={100}
+                  width={1000}
+                  height={1000}
+                  priority 
+              />
+           </div>
         </div>
       )}
 
-      {/* Industry Detail Content Section */}
-      <div className="industries_detail_section" style={{ padding: '40px 0' }}>
+      <div className="industries_detail_section" style={{ padding: '40px 0' }}> {/* Example padding */}
         <div className="container">
-          {/* Add a clear heading for the content */}
-          {/* <h1>{industry.title} Solutions</h1> Optionally render title again */}
+          {/* Main content container */}
           <div className="industrie_wrap_sec">
             {renderContent(industry.content)}
           </div>
         </div>
       </div>
+
     </>
   );
 }

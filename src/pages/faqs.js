@@ -16,17 +16,25 @@ export default function Faqs({ faqsData }) {
   const currentPath = router.pathname;
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
+  const pageUrl = `${BASE_URL}${router.asPath}`;
+
   const customMeta = {
-    title: "Frequently Asked Questions | Comsci Technologies",
-    description: "Find answers to common questions about Comsci Technologies, our services, processes, and more. If you don't see your question here, contact us!",
+    title: "Comsci | FAQs About Design & Development Services",
+    description: "Get answers to frequently asked questions about Comsci. Find details on our design & development services, process, pricing, & how we partner globally.",
+    keywords: [
+      "comsci faqs", "frequently asked questions agency", "design agency faq", "development agency faq", "web design faq", "app development faq", "software development faq", "digital agency faq", "comsci process", "how does comsci work", "digital project questions", "comsci pricing"
+    ],
     og: {
-      title: "Comsci FAQs - Your Questions Answered",
-      description: "Get quick answers to frequently asked questions about software development, web design, and working with Comsci Technologies.",
+      title: "Comsci FAQs: Design & Development Questions Answered",
+      description: "Find answers to frequently asked questions about Comsci Technologies and our web, app, and branding services.",
+      url: pageUrl,
     },
     twitter: {
-      title: "Your Questions, Answered: Comsci FAQs",
-      description: "Have questions about Comsci Technologies and our services? Find answers to frequently asked questions here.",
+      title: "Comsci FAQs: Design & Development Questions Answered",
+      description: "Find answers to frequently asked questions about Comsci Technologies and our web, app, and branding services.",
+      url: pageUrl,
     },
+    author: "Comsci - Arya Kagathara",
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
@@ -51,7 +59,6 @@ export default function Faqs({ faqsData }) {
     });
   };
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
   const currentPageMeta = { ...baseMetaData, ...customMeta };
 
   const pageSchema = {

@@ -14,14 +14,35 @@ export default function Privacy() {
   const currentPath = router.pathname;
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
+  const pageUrl = `${BASE_URL}${router.asPath}`;
+
   const customMeta = {
-    title: "Privacy Policy | Comsci Technologies",
-    description: "Comsci Technologies is committed to protecting your privacy. Learn how we collect, use, and safeguard your personal information.",
+    title: "Comsci | Website Privacy Policy & Data Practices",
+    description: "Read Comsci's Privacy Policy. Learn how we collect, use, and protect your personal information on our website and safeguard your data with us.",
+    keywords: [
+      "comsci privacy policy",
+      "website privacy policy",
+      "data protection policy",
+      "personal data usage",
+      "online privacy practices",
+      "comsci data",
+      "information security policy",
+      "legal privacy policy",
+      "digital privacy policy",
+      "how comsci uses data"
+    ],
     og: {
       title: "Comsci Technologies Privacy Policy",
       description: "Your privacy matters. Read our comprehensive privacy policy to understand our data practices and your rights.",
+      url: pageUrl,
+    },
+    twitter: {
+      title: "Comsci Technologies Privacy Policy",
+      description: "Your privacy matters. Read our comprehensive privacy policy to understand our data practices and your rights.",
+      url: pageUrl,
     },
     robots: "noindex, nofollow",
+    author: "Comsci - Arya Kagathara",
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
@@ -52,7 +73,6 @@ export default function Privacy() {
     });
   };
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
   const currentPageMeta = { ...baseMetaData, ...customMeta };
 
   const pageSchema = {

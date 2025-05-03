@@ -21,13 +21,25 @@ export default function About() {
   const currentPath = router.pathname;
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
-  const customMeta = {
-    "title": "About Comsci | Our Story, Mission & Values - Global Design & Development Agency",
-    "description": "Discover Comsci Technologies, your expert design & development partner, serving global clients. Learn about our mission, values, founder's vision, and commitment to delivering innovative web, app & branding solutions for businesses in Europe & the USA.",
-    "keywords": [
-      "about comsci", "design agency india", "global web development partner", "creative branding agency", "software development mission", "ux ui design values", "tech company story", "Arya Kagathara founder", "design agency Europe clients", "web design agency USA focus"
-    ],
+  const pageUrl = `${BASE_URL}${router.asPath}`;
 
+  const customMeta = {
+    title: "About Comsci | Design & Development Agency, Story & Values",
+    description: "Learn about Comsci, a design & development agency partnered globally with businesses in Europe & USA. Read our story, mission & values driving innovative web, app, branding solutions.",
+    keywords: [
+      "about comsci", "comsci technologies", "design and development agency", "web design agency", "mobile app development company", "branding agency", "tech company mission", "company values", "arya kagathara founder", "digital agency europe", "digital agency usa", "innovation in tech"
+    ],
+    og: {
+      title: "About Comsci - Design & Development Agency",
+      description: "Learn the story behind Comsci, our mission, and values. A global design & development partner.",
+      url: pageUrl,
+    },
+    twitter: {
+      title: "About Comsci - Design & Development Agency",
+      description: "Learn the story behind Comsci, our mission, and values. A global design & development partner.",
+      url: pageUrl,
+    },
+    author: "Comsci - Arya Kagathara",
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
@@ -52,7 +64,6 @@ export default function About() {
     });
   };
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
   const currentPageMeta = { ...baseMetaData, ...customMeta };
 
   const pageSchema = {

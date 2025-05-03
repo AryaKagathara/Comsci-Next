@@ -12,18 +12,25 @@ export default function Books({ booksData = [] }) {
   const currentPath = router.pathname;
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
+  const pageUrl = `${BASE_URL}${router.asPath}`;
+
   const customMeta = {
-    "title": "Download Creative Books - Comsci: Design & Development Insights",
-    "description": "Learn about Designing, Logo, Branding, Typography, UX/UI. Download free eBooks from Comsci Technologies.",
-    "keywords": [
-       "design ebooks", "branding books", "logo design book", "typography books", "UX UI books", "free design books", "visual concept books", "comsci ebooks" // Expanded keywords
+    title: "Comsci | Free Design & Development Guides & eBooks",
+    description: "Download free expert eBooks & guides from Comsci Technologies. Learn about design, branding, web development, UX/UI, typography, AI and more for you.",
+    keywords: [
+      "free design guides", "free development ebooks", "design branding ebooks", "web design guides free", "ux ui design ebooks", "typography guide free", "comsci free AI resources", "download AI tech guides", "digital design ebooks", "branding strategy ebook", "logo design guide", "visual concept guides"
     ],
-    "og": {
-      "title": "Free Design & Development eBooks | Comsci Technologies",
-      "description": "Expand your knowledge in branding, design, and development with free downloadable eBooks from Comsci Technologies."
+    og: {
+      title: "Download Free Design & Development eBooks | Comsci",
+      description: "Expand your knowledge with free downloadable expert eBooks from Comsci Technologies on design, development, and branding topics.",
+      url: pageUrl,
     },
-    "robots": "index, follow",
-    "author": "Comsci"
+    twitter: {
+      title: "Download Free Design & Development eBooks | Comsci",
+      description: "Expand your knowledge with free downloadable expert eBooks from Comsci Technologies on design, development, and branding topics.",
+      url: pageUrl,
+    },
+    author: "Comsci - Arya Kagathara",
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
@@ -49,7 +56,6 @@ export default function Books({ booksData = [] }) {
     });
   };
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
   const currentPageMeta = { ...baseMetaData, ...customMeta };
   const pageSchema = {
     "@type": "CollectionPage",

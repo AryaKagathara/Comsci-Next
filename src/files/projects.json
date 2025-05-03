@@ -3,6 +3,8 @@
         "id": 1,
         "title": "NuAI Artificial Intelligence Health App",
         "description": "Nuverse Health Solutions or NuAI has been formed to place intuitive preventive healthcare in the hands of the end user. Nuverse envisions the discovery of new processes, drugs, diagnostics and devices for efficient healthcare delivery. Using Artifical Intelloigence technology integrated inside mobile application can deliver critical health parameters in hand without any medical device.",
+        "meta_title": "NuAI AI Health App | Comsci Healthcare Mobile Project",
+        "meta_description": "Developed NuAI, an AI health app by Comsci for contactless vital sign tracking & remote care. Uses deep learning & machine learning for health monitoring solutions.",
         "alt": "NuAI AI Healthcare App user interface design by Comsci",
         "image": "/images/projects/NuAI-0.webp",
         "images": [
@@ -64,6 +66,8 @@
         "id": 2,
         "title": "Mipo South America FinTech Platform",
         "description": "MIPO is your trusted partner in financial empowerment. We specialize in turning unpaid invoices into immediate cash flow for small businesses. With seamless and friendly factoring solutions, MIPO accelerates your path to financial freedom, ensuring your business thrives today, not tomorrow.",
+        "meta_title": "Mipo South America FinTech Platform Project | Comsci",
+        "meta_description": "Explore Mipo FinTech platform development by Comsci for South America. Features invoice factoring, competitive bidding, & financial empowerment solutions.",
         "alt": "Mipo Fintech Platform dashboard design for invoice factoring - Comsci",
         "image": "/images/projects/Mipo-1.webp",
         "images": [
@@ -122,6 +126,8 @@
         "id": 3,
         "title": "EatCoast Restaurant Management & Food Delivery Platform",
         "description": "EatCoast is a comprehensive restaurant management and food delivery platform that streamlines operations, enhances customer experience, and boosts revenue. From online ordering and delivery tracking to inventory management and analytics, EatCoast offers a complete solution for restaurants to thrive in the digital age.",
+        "meta_title": "EatCoast Restaurant Management & Delivery Platform Case Study",
+        "meta_description": "Discover how Comsci developed EatCoast, a comprehensive restaurant management & food delivery platform. Features online ordering, delivery tracking, & analytics.",
         "alt": "EatCoast food delivery app and restaurant management platform UI - Comsci",
         "image": "/images/projects/EatCoast-0.webp",
         "images": [
@@ -179,6 +185,8 @@
         "id": 4,
         "title": "Medical Escape Milan Skin Care Clinic",
         "description": "Choosing our clinic means relying on a team of highly qualified professionals, led by the renowned prof. Dario bertossi",
+        "meta_title": "Medical Escape Milan Skin Care Clinic Website Project",
+        "meta_description": "Explore the Medical Escape Milan website project by Comsci. We created a sophisticated online presence for a premium Italian skin care clinic.",
         "alt": "Medical Escape Milan skincare clinic website design - Comsci",
         "image": "/images/projects/Medical-Escape-1.webp",
         "images": [
@@ -232,6 +240,8 @@
         "id": 5,
         "title": "BLKResumes USA Recruitment Platform",
         "description": "BLKResumes is a dynamic and inclusive hiring and job search platform designed for professionals seeking career opportunities, with a focus on connecting black and brown talent in various industries.",
+        "meta_title": "BLKResumes USA Recruitment Platform Development",
+        "meta_description": "See how Comsci built BLKResumes, a dynamic recruitment platform in the USA connecting black and brown talent with job opportunities across industries.",
         "image": "/images/projects/BLKResumes-1.webp",
         "images": [
             "/images/projects/BLKResumes-1.webp",
@@ -290,6 +300,8 @@
         "id": 6,
         "title": "W3Dart Bug Reporting SaaS Tool",
         "description": "W3Dart is a powerful visual feedback and bug reporting tool designed for developers and designers. Streamline collaboration with annotated screenshots, video screen capture, and seamless task management.",
+        "meta_title": "W3Dart SaaS Bug Reporting Tool Development by Comsci",
+        "meta_description": "Explore W3Dart, a SaaS visual feedback & bug reporting tool developed by Comsci for developers & designers. Features annotated screenshots & video capture.",
         "image": "/images/projects/W3Dart-1.webp",
         "images": [
             "/images/projects/W3Dart-1.webp",
@@ -353,6 +365,8 @@
         "id": 7,
         "title": "Roberto Bolle Foundation Italy",
         "description": "Developed a sleek and engaging website for the Roberto Bolle Foundation, showcasing its mission to promote dance and cultural initiatives worldwide. The site features a seamless user experience, elegant design, and intuitive navigation to highlight the foundation’s impactful work.",
+        "meta_title": "Roberto Bolle Foundation Italy Website Case Study | Comsci",
+        "meta_description": "Explore the website project by Comsci for the Roberto Bolle Foundation in Italy. We built a sleek site showcasing dance & cultural initiatives globally.",
         "image": "/images/projects/Roberto-Bolle-1.webp",
         "images": [
             "/images/projects/Roberto-Bolle-1.webp",
@@ -407,6 +421,8 @@
         "id": 8,
         "title": "Recre Marketing Agency Website",
         "description": "Crafted a sleek and engaging website for Recre8, a video marketing agency that brings brands to life through compelling visuals. The design captures their creativity, innovation, and storytelling expertise.",
+        "meta_title": "Recre Video Marketing Agency Website by Comsci",
+        "meta_description": "Case study: Comsci crafted a sleek website for Recre video marketing agency, reflecting their creativity & storytelling expertise through engaging design.",
         "image": "/images/projects/Recre-0.webp",
         "images": [
             "/images/projects/Recre-1.webp",
@@ -442,15 +458,19 @@
         "content": [
             {
                 "tag": "p",
-                "content": "This project involved crafting a dynamic and visually compelling website for Recre8, a leading video marketing agency. Known for their ability to bring brands to life through powerful visual storytelling, the website needed to reflect their own creative energy and expertise in the marketing and advertising industry."
+                "content": "This project involved crafting a dynamic and visually compelling website for Recre8, a leading video marketing agency. Known for their ability to bring brands to life through powerful visual storytelling, the website needed to function as a central digital hub, elegantly showcasing the Foundation's significant work, cultural projects, events, and initiatives while providing easy navigation and comprehensive information for an international audience interested in supporting or learning about dance in Italy."
             },
             {
                 "tag": "p",
-                "content": "The core objective was to design a digital presence that was not only sleek and engaging (focusing on UX/UI principles) but also authentically captured Recre8's unique brand identity. We focused on creating an intuitive navigation and a seamless user experience, making it easy for visitors to explore their portfolio and services. The visual design emphasized their innovation and storytelling prowess through strategic use of imagery and layout, aligning with the initial logo and branding considerations."
+                "content": "Our project focused on designing and developing the authoritative website for the Roberto Bolle Foundation Italy, the organization founded by the internationally acclaimed étoile Roberto Bolle. The Foundation is dedicated to fostering the art of dance and spreading its positive influence, especially for young dancers. The website needed to function as a central digital hub, elegantly showcasing the Foundation's significant work, cultural projects, events, and initiatives while providing easy navigation and comprehensive information for an international audience interested in supporting or learning about dance in Italy."
             },
             {
                 "tag": "p",
-                "content": "Leveraging the flexibility of WordPress, the site was developed with robust back-end functionality using PHP and SQL. Advanced Custom Fields (ACF) were integrated to provide Recre8 with easy control over their content, especially their diverse project portfolio. Beyond development, the project also included initial Search Engine Optimization (SEO) setup to enhance visibility and reach their target audience effectively."
+                "content": "The development process prioritized creating a high-quality online experience that matched the Foundation's reputation. We implemented a sleek, elegant design and intuitive navigation structure, ensuring a seamless journey for users browsing on any device. Key functionalities developed include dedicated sections for exploring detailed information about ongoing projects, archived events, the Foundation's history, and easy access to contact information. This user-centric approach, refined through stages using Figma and Photoshop, ensures that visitors can efficiently find and engage with the content that matters most, highlighting the Foundation's impact and vision for dance promotion."
+            },
+            {
+                "tag": "p",
+                "content": "From a technical perspective, the Roberto Bolle Foundation website is built upon a flexible WordPress CMS powered by PHP and a robust SQL Database. We implemented modern HTML5, CSS3, and JavaScript for the responsive frontend, ensuring optimal performance and visual integrity. Extensive use of Advanced Custom Fields (ACF) was central to empowering the client to manage diverse content types easily and without technical expertise. Beyond core development, our work included integrating necessary site functionality and applying thorough SEO strategies from the outset to ensure the platform ranks effectively and connects the Foundation with individuals searching for information related to dance foundations, cultural initiatives in Italy, and Roberto Bolle's projects."
             }
         ]
     },
@@ -458,6 +478,8 @@
         "id": 9,
         "title": "Black Lusion Web3 Games Marketplace",
         "description": "Crafted a sleek and engaging website for Recre8, a video marketing agency that brings brands to life through compelling visuals. The design captures their creativity, innovation, and storytelling expertise.",
+        "meta_title": "Black Lusion Web3 Games Marketplace Development",
+        "meta_description": "Case study: Comsci developed the Black Lusion Web3 Games Marketplace, a pioneering platform for NFTs and digital assets on the Ethereum blockchain.",
         "image": "/images/projects/Black-Lusion-1.webp",
         "images": [
             "/images/projects/Black-Lusion-1.webp",
@@ -517,6 +539,8 @@
         "id": 10,
         "title": "Carlton West Canada Real Estate Website",
         "description": "Carlton West offers premium condo-style living next to Westboro, combining modern design with top-tier amenities. Experience the perfect blend of comfort, convenience, and vibrant city life in Ottawa.",
+        "meta_title": "Carlton West Canada Real Estate Website by Comsci",
+        "meta_description": "Case study: Comsci designed and developed the Carlton West real estate website, showcasing premium condo-style living in Ottawa, Canada.",
         "image": "/images/projects/Carlton-West-0.webp",
         "images": [
             "/images/projects/Carlton-West-1.webp",
@@ -575,6 +599,8 @@
         "id": 11,
         "title": "DA Studio Interior Designer Branding",
         "description": "We crafted a sophisticated brand identity for DA Studio, an interior design firm that transforms spaces with elegance and innovation. The branding reflects their vision of timeless aesthetics and functional design.",
+        "meta_title": "DA Studio Interior Designer Branding Case Study",
+        "meta_description": "Explore how Comsci crafted a sophisticated brand identity and website for DA Studio Interior Design, reflecting timeless aesthetics and functional design.",
         "image": "/images/projects/DA-Studio-0.webp",
         "images": [
             "/images/projects/DA-Studio-1.webp",
@@ -627,6 +653,8 @@
         "id": 12,
         "title": "Myotonx Body Reset Clinic",
         "description": "Myotonx® revolutionizes body alignment with Instant Body Reset™, a groundbreaking approach that restores posture and function without stretching or manipulation. Experience a pain-free, self-correcting transformation that makes you functionally younger—guaranteed!",
+        "meta_title": "Myotonx Body Reset Clinic Website Project | Comsci",
+        "meta_description": "Case study: Comsci developed the website for Myotonx Body Reset Clinic, showcasing their pain-free body alignment and instant body reset methods.",
         "image": "/images/projects/Myotonx-0.webp",
         "images": [
             "/images/projects/Myotonx-1.webp",
@@ -679,7 +707,9 @@
     {
         "id": 13,
         "title": "RMS Advance GIS Logistic Tool",
-        "description": "Designed and developed a web-based GIS logistics tool that streamlines route planning and quoting by integrating real-time data with Google Maps. This smart system optimizes delivery efficiency, reducing costs and improving decision-making for logistics managers.",
+        "description": "Designed and developed a web-based GIS logistics tool that streamlines route planning and quoting by integrating real-time data with Google Maps. This smart system optimizes delivery efficiency, reducing costs and improving decision-decision-making for logistics managers.",
+        "meta_title": "RMS Advance GIS Logistic Tool Development | Comsci",
+        "meta_description": "See how Comsci developed the RMS Advance web-based GIS logistic tool. Features streamlined route planning & quoting with Google Maps integration for efficiency.",
         "image": "/images/projects/RMS-0.webp",
         "images": [
             "/images/projects/RMS-1.webp",

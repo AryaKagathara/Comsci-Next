@@ -12,18 +12,25 @@ export default function Contact() {
   const currentPath = router.pathname;
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
+  const pageUrl = `${BASE_URL}${router.asPath}`;
+
   const customMeta = {
-    title: "Schedule a Meeting | Comsci Technologies - Software Development", // Updated title
-    description: "Schedule a meeting with Comsci Technologies to discuss your software development project. Let's talk about web design, mobile apps, branding, AI, and more.", // Updated description
+    title: "Contact Us | Comsci - Design & Development Inquiry",
+    description: "Ready to start your next project? Contact Comsci, a global design & development agency. Discuss needs for web, app, branding, AI & custom software.",
+    keywords: [
+      "contact comsci", "comsci technologies contact", "get in touch design agency", "contact us web development", "app development inquiry", "request a quote digital agency", "software project contact", "branding services contact", "contact form design company", "inquire about services", "talk to design experts", "global agency contact"
+    ],
     og: {
-      title: "Schedule a Meeting with Comsci Technologies", // Updated OG title
-      description: "Ready to start your next software project? Book a time with Comsci Technologies today for a consultation.", // Updated OG description
+      title: "Contact Comsci: Start Your Digital Project",
+      description: "Ready to start your next software project? Book a time with Comsci Technologies today for a consultation.",
+      url: pageUrl,
     },
     twitter: {
-      card: "summary_large_image",
-      title: "Schedule Meeting - Comsci Technologies", // Updated Twitter title
-      description: "Book a meeting with Comsci Technologies to discuss web, mobile, AI, or branding projects. Let's connect!", // Consistent Twitter description
+      title: "Contact Comsci: Start Your Digital Project",
+      description: "Book a meeting with Comsci Technologies to discuss web, mobile, AI, or branding projects. Let's connect!",
+      url: pageUrl,
     },
+    author: "Comsci - Arya Kagathara",
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
@@ -48,7 +55,6 @@ export default function Contact() {
     });
   };
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
   const currentPageMeta = { ...baseMetaData, ...customMeta };
 
   const pageSchema = {

@@ -18,18 +18,36 @@ export default function ServicesPage({ servicesData }) {
 
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
+  const pageUrl = `${BASE_URL}${router.asPath}`;
+
   const customMeta = {
-    "title": "Our Services - Comsci Design & Development Company",
-    "description": "Explore Comsci's comprehensive design and development services: Web, Mobile, UX/UI, Branding, AI and more. Drive measurable results for your business.",
-    "keywords": ["web design", "web development", "mobile app development", "UI design", "UX design", "branding", "logo design", "SEO", "digital marketing", "AI development"],
-    "og": {
-      "title": "Comsci - Design & Development Services",
-      "description": "Elevate your business with our expert services in web, mobile, and AI solutions.",
+    title: "Comsci | Full Digital Design & Development Services",
+    description: "Explore Comsci's digital design & development services. Get bespoke web, app, software, branding, AI & SEO solutions driving measurable results.",
+    keywords: [
+      "comsci services",
+      "design development services",
+      "web design services",
+      "mobile app development services",
+      "custom software development",
+      "branding services",
+      "ux ui design services",
+      "artificial intelligence services",
+      "seo services digital",
+      "video production services",
+      "digital agency services",
+      "full service digital agency"
+    ],
+    og: {
+      title: "Comsci Digital Services - Web, App, AI, Branding & More",
+      description: "Elevate your business with Comsci's expert services in web, mobile, software, branding, and AI solutions.",
+      url: pageUrl,
     },
-    "twitter": {
-      "title": "Comsci - Design & Development Services",
-      "description": "Elevate your business with our expert services in web, mobile, and AI solutions.",
-    }
+    twitter: {
+      title: "Comsci Digital Services - Web, App, AI, Branding & More",
+      description: "Elevate your business with Comsci's expert services in web, mobile, software, branding, and AI solutions.",
+      url: pageUrl,
+    },
+    author: "Comsci - Arya Kagathara"
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
@@ -54,7 +72,6 @@ export default function ServicesPage({ servicesData }) {
     });
   };
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
   const currentPageMeta = { ...baseMetaData, ...customMeta };
 
   const pageSchema = {

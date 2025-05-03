@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import ProjectDetailBanner from '@/components/ProjectDetailBanner';
+import ProjectDetailBanner from '@/components/ProjectDetailBanner'; // Assuming these components are still needed
 import ProjectDetailContent from '@/components/ProjectDetailContent';
 import ProjectDetailImage from '@/components/ProjectDetailImage';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -49,20 +49,28 @@ export default function ProjectDetail({ project }) {
        parentPath = '/';
     }
 
-    const parentBreadcrumbs = breadcrumbData[parentPath];
+    // Assuming breadcrumbData structure has paths like "/projects"
+    // Adjust this logic if your breadcrumb data source works differently
+    const parentBreadcrumbs = breadcrumbData[parentPath] || breadcrumbData[pathSegments[0]]; // Try /projects or just 'projects' key
+
 
     if (parentBreadcrumbs && project?.title && router.asPath) {
       const itemsCopy = JSON.parse(JSON.stringify(parentBreadcrumbs));
       const currentProjectItem = {
         label: project.title,
-        name: project.title,
+        name: project.title, // Use title for schema name too
         href: router.asPath
       };
       itemsCopy.push(currentProjectItem);
       setBreadcrumbItems(itemsCopy);
     } else {
-      // Fallback to root breadcrumbs or empty array if no match
-      setBreadcrumbItems(breadcrumbData['/'] || []);
+      // Fallback to a default or empty array if no match
+       const defaultItems = breadcrumbData['/'] || []; // Use root or empty if no root data
+       if(project?.title && router.asPath) {
+            setBreadcrumbItems([...defaultItems, { label: project.title, name: project.title, href: router.asPath }]);
+       } else {
+           setBreadcrumbItems(defaultItems);
+       }
     }
   }, [router.pathname, router.asPath, project?.title]);
 
@@ -92,116 +100,112 @@ export default function ProjectDetail({ project }) {
 
   // --- Custom Meta Tags ---
   const customMeta = {
-      title: `${project.title} | Comsci Project`,
-      // Use project description for the primary description meta tag
-      description: project.description,
+      // Use meta_title from JSON
+      title: project.meta_title,
+      // Use meta_description from JSON
+      description: project.meta_description,
       // Use the unique array of combined keywords for the <meta name="keywords"> tag
       keywords: uniqueKeywords,
-      // og tags - Keep description concise
+      // og tags - Use meta_title and meta_description from JSON
       og: {
-          title: `${project.title} | Comsci Project`,
-          description: project.description, // Consider making OG description shorter if main is very long
+          title: project.meta_title, // Use dedicated meta title for OG
+          description: project.meta_description, // Use dedicated meta description for OG
           image: fullImageUrl,
           imageAlt: project.alt || `Showcase image for ${project.title}`, // Use project.alt if available
           url: `${BASE_URL}${router.asPath}`, // Add URL tag for OG
           type: 'article', // Type article often fits project showcases with substantial content
       },
-      // twitter tags - Keep description concise
+      // twitter tags - Use meta_title and meta_description from JSON
       twitter: {
          card: 'summary_large_image', // Use large image card type
-         title: `${project.title} | Comsci Project`,
-          description: project.description, // Consider making Twitter description shorter
+         title: project.meta_title, // Use dedicated meta title for Twitter
+         description: project.meta_description, // Use dedicated meta description for Twitter
           image: fullImageUrl,
           imageAlt: project.alt || `Showcase image for ${project.title}`, // Use project.alt if available
       },
        // robots tag (often from baseMetaData, ensure it's considered)
        robots: baseMetaData.robots || 'index, follow', // Use base or provide a default
+       // Author tag
+       author: baseMetaData.author || 'Comsci',
   };
 
   // Helper function to generate meta tags (slightly improved filtering)
-  const getMetaTags = (metaData, customMeta = {}) => {
-    const mergedMeta = { ...metaData, ...customMeta };
-    if (customMeta.og) mergedMeta.og = { ...metaData.og, ...customMeta.og };
-    if (customMeta.twitter) mergedMeta.twitter = { ...metaData.twitter, ...customMeta.twitter };
+  // Assuming this helper is already defined and working correctly or provided elsewhere
+  // Keeping the provided helper for context, assuming it's what you use.
+  // If you are using next/head's array format directly, this helper might be simplified.
+  // For direct array format you'd return the array of elements directly from the customMeta object structure.
 
-    return Object.keys(mergedMeta).map((key) => {
-      const value = mergedMeta[key];
+   // A simpler way using next/head's array format, assumes Head can handle the standard key names:
+   const headMetaTags = [
+    <title key="title">{customMeta.title}</title>,
+    <meta key="description" name="description" content={customMeta.description} />,
+     ...(Array.isArray(customMeta.keywords) && customMeta.keywords.length > 0 ?
+      [<meta key="keywords" name="keywords" content={customMeta.keywords.join(', ')} />]
+      : []),
+    <meta key="robots" name="robots" content={customMeta.robots} />,
+    <meta key="author" name="author" content={customMeta.author} />,
 
-      if (key === "title" && typeof value === 'string') return <title key={key}>{value}</title>;
+    // OG tags
+    ...(customMeta.og ? [
+        <meta key="og:title" property="og:title" content={customMeta.og.title} />,
+        <meta key="og:description" property="og:description" content={customMeta.og.description} />,
+        <meta key="og:type" property="og:type" content={customMeta.og.type} />,
+        <meta key="og:url" property="og:url" content={customMeta.og.url} />,
+         ...(customMeta.og.image ? [<meta key="og:image" property="og:image" content={customMeta.og.image} />] : []),
+         ...(customMeta.og.imageAlt ? [<meta key="og:image:alt" property="og:image:alt" content={customMeta.og.imageAlt} />] : []),
+        // Add width/height if you add them to your og object later
+       // ...(customMeta.og.image?.width ? [<meta key="og:image:width" property="og:image:width" content={customMeta.og.image.width} />] : []),
+       // ...(customMeta.og.image?.height ? [<meta key="og:image:height" property="og:image:height" content={customMeta.og.image.height} />] : []),
+    ] : []),
 
-      if (key === "og" || key === "twitter") {
-        if (typeof value === 'object' && value !== null) {
-          return Object.keys(value).map((property) => (
-             // Handle nested objects (like image objects with url, width, height, etc.) if your schema has them
-            typeof value[property] === 'string' ?
-             <meta key={`${key}:${property}`} property={`${key}:${property}`} content={value[property]} />
-             : null // Don't render meta tag for non-string values in OG/Twitter direct properties
-          )).filter(Boolean); // Filter out null entries
-        }
-        return null; // Skip if og/twitter is not a valid object
-      }
+     // Twitter tags
+     ...(customMeta.twitter ? [
+        <meta key="twitter:card" name="twitter:card" content={customMeta.twitter.card} />,
+        <meta key="twitter:title" name="twitter:title" content={customMeta.twitter.title} />,
+        <meta key="twitter:description" name="twitter:description" content={customMeta.twitter.description} />,
+        ...(customMeta.twitter.image ? [<meta key="twitter:image" name="twitter:image" content={customMeta.twitter.image} />] : []),
+         ...(customMeta.twitter.imageAlt ? [<meta key="twitter:image:alt" name="twitter:image:alt" content={customMeta.twitter.imageAlt} />] : []),
+     ] : []),
 
-      // This part already correctly handles Array keywords and joins them
-      if (key === "keywords" && Array.isArray(value)) {
-          return value.length > 0 ? <meta key={key} name={key} content={value.join(', ')} /> : null; // Render only if keywords exist
-      }
-
-       if (key === "robots" && typeof value === 'string') return <meta key={key} name={key} content={value} />;
-
-       // Handle other string meta tags (description, author, etc.)
-       if (key !== 'og' && key !== 'twitter' && key !== 'title' && key !== 'keywords' && typeof value === 'string') {
-           return <meta key={key} name={key} content={value} />;
-       }
-       return null; // Ignore unexpected types or keys already handled
-    }).filter(Boolean); // Filter out null entries from the outer map as well
-  };
+      // Canonical URL
+     <link rel="canonical" href={customMeta.og.url} key="canonical-link" /> // Assuming og.url is the correct canonical URL
+   ];
 
 
   // --- JSON-LD Schema Markup ---
-  const pageUrl = `${BASE_URL}${router.asPath}`;
+  const pageUrl = customMeta.og.url; // Use the same URL from meta tags
 
   const pageSchema = {
     // Choose a schema type appropriate for showcasing a project.
-    // 'Article' is good if there is significant descriptive content.
-    // 'CreativeWork' or 'Product' could also be considered depending on context.
-    // Let's stick with 'Article' as in your original code.
-    "@type": "Article",
+    "@context": "https://schema.org", // Add context here
+    "@type": "Article", // Keeping Article as previously used, consider 'CreativeWork'
     "@id": pageUrl,
     "url": pageUrl,
-    "headline": project.title,
-    "name": project.title,
-    "description": project.description, // Use project description
-    // Relationships to site/org schemas
-    "isPartOf": {
-      "@id": websiteSchema["@id"] // Link to the overall website schema
-    },
-    "publisher": {
-      "@id": organizationSchema["@id"] // Link to the organization schema
-    },
-    "author": { // Credit the organization as the author of the content/page
-      "@id": organizationSchema["@id"]
-    },
-    // Image object for the schema
-    "image": {
-       "@type": "ImageObject",
-       "url": fullImageUrl,
-       "caption": project.alt || `Showcase image for ${project.title}`, // Use alt text if available
-       // Consider adding width/height if known for the main image
-       // "width": 1200, // Example
-       // "height": 630 // Example
-    },
+    "headline": project.title, // Using the project title here is fine
+    "name": project.title, // Using the project title here is fine
+    "description": project.description, // Using the main project description might be best for detailed schema description
 
-     // Add combined keywords string to schema
-     "keywords": keywordsString.length > 0 ? keywordsString : undefined, // Include only if there are keywords
+    // Relationships to site/org schemas - ensure organizationSchema & websiteSchema are defined
+    // You need to define these globally or import them correctly in lib/commonSchema.js
+    ...(organizationSchema ? { "publisher": { "@id": organizationSchema["@id"] }, "author": { "@id": organizationSchema["@id"] } } : {}),
+    ...(websiteSchema ? { "isPartOf": { "@id": websiteSchema["@id"] } } : {}),
 
-     // You could also add 'articleSection' or 'about' more semantically,
-     // but adding to 'keywords' fulfills the request directly. Example of 'about':
-     /*
-     "about": [
-        ...(project.category || []).map(cat => ({ "@type": "Thing", "name": cat })),
-        ...(project.industry || []).map(ind => ({ "@type": "Thing", "name": ind })),
-     ].filter(item => item.name), // Filter out items with no name
-     */
+
+    // Image object for the schema - using fullImageUrl derived earlier
+    ...(customMeta.og?.image && customMeta.og?.imageAlt ? {
+       "image": {
+          "@type": "ImageObject",
+          "url": customMeta.og.image,
+          "caption": customMeta.og.imageAlt,
+          // Consider adding width/height if known
+          // "width": 1200,
+          // "height": 630
+       }
+    } : {}),
+
+
+     // Add combined keywords string to schema (using the comma-separated string)
+     "keywords": keywordsString.length > 0 ? keywordsString : undefined,
 
      // Link back to the page itself as the main entity
      "mainEntityOfPage": {
@@ -215,9 +219,10 @@ export default function ProjectDetail({ project }) {
 
   // --- Breadcrumb Schema ---
   let breadcrumbSchema = null;
+   // Check if breadcrumbItems exist and have more than 0 items
   if (breadcrumbItems && breadcrumbItems.length > 0) {
       breadcrumbSchema = {
-        "@context": "https://schema.org",
+        "@context": "https://schema.org", // Context also needed for this schema
         "@type": "BreadcrumbList",
         "itemListElement": breadcrumbItems.map((item, index) => ({
             "@type": "ListItem",
@@ -229,10 +234,10 @@ export default function ProjectDetail({ project }) {
       };
   }
 
-  // Final array of schema objects
+  // Final array of schema objects - ensure organizationSchema, websiteSchema are available
   const finalSchema = [
-      organizationSchema, // Your base organization schema
-      websiteSchema,      // Your base website schema
+      ...(organizationSchema ? [organizationSchema] : []), // Add org schema if available
+      ...(websiteSchema ? [websiteSchema] : []),      // Add site schema if available
       pageSchema,         // The schema for the current project page
       ...(breadcrumbSchema ? [breadcrumbSchema] : []) // Add breadcrumb schema if generated
   ];
@@ -241,23 +246,25 @@ export default function ProjectDetail({ project }) {
     <>
       {/* Head component for meta tags and schema */}
       <Head>
-        {/* Generate standard meta tags using the merged metadata */}
-        {getMetaTags(baseMetaData, customMeta)}
-        <link rel="canonical" href={pageUrl} key="canonical-link" />
+         {/* Render standard meta tags and canonical */}
+         {headMetaTags}
 
         {/* Add the JSON-LD Schema script */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(finalSchema, null, 2) }}
-          key="jsonld-schema" // Unique key for React rendering
-        />
+         {finalSchema && finalSchema.length > 0 && (
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(finalSchema, null, 2) }}
+                key="jsonld-schema" // Unique key for React rendering
+              />
+         )}
       </Head>
 
       {/* Render other page components */}
-      <Breadcrumb items={breadcrumbItems} />
+      {/* Render breadcrumb only if items exist */}
+       {breadcrumbItems && breadcrumbItems.length > 0 && <Breadcrumb items={breadcrumbItems} />}
       {/* <ProjectDetailBanner project={project} /> */}
       <ProjectDetailImage project={project} />
-      <ProjectDetailContent project={project} /> 
+      <ProjectDetailContent project={project} />
     </>
   );
 }

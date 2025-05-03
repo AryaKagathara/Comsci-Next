@@ -18,17 +18,36 @@ export default function Projects({ projectsData }) {
   const currentPath = router.pathname;
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
+  const pageUrl = `${BASE_URL}${router.asPath}`;
+
   const customMeta = {
-    title: "Our Projects | Comsci Technologies - Software Development Portfolio",
-    description: "Explore Comsci Technologies' portfolio of successful software development projects. Discover innovative solutions we've delivered across various industries.",
+    title: "Comsci | Portfolio of Design & Development Projects",
+    description: "Explore Comsci's project portfolio showcasing innovative web, app, and custom software development. See our tailored solutions for global clients.",
+    keywords: [
+      "comsci projects",
+      "design development portfolio",
+      "web design projects",
+      "mobile app development examples",
+      "custom software development cases",
+      "digital solutions portfolio",
+      "branding project examples",
+      "agency work portfolio",
+      "past projects design dev",
+      "client success stories",
+      "software portfolio",
+      "digital transformation projects"
+    ],
     og: {
-      title: "Comsci's Project Portfolio: Showcasing Innovation",
-      description: "See how Comsci Technologies transforms businesses with cutting-edge software solutions. Explore our project portfolio for inspiration and results.",
+      title: "Comsci Portfolio: Innovative Design & Development Projects",
+      description: "See how Comsci transforms businesses with cutting-edge web, app, and custom software solutions. Explore our project portfolio.",
+      url: pageUrl,
     },
     twitter: {
-      card: "summary_large_image",
-      title: "Comsci's Portfolio: Inspiring Software Solutions",
+      title: "Comsci Portfolio: Innovative Design & Development Projects",
+      description: "See how Comsci transforms businesses with cutting-edge web, app, and custom software solutions. Explore our project portfolio.",
+      url: pageUrl,
     },
+    author: "Comsci - Arya Kagathara"
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
@@ -53,7 +72,6 @@ export default function Projects({ projectsData }) {
     });
   };
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
   const currentPageMeta = { ...baseMetaData, ...customMeta };
 
   const pageSchema = {

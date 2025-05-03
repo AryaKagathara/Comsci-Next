@@ -3,6 +3,8 @@
     "id": 1,
     "title": "Healthcare",
     "description": "Revolutionizing patient care with innovative digital solutions for telehealth, remote monitoring, data analytics, and EHR integration.",
+    "meta_title": "Comsci | Healthcare Digital Solutions & Patient Tech",
+    "meta_description": "Revolutionize healthcare with Comsci's digital solutions. We provide telehealth, remote monitoring, data analytics, EHR integration, & AI for better patient care.",
     "image": "/images/industries/Healthcare-Small.webp",
     "fullImage": "/images/industries/Healthcare-Full.webp",
     "alt": "Full width banner illustrating digital innovation in the healthcare sector",
@@ -82,6 +84,8 @@
     "id": 2,
     "title": "Web3",
     "description": "Building the decentralized future with blockchain technology, specializing in smart contracts, dApps, and decentralized infrastructure.",
+    "meta_title": "Web3 & Blockchain Development for Decentralization | Comsci",
+    "meta_description": "Power the decentralized future with Comsci's Web3 expertise. We specialize in blockchain, smart contracts, dApps, NFTs, & metaverse development solutions.",
     "image": "/images/industries/Web3-Small.webp",
     "fullImage": "/images/industries/Web3-Full.webp",
     "alt": "Image representing Comsci's Web3 and Blockchain development services",
@@ -167,6 +171,8 @@
     "id": 3,
     "title": "Real Estate",
     "description": "Revolutionizing the real estate market with blockchain technology, tokenization, and fractional ownership.",
+    "meta_title": "Comsci | Real Estate Tech Solutions with Blockchain",
+    "meta_description": "Transform real estate with Comsci's blockchain solutions. We offer property tokenization, fractional ownership platforms, & smart contract transaction services.",
     "image": "/images/industries/RealEstate-Small.webp",
     "fullImage": "/images/industries/RealEstate-Full.webp",
     "alt": "Image representing Comsci Technologies' solutions for Real Estate",
@@ -207,7 +213,7 @@
           },
           {
             "tag": "li",
-            "content": "<strong>Decentralized Property Management:</strong> We leverage blockchain to create efficient and transparent property management systems, streamlining processes such as rent collection, maintenance requests, and record keeping."
+            "content": "<strong>Decentralized Property Management:</strong> We leverage blockchain to create efficient and transparent property management systems, streamlining processes suchs as rent collection, maintenance requests, and record keeping."
           },
           {
             "tag": "li",
@@ -244,8 +250,10 @@
   },
   {
     "id": 4,
-    "title": "Luxery & Hospitality",
+    "title": "Luxury & Hospitality",
     "description": "Comsci Technologies provides tailored software and website development for hotels, restaurants, and other hospitality businesses to enhance operations, improve customer experience, and drive revenue.",
+    "meta_title": "Comsci | Hospitality Software & Website Development",
+    "meta_description": "Elevate hospitality with Comsci's custom software. We provide hotel/restaurant management, booking systems, loyalty programs, & stunning website development.",
     "image": "/images/industries/Hospitality-Small.webp",
     "fullImage": "/images/industries/Hospitality-Full.webp",
     "alt": "Full width image showcasing digital solutions for the luxury and hospitality industry",
@@ -329,6 +337,8 @@
     "id": 5,
     "title": "Education",
     "description": "Comsci Technologies empowers educational institutions with tailored software and website solutions to enhance learning, streamline administration, and improve student engagement.",
+    "meta_title": "Comsci | Education Software & Website Solutions",
+    "meta_description": "Empower education with Comsci's custom tech. We build LMS, student portals, school management software, online platforms, & educational websites.",
     "image": "/images/industries/Educational-Small.webp",
     "fullImage": "/images/industries/Educational-Full.webp",
     "link": "education",
@@ -368,15 +378,15 @@
           },
             {
             "tag": "li",
-            "content": "<strong>Educational Website Design and Development:</strong> Build informative and engaging websites for educational institutions to showcase programs, attract students, and facilitate online applications."          
+            "content": "<strong>Educational Website Design and Development:</strong> Build informative and engaging websites for educational institutions to showcase programs, attract students, and facilitate online applications."
           }
         ]
       },
-  {
+      {
         "tag": "h2",
         "content": "Why Choose Comsci Technologies?"
       },
-  {
+      {
         "tag": "ul",
         "content": [
           {
@@ -390,7 +400,7 @@
           {
             "tag": "li",
             "content": "<strong>Global Reach, Local Expertise:</strong> Located in India, we provide cost-effective solutions to educational institutions worldwide."
-          }        
+          }
         ]
       },
       {
@@ -403,11 +413,13 @@
     "id": 6,
     "title": "Entertainment & Events",
     "description": "Comsci Technologies builds innovative software and websites for the entertainment and events industry, enhancing ticketing, fan engagement, and event management.",
+    "meta_title": "Comsci | Entertainment & Event Tech Solutions & Software",
+    "meta_description": "Power unforgettable entertainment & events with Comsci's tech. Custom ticketing, fan engagement platforms, artist websites, & event management software.",
     "image": "/images/industries/Entertainment-Small.webp",
     "fullImage": "/images/industries/Entertainment-Full.webp",
     "link": "entertainment-events",
     "alt": "Visual representing Comsci's technology solutions for the entertainment and events industry",
-    "keywords": ["event management software", "ticketing system", "fan engagement platform", "event website design", "artist website", "music streaming platform", "India"],  
+    "keywords": ["event management software", "ticketing system", "fan engagement platform", "event website design", "artist website", "music streaming platform", "India"],
     "content": [
       {
         "tag": "h1",
@@ -442,13 +454,13 @@
           }
         ]
       },
-  {
+      {
         "tag": "h2",
         "content": "Why Choose Comsci Technologies?"
       },
-  {
+      {
         "tag": "ul",
-        "content": [    
+        "content": [
           {
             "tag": "li",
             "content": "<strong>Tailored Solutions:</strong> We understand that every event and entertainment business is unique. Our solutions are custom-designed to meet your specific requirements."
@@ -457,7 +469,7 @@
             "tag": "li",
             "content": "<strong>Innovative Technology:</strong> We utilize the latest technologies to build scalable, secure, and engaging platforms that enhance the entertainment experience."
           },
-  {
+          {
             "tag": "li",
             "content": "<strong>Global Reach, Local Expertise:</strong> Based in India, we provide high-quality and cost-effective solutions to clients around the world."
           }
@@ -473,6 +485,8 @@
     "id": 7,
     "title": "E-commerce",
     "description": "Comsci Technologies builds custom e-commerce websites and applications to help businesses thrive online.",
+    "meta_title": "Custom E-commerce Website & App Development | Comsci",
+    "meta_description": "Build e-commerce success with Comsci. Custom online stores, shopping carts, e-commerce apps, Shopify/WooCommerce development driving sales.",
     "image": "/images/industries/Ecommerce-Small.webp",
     "fullImage": "/images/industries/Ecommerce-Full.webp",
     "link": "ecommerce",
@@ -510,7 +524,7 @@
             "tag": "li",
             "content": "<strong>WooCommerce Development:</strong> Extend the functionality of WordPress with WooCommerce to create flexible and robust e-commerce solutions."
           },
-  {
+          {
             "tag": "li",
             "content": "<strong>Magento Development:</strong> Build enterprise-level e-commerce platforms with Magento's powerful features and scalability."
           }
@@ -531,9 +545,9 @@
             "tag": "li",
             "content": "<strong>Experienced Developers:</strong> Our team of skilled e-commerce developers has a proven track record of delivering successful projects."
           },
-  {
+          {
             "tag": "li",
-            "content": "<strong>Global Reach, Local Expertise:</strong>  Based in India, we offer cost-effective development services to clients worldwide."  
+            "content": "<strong>Global Reach, Local Expertise:</strong>  Based in India, we offer cost-effective development services to clients worldwide."
           }
         ]
       },
@@ -547,6 +561,8 @@
     "id": 8,
     "title": "Fintech",
     "description": "Comsci Technologies builds custom software solutions for Fintech companies, enabling innovation and efficiency in financial services.",
+    "meta_title": "Fintech Software Development & Solutions | Comsci",
+    "meta_description": "Drive Fintech innovation with Comsci's custom software. Expertise in payment integration, loan/investment platforms, personal finance apps & financial security.",
     "image": "/images/industries/Fintech-Small.webp",
     "fullImage": "/images/industries/Fintech-Full.webp",
     "link": "fintech",

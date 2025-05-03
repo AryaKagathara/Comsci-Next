@@ -18,17 +18,25 @@ export default function Industries({ industriesData }) {
   const currentPath = router.pathname;
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
+  const pageUrl = `${BASE_URL}${router.asPath}`;
+
   const customMeta = {
-    title: "Industries We Serve | Comsci Technologies - Software Solutions",
-    description: "Comsci Technologies provides tailored software solutions across diverse industries, including Healthcare, Fintech, and more. Explore our expertise and see how we can help your business thrive.",
+    title: "Comsci | Industries Served - Tailored Digital Solutions",
+    description: "Explore industries Comsci serves: Healthcare, Web3, Real Estate, Fintech & more. Get tailored web, app & software solutions to help your business thrive globally.",
+    keywords: [
+      "comsci industries served", "industries digital agency", "tech solutions by industry", "healthcare software solutions", "web3 development company", "real estate tech solutions", "ecommerce development agency", "fintech software company", "digital transformation by sector", "industry specific software", "tailored tech solutions", "digital services by industry"
+    ],
     og: {
-      title: "Comsci: Industry-Specific Software Solutions",
-      description: "We empower businesses across various industries with custom software designed to meet their unique challenges and achieve growth.",
+      title: "Industries We Serve | Comsci",
+      description: "See how Comsci provides tailored web, app, and software solutions across various industries. Partner for business success.",
+      url: pageUrl,
     },
     twitter: {
-      title: "Software Solutions for Every Industry - Comsci",
-      description: "Comsci Technologies delivers tailored software solutions for leading industries. Discover how we can transform your business.",
+      title: "Industries We Serve | Comsci",
+      description: "See how Comsci provides tailored web, app, and software solutions across various industries. Partner for business success.",
+      url: pageUrl,
     },
+    author: "Comsci - Arya Kagathara",
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
@@ -53,7 +61,6 @@ export default function Industries({ industriesData }) {
     });
   };
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
   const currentPageMeta = { ...baseMetaData, ...customMeta };
 
   const pageSchema = {

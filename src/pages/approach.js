@@ -17,10 +17,25 @@ export default function Approach() {
   const currentPath = router.pathname;
   const breadcrumbItems = breadcrumbData[currentPath] || breadcrumbData['/'];
 
-  const customMeta = {
-    title: "Comsci's Approach: Delivering Results Through Strategic Software Development",
-    description: "Discover how Comsci's proven 5-step approach, from strategy to delivery, ensures your software project achieves measurable results. We combine creative design, technical expertise, and rigorous testing for successful outcomes.",
+  const pageUrl = `${BASE_URL}${router.asPath}`;
 
+  const customMeta = {
+    title: "Comsci | Our Strategic Design & Development Process",
+    description: "Discover Comsci's proven approach to digital success. Learn our strategic process from creative design & development to quality testing & launch for your project.",
+    keywords: [
+      "comsci approach", "design development process", "web development process", "app development process", "digital project methodology", "agile process", "project lifecycle", "creative design process", "development stages", "quality assurance testing", "strategic approach", "digital solution process"
+    ],
+    og: {
+      title: "Comsci Approach: Our Project Process",
+      description: "Learn about Comsci's strategic 5-step design & development process, from strategy to successful launch.",
+      url: pageUrl,
+    },
+    twitter: {
+      title: "Comsci Approach: Our Project Process",
+      description: "Learn about Comsci's strategic 5-step design & development process, from strategy to successful launch.",
+      url: pageUrl,
+    },
+    author: "Comsci - Arya Kagathara",
   };
 
   const getMetaTags = (metaData, customMeta = {}) => {
@@ -46,7 +61,7 @@ export default function Approach() {
     });
   };
 
-  const pageUrl = `${BASE_URL}${router.asPath}`;
+  
   const currentPageMeta = { ...baseMetaData, ...customMeta };
 
   const pageSchema = {
