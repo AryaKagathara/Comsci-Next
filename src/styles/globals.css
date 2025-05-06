@@ -344,6 +344,7 @@ to { transform: translateX(calc(-100% - 1rem)); }
 .result_wrap .result_detail .result_textbox { width: 100%; max-width: 25%; position: relative; }
 .blogdetail { padding: 100px 0; background: var(--primary-white); color: var(--primary-black); }
 .blogdetail_section { margin: 0 auto; max-width: 856px; }
+.blogdetail_section p, .blogdetail_section ul, .blogdetail_section h1, .blogdetail_section h2, .blogdetail_section h3, .blogdetail_section h4, .blogdetail_section h5, .blogdetail_section h6 { font-family: 'Open Sans';}
 .blogdetail_section span { display: block; color: var(--primary-black); font-family: 'Open Sans'; font-size: 24px; font-weight: 400; text-transform: capitalize; margin-bottom: 32px; }
 .blogdetail_section .caption { margin-bottom: 32px; display: flex; align-items: center; }
 .blogdetail_section .caption i { color: var(--primary-light-gray); font-size: 16px; font-style: normal; font-weight: 400; font-family: 'Open Sans'; }
